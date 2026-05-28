@@ -1,768 +1,640 @@
 <!DOCTYPE html>
 <html lang="lv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pilns veloservisa cenu saraksts — BergsVelo Ozolnieki. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope. Savākšana un piegāde bez papildu maksas." />
-    <meta name="keywords" content="velo apkope cenas Ozolnieki, bremžu regulēšana velosipēdam, ķēdes maiņa, riteņu centrēšana, pilnā apkope, bergsvelo" />
-    <meta name="robots" content="index, follow" />
-    <title data-cfg="seo.workshop.title">Serviss &amp; Cenas — Velo Apkope Pilsētā | TAVSVELO</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VELO.SERVIS servisa cenrādis — bremzes, pārnesumi, riteņi, gultņi, amortizatori, pilnā apkope. Interaktīvs cenu kalkulators. Pieteikties tiešsaistē." />
+  <meta name="robots" content="index, follow" />
+  <title data-cfg="seo.workshop.title">Serviss &amp; Cenas — Velo Apkope Ozolniekos | VELO.SERVIS</title>
+  <link rel="canonical" href="https://bergsvelo.lv/workshop.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="SITE_URL/workshop.html" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="SITE_URL/workshop.html" />
-    <meta property="og:title" content="Serviss &amp; Cenas — Velo Apkope Ozolnieki | BERGSVELO" />
-    <meta property="og:description" content="Pilns veloservisa cenu saraksts. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope. Savākšana un piegāde bez papildu maksas." />
-    <meta property="og:image" content="https://bergsvelo.lv/images/close-up-working-bike.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="lv_LV" />
-    <meta property="og:site_name" content="BergsVelo" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Serviss &amp; Cenas — BergsVelo" />
-    <meta name="twitter:description" content="Pilns veloservisa cenu saraksts. Bremžu regulēšana, ķēdes maiņa, pilnā apkope Ozolniekos." />
-    <meta name="twitter:image" content="https://bergsvelo.lv/images/close-up-working-bike.jpg" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "SITE_URL/" },
-            { "@type": "ListItem", "position": 2, "name": "Serviss & Cenas", "item": "SITE_URL/workshop.html" }
-          ]
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'deep-navy':'#0A1428','electric-blue':'#2E72FF','primary':'#0038af',
+          'primary-c':'#1b4fd8','on-surface':'#1a1c1c','on-sv':'#434655',
+          'on-sfx':'#0b1b38','on-sfx-v':'#394666','slate-s':'#E2E8F0',
+          'bg':'#f9f9f9','sc':'#eeeeee','sc-low':'#f3f3f4',
+          'outline':'#747686','outline-v':'#c4c5d7',
         },
-        {
-          "@type": "Service",
-          "serviceType": "Bicycle Repair",
-          "name": "SITE_NAME Veloserviss",
-          "description": "Pilna spektra velosipēdu apkope un remonts. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope.",
-          "provider": { "@id": "SITE_URL/#business" },
-          "areaServed": [
-            { "@type": "City", "name": "SITE_CITY" },
-            { "@type": "AdministrativeArea", "name": "SITE_REGION" }
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Servisa pakalpojumi un cenas",
-            "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Velosipēda pilnā diagnostika" }, "priceCurrency": "EUR", "price": "12" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Express apkope" }, "priceCurrency": "EUR", "price": "25" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "V-bremžu regulēšana" }, "priceCurrency": "EUR", "price": "8" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hidraulisko bremžu atgaisošana" }, "priceCurrency": "EUR", "price": "30" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Riteņu centrēšana" }, "priceCurrency": "EUR", "price": "15" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ķēdes maiņa" }, "priceCurrency": "EUR", "price": "10" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pārnesumu regulēšana" }, "priceCurrency": "EUR", "price": "8" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Amortizatoru apkope" }, "priceCurrency": "EUR", "price": "25" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Elektrovelosipēda diagnostika" }, "priceCurrency": "EUR", "price": "25" },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pilnā apkope" }, "priceCurrency": "EUR", "price": "30" }
-            ]
-          }
-        }
-      ]
-    }
-    </script>
+        fontFamily: {
+          'display':['"Space Grotesk"','sans-serif'],
+          'body':['Inter','sans-serif'],
+          'mono':['"JetBrains Mono"','monospace'],
+        },
+      }},
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass { background:rgba(255,255,255,.85); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(15,30,60,.1); }
+    .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .svc-row:hover { background: rgba(46,114,255,.05); }
+    .svc-detail { overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1); max-height: 0; }
+    .tech-bg { background-image:radial-gradient(circle at 2px 2px,rgba(15,30,60,.05) 1px,transparent 0); background-size:24px 24px; }
+    .wa-float { position:fixed; bottom:2rem; right:2rem; z-index:150; width:52px; height:52px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; box-shadow:0 4px 16px rgba(37,211,102,.38); text-decoration:none; transition:transform .28s ease,box-shadow .28s ease; }
+    .wa-float:hover { transform:scale(1.1) translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,.55); }
+    .expand-btn { opacity:.45; transition: opacity .2s, color .2s; }
+    .expand-btn:hover { opacity:1; }
+  </style>
+</head>
+<body class="bg-bg text-on-surface overflow-x-hidden tech-bg">
 
-    <!-- Ionicons -->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- JS -->
-    <script src="./js/site-config.js" defer></script>
-    <script src="./js/app.js" defer></script>
-    <script src="./js/cart.js" defer></script>
-  </head>
-  <body>
-
-    <!-- ==================== HEADER ==================== -->
-    <header class="site-header scrolled" id="site-header">
-      <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="nav-logo">
-            <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-          </a>
-
-          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <ul class="nav-menu" id="nav-menu" role="list">
-            <li><a href="index.html" class="nav-link">Sākums</a></li>
-            <li><a href="workshop.html" class="nav-link active nav-cta">Serviss</a></li>
-            <li><a href="shop.html" class="nav-link">Veikals</a></li>
-            <li><a href="contacts.html" class="nav-link">Kontakti</a></li>
-          </ul>
-
-          <a href="shop.html" class="nav-cart" id="nav-cart" aria-label="Grozs">
-            <i class="icon ion-md-cart"></i>
-            <span class="cart-badge" id="cart-badge"></span>
-          </a>
-        </nav>
+  <!-- HEADER -->
+  <header class="fixed top-0 w-full z-50 glass border-b border-on-sfx/10">
+    <nav class="flex justify-between items-center h-20 px-4 md:px-16 max-w-[1440px] mx-auto">
+      <a href="index.html" class="font-display text-2xl font-bold tracking-tight leading-none">
+        <span class="text-deep-navy">VELO.</span><span class="text-electric-blue">SERVIS</span>
+      </a>
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="index.html"    class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Sākums</a>
+        <a href="workshop.html" class="font-mono text-[11px] uppercase tracking-widest text-primary border-b-2 border-primary pb-0.5">Serviss</a>
+        <a href="contacts.html" class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Kontakti</a>
       </div>
-    </header>
+      <div class="flex items-center gap-3">
+        <a href="workshop.html" class="hidden md:block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest hover:bg-transparent hover:text-primary-c border-2 border-primary-c transition-all">Pieteikt servisu</a>
+        <button class="md:hidden p-2 text-deep-navy" id="nav-toggle" aria-label="Izvēlne">
+          <span class="material-symbols-outlined" id="hamburger-icon">menu</span>
+        </button>
+      </div>
+    </nav>
+    <div class="hidden glass border-t border-on-sfx/10 px-4 py-6 space-y-3" id="mobile-menu">
+      <a href="index.html"    class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Sākums</a>
+      <a href="workshop.html" class="block font-mono text-[11px] uppercase tracking-widest text-primary py-2 border-b border-outline-v/30">Serviss</a>
+      <a href="contacts.html" class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Kontakti</a>
+    </div>
+  </header>
 
-    <main>
+  <main class="pt-20">
 
-      <!-- ==================== PAGE HERO ==================== -->
-      <section class="page-hero">
-        <div class="page-hero-bg" style="background-image: url('./images/david-henrichs-7TWyA0UvpVY-unsplash.jpg');"></div>
-        <div class="page-hero-overlay"></div>
-        <div class="container">
-          <div class="page-hero-content reveal">
-            <span class="page-hero-eyebrow">Pakalpojumi</span>
-            <h1 class="page-hero-title">
-              Servisa<br /><span class="accent">Cenrādis</span>
-            </h1>
-            <p class="page-hero-desc">
-              Caurspīdīgas un godīgas cenas par visiem velosipēda apkopes un remonta pakalpojumiem.
-            </p>
+    <!-- HERO -->
+    <section class="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden">
+      <img src="./images/close-up-working-bike.jpg" alt="Veloservisa cenrādis" class="absolute inset-0 w-full h-full object-cover" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-r from-deep-navy/90 via-deep-navy/50 to-transparent"></div>
+      <div class="relative px-4 md:px-16 max-w-[1440px] mx-auto w-full">
+        <div class="max-w-2xl">
+          <span class="font-mono text-[11px] text-electric-blue uppercase tracking-[0.2em] mb-4 block">Pakalpojumi</span>
+          <h1 class="font-display text-4xl md:text-[64px] font-bold text-white mb-6 leading-tight">Servisa<br/>Cenrādis</h1>
+          <p class="font-body text-lg text-white/80 max-w-md">Izvēlies pakalpojumus — katram pievienots detalizēts skaidrojums par darba saturu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="py-20 md:py-32 px-4 md:px-16 max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-12 gap-6">
+
+        <!-- Left sidebar -->
+        <div class="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
+          <div class="lg:sticky lg:top-28">
+            <h2 class="font-display text-3xl md:text-4xl font-semibold text-deep-navy mb-8">Kā pieteikties</h2>
+            <div class="space-y-6 mb-12">
+              <div class="flex gap-5 items-start">
+                <span class="shrink-0 w-10 h-10 rounded-full bg-primary-c text-white flex items-center justify-center font-display font-bold text-lg">1</span>
+                <div><h4 class="font-display text-lg font-semibold text-deep-navy mb-1">Izvēle</h4><p class="font-body text-sm text-on-sv">Atzīmējiet vajadzīgos pakalpojumus — katram automātiski atvērsies detalizēts skaidrojums.</p></div>
+              </div>
+              <div class="flex gap-5 items-start">
+                <span class="shrink-0 w-10 h-10 rounded-full bg-primary-c text-white flex items-center justify-center font-display font-bold text-lg">2</span>
+                <div><h4 class="font-display text-lg font-semibold text-deep-navy mb-1">Aprēķins</h4><p class="font-body text-sm text-on-sv">Apakšā automātiski parādīsies kopējā darba cena.</p></div>
+              </div>
+              <div class="flex gap-5 items-start">
+                <span class="shrink-0 w-10 h-10 rounded-full bg-primary-c text-white flex items-center justify-center font-display font-bold text-lg">3</span>
+                <div><h4 class="font-display text-lg font-semibold text-deep-navy mb-1">Pieteikums</h4><p class="font-body text-sm text-on-sv">Spiediet "Pieteikties servisam" un aizpildiet kontaktinformāciju.</p></div>
+              </div>
+            </div>
+            <div class="p-6 border border-outline/20 bg-white">
+              <span class="font-mono text-[11px] text-electric-blue block mb-3 uppercase tracking-widest">Piezīme</span>
+              <p class="font-body text-sm text-on-sv">Cenas norādītas par darbu. Detaļas tiek pieskaitītas papildus. Klikšķiniet uz <span class="material-symbols-outlined text-[14px] align-middle text-electric-blue">info</span> lai lasītu par katru pakalpojumu.</p>
+            </div>
           </div>
         </div>
-      </section>
 
-      <!-- ==================== PRICING ==================== -->
-      <section class="pricing-section">
-        <div class="container">
+        <!-- Right: catalog -->
+        <div class="col-span-12 lg:col-span-8">
+          <div class="space-y-10" id="catalog">
 
-          <div class="pricing-intro reveal">
-            <span class="section-label">Cenu saraksts</span>
-            <h2 class="section-title">Pakalpojumi</h2>
-            <p class="section-desc" style="text-align:left; margin-left: 0; margin-right: 0; max-width: 580px;">
-              Cenas norādītas par darbu. Detaļas tiek pieskaitītas papildus atbilstoši to izmaksām.
-              Ja nav skaidrības par nepieciešamo servisu — zvaniet, palīdzēsim noskaidrot!
-            </p>
+            <!-- Diagnostika -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">analytics</span> Diagnostika un mazgāšana
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item">
+                  <div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="diag-full" onclick="toggleSvc(this,12,'diag-full')">
+                    <div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Velosipēda pilnā diagnostika</span></div>
+                    <div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 12</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('diag-full')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div>
+                  </div>
+                  <div class="svc-detail" id="detail-diag-full"></div>
+                </div>
+                <div class="svc-item">
+                  <div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="diag-express" onclick="toggleSvc(this,25,'diag-express')">
+                    <div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Express apkope (regulēšana + pumpēšana)</span></div>
+                    <div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 25</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('diag-express')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div>
+                  </div>
+                  <div class="svc-detail" id="detail-diag-express"></div>
+                </div>
+                <div class="svc-item">
+                  <div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="diag-wash" onclick="toggleSvc(this,15,'diag-wash')">
+                    <div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Velosipēda mazgāšana</span></div>
+                    <div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 15</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('diag-wash')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div>
+                  </div>
+                  <div class="svc-detail" id="detail-diag-wash"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vispārīgie darbi -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">build</span> Vispārīgie darbi
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gen-assemble" onclick="toggleSvc(this,50,'gen-assemble')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Jauna velosipēda salikšana no kastes</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 50</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gen-assemble')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gen-assemble"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gen-pack" onclick="toggleSvc(this,30,'gen-pack')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Velosipēda iepakošana kastē</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 30</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gen-pack')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gen-pack"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gen-frame" onclick="toggleSvc(this,100,'gen-frame')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Rāmja maiņa (darbs)</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 100</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gen-frame')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gen-frame"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gen-defect" onclick="toggleSvc(this,80,'gen-defect')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Defektācijas akts (apdrošināšanai)</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 80</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gen-defect')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gen-defect"></div></div>
+              </div>
+            </div>
+
+            <!-- V-bremzes -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">speed</span> V-bremzes
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="vbr-adj" onclick="toggleSvc(this,8,'vbr-adj')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu regulēšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('vbr-adj')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-vbr-adj"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="vbr-pads" onclick="toggleSvc(this,7,'vbr-pads')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu kluču maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 7</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('vbr-pads')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-vbr-pads"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="vbr-cable" onclick="toggleSvc(this,8,'vbr-cable')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu troses maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('vbr-cable')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-vbr-cable"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="vbr-full" onclick="toggleSvc(this,12,'vbr-full')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu komplekta maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 12</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('vbr-full')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-vbr-full"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="br-lever" onclick="toggleSvc(this,15,'br-lever')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu roktura maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 15</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('br-lever')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-br-lever"></div></div>
+              </div>
+            </div>
+
+            <!-- Disku bremzes -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">album</span> Disku bremzes
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="dbr-adj" onclick="toggleSvc(this,10,'dbr-adj')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu regulēšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 10</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('dbr-adj')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-dbr-adj"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="dbr-bleed" onclick="toggleSvc(this,30,'dbr-bleed')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Hidraulisko bremžu atgaisošana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 30</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('dbr-bleed')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-dbr-bleed"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="dbr-pads" onclick="toggleSvc(this,8,'dbr-pads')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu kluču maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('dbr-pads')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-dbr-pads"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="dbr-full" onclick="toggleSvc(this,35,'dbr-full')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu komplekta maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 35</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('dbr-full')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-dbr-full"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="dbr-rotor" onclick="toggleSvc(this,10,'dbr-rotor')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu diska taisnošana vai maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 10</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('dbr-rotor')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-dbr-rotor"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="dbr-lever" onclick="toggleSvc(this,15,'dbr-lever')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bremžu roktura maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 15</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('dbr-lever')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-dbr-lever"></div></div>
+              </div>
+            </div>
+
+            <!-- Pārnesumi -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">settings</span> Pārnesumi
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gear-adj" onclick="toggleSvc(this,8,'gear-adj')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Pārnesumu regulēšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gear-adj')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gear-adj"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gear-cable" onclick="toggleSvc(this,8,'gear-cable')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Pārnesumu troses maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gear-cable')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gear-cable"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gear-der" onclick="toggleSvc(this,20,'gear-der')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Maiņrīka maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 20</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gear-der')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gear-der"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gear-shifter" onclick="toggleSvc(this,15,'gear-shifter')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Shiftera maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 15</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gear-shifter')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gear-shifter"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gear-hanger" onclick="toggleSvc(this,10,'gear-hanger')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Pārslēdzēja turētāja taisnošana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 10</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gear-hanger')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gear-hanger"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gear-pulleys" onclick="toggleSvc(this,10,'gear-pulleys')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Pārslēdzēja rullīšu maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 10</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gear-pulleys')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gear-pulleys"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gear-elec" onclick="toggleSvc(this,30,'gear-elec')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Elektronisko ātrumu regulēšana / atjaunināšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 30</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gear-elec')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gear-elec"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="gear-di2" onclick="toggleSvc(this,40,'gear-di2')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Shimano Di2 / SRAM AXS sinhronizācija</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 40</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('gear-di2')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-gear-di2"></div></div>
+              </div>
+            </div>
+
+            <!-- Riteņi un riepas -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">rotate_right</span> Riteņi un riepas
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-tube" onclick="toggleSvc(this,8,'whl-tube')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Kameras maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-tube')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-tube"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-tyre" onclick="toggleSvc(this,10,'whl-tyre')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Riepu maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 10</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-tyre')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-tyre"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-tubeless" onclick="toggleSvc(this,22,'whl-tubeless')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Tubeless uzstādīšana (viens ritenis)</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 22</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-tubeless')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-tubeless"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-true" onclick="toggleSvc(this,15,'whl-true')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Riteņa centrēšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 15</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-true')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-true"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-spoke" onclick="toggleSvc(this,8,'whl-spoke')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Spieķa maiņa (ar taisnošanu)</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-spoke')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-spoke"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-respoke" onclick="toggleSvc(this,30,'whl-respoke')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Rata pilnā spieķošana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 30</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-respoke')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-respoke"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-rim" onclick="toggleSvc(this,40,'whl-rim')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Aploces (loka) maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 40</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-rim')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-rim"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-hub" onclick="toggleSvc(this,40,'whl-hub')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Rumbas maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 40</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-hub')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-hub"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="whl-freehub" onclick="toggleSvc(this,20,'whl-freehub')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Brīvrumas (tirkšķa) apkope</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 20</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('whl-freehub')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-whl-freehub"></div></div>
+              </div>
+            </div>
+
+            <!-- Ķēde un transmisija -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">link</span> Ķēde un transmisija
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="chain-wash" onclick="toggleSvc(this,8,'chain-wash')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Ķēdes mazgāšana un eļļošana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('chain-wash')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-chain-wash"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="chain-rep" onclick="toggleSvc(this,10,'chain-rep')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Ķēdes maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 10</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('chain-rep')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-chain-rep"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="chain-cas" onclick="toggleSvc(this,12,'chain-cas')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Kasetes maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 12</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('chain-cas')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-chain-cas"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="chain-ring" onclick="toggleSvc(this,12,'chain-ring')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Priekšējā zobrata maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 12</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('chain-ring')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-chain-ring"></div></div>
+              </div>
+            </div>
+
+            <!-- Kloķis un pedāļi -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">autorenew</span> Kloķis un pedāļi
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="ped-rep" onclick="toggleSvc(this,8,'ped-rep')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Pedāļu maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('ped-rep')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-ped-rep"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="crank-rep" onclick="toggleSvc(this,15,'crank-rep')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Kloķa maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 15</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('crank-rep')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-crank-rep"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="crank-ext" onclick="toggleSvc(this,10,'crank-ext')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Saskrūvēta kloķa izķīlēšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 10</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('crank-ext')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-crank-ext"></div></div>
+              </div>
+            </div>
+
+            <!-- Gultņi -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">radio_button_unchecked</span> Gultņi
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="hs-adj" onclick="toggleSvc(this,8,'hs-adj')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Stūres gultņa regulēšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('hs-adj')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-hs-adj"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="hs-rep" onclick="toggleSvc(this,22,'hs-rep')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Stūres gultņa maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 22</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('hs-rep')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-hs-rep"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="bb-rep" onclick="toggleSvc(this,18,'bb-rep')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Kartera gultņa maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 18</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('bb-rep')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-bb-rep"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="hub-serv" onclick="toggleSvc(this,20,'hub-serv')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Riteņa muklāja apkope</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 20</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('hub-serv')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-hub-serv"></div></div>
+              </div>
+            </div>
+
+            <!-- Amortizatori -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">compress</span> Amortizatori
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="susp-adj" onclick="toggleSvc(this,12,'susp-adj')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Priekšējās dakšas regulēšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 12</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('susp-adj')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-susp-adj"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="susp-oil" onclick="toggleSvc(this,38,'susp-oil')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Dakšas eļļas maiņa (lower leg service)</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 38</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('susp-oil')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-susp-oil"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="susp-rear" onclick="toggleSvc(this,12,'susp-rear')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Aizmugurējā amortizatora regulēšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 12</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('susp-rear')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-susp-rear"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="susp-mini" onclick="toggleSvc(this,75,'susp-mini')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Priekšējā dakšas mini serviss (lower leg)</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 75</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('susp-mini')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-susp-mini"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="susp-full" onclick="toggleSvc(this,170,'susp-full')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Priekšējā dakšas pilnais serviss</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 170</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('susp-full')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-susp-full"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="susp-rear-full" onclick="toggleSvc(this,145,'susp-rear-full')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Aizmugurējā amortizatora pilnais serviss</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 145</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('susp-rear-full')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-susp-rear-full"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="susp-swap" onclick="toggleSvc(this,20,'susp-swap')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Dakšas vai amortizatora fiziskā maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 20</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('susp-swap')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-susp-swap"></div></div>
+              </div>
+            </div>
+
+            <!-- Aksesuāri -->
+            <div>
+              <h3 class="font-display text-xl font-semibold text-deep-navy mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">handyman</span> Aksesuāru uzstādīšana
+              </h3>
+              <div class="border border-outline/10 bg-white divide-y divide-outline/5">
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="acc-saddle" onclick="toggleSvc(this,8,'acc-saddle')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Sēdekļa maiņa</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('acc-saddle')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-acc-saddle"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="acc-lights" onclick="toggleSvc(this,8,'acc-lights')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Lukturu uzstādīšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 8</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('acc-lights')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-acc-lights"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="acc-computer" onclick="toggleSvc(this,15,'acc-computer')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Velodatora uzstādīšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 15</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('acc-computer')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-acc-computer"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="acc-fenders" onclick="toggleSvc(this,20,'acc-fenders')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Dubļusargu montāža</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 20</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('acc-fenders')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-acc-fenders"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="acc-rack" onclick="toggleSvc(this,20,'acc-rack')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Bagāžnieka montāža</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 20</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('acc-rack')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-acc-rack"></div></div>
+                <div class="svc-item"><div class="svc-row flex items-center p-5 cursor-pointer group transition-all" data-svc="acc-bottlecage" onclick="toggleSvc(this,5,'acc-bottlecage')"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="chk w-6 h-6 border-2 border-outline/20 group-hover:border-primary transition-colors flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-sm hidden">check</span></div><span class="font-body text-sm">Pudeles turētāja uzstādīšana</span></div><div class="flex items-center gap-3 shrink-0"><span class="font-mono text-deep-navy text-sm">€ 5</span><button class="expand-btn p-1 text-outline hover:text-primary" onclick="event.stopPropagation();expandDetail('acc-bottlecage')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div><div class="svc-detail" id="detail-acc-bottlecage"></div></div>
+              </div>
+            </div>
+
+            <!-- Pilnā apkope highlight -->
+            <div class="p-8 bg-deep-navy text-white relative overflow-hidden group">
+              <div class="absolute -right-10 -top-10 w-40 h-40 border-[10px] border-electric-blue/20 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
+              <div class="relative z-10">
+                <span class="font-mono text-[11px] text-electric-blue uppercase tracking-widest block mb-2">Speciālais piedāvājums</span>
+                <h3 class="font-display text-2xl md:text-3xl font-semibold mb-4">Velosipēda pilnā apkope</h3>
+                <p class="font-body text-slate-s/70 mb-6 max-w-lg text-sm">Ietver mazgāšanu, eļļošanu, regulēšanu, skrūvju pārbaudi, defektāciju un ratu centrēšanu.</p>
+                <div class="space-y-2">
+                  <div class="svc-item-dark">
+                    <div class="svc-row flex justify-between items-center p-4 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-pointer" data-svc="full-single" onclick="toggleSvc(this,30,'full-single')"><div class="flex items-center gap-3"><div class="chk-dark w-5 h-5 border-2 border-white/30 flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-xs hidden">check</span></div><span class="font-body text-sm">Vienātruma</span></div><div class="flex items-center gap-3"><span class="font-mono text-electric-blue text-sm">€ 30</span><button class="expand-btn p-1 text-white/40 hover:text-electric-blue" onclick="event.stopPropagation();expandDetail('full-single')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div>
+                    <div class="svc-detail" id="detail-full-single"></div>
+                  </div>
+                  <div class="svc-item-dark">
+                    <div class="svc-row flex justify-between items-center p-4 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-pointer" data-svc="full-multi-v" onclick="toggleSvc(this,40,'full-multi-v')"><div class="flex items-center gap-3"><div class="chk-dark w-5 h-5 border-2 border-white/30 flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-xs hidden">check</span></div><span class="font-body text-sm">Multi-speed (V-Brake)</span></div><div class="flex items-center gap-3"><span class="font-mono text-electric-blue text-sm">€ 40</span><button class="expand-btn p-1 text-white/40 hover:text-electric-blue" onclick="event.stopPropagation();expandDetail('full-multi-v')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div>
+                    <div class="svc-detail" id="detail-full-multi-v"></div>
+                  </div>
+                  <div class="svc-item-dark">
+                    <div class="svc-row flex justify-between items-center p-4 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-pointer" data-svc="full-multi-d" onclick="toggleSvc(this,50,'full-multi-d')"><div class="flex items-center gap-3"><div class="chk-dark w-5 h-5 border-2 border-white/30 flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-xs hidden">check</span></div><span class="font-body text-sm">Multi-speed (Disku)</span></div><div class="flex items-center gap-3"><span class="font-mono text-electric-blue text-sm">€ 50</span><button class="expand-btn p-1 text-white/40 hover:text-electric-blue" onclick="event.stopPropagation();expandDetail('full-multi-d')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div>
+                    <div class="svc-detail" id="detail-full-multi-d"></div>
+                  </div>
+                  <div class="svc-item-dark">
+                    <div class="svc-row flex justify-between items-center p-4 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-pointer" data-svc="full-evelo" onclick="toggleSvc(this,65,'full-evelo')"><div class="flex items-center gap-3"><div class="chk-dark w-5 h-5 border-2 border-white/30 flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-xs hidden">check</span></div><span class="font-body text-sm">E-velo / Carbon</span></div><div class="flex items-center gap-3"><span class="font-mono text-electric-blue text-sm">€ 65</span><button class="expand-btn p-1 text-white/40 hover:text-electric-blue" onclick="event.stopPropagation();expandDetail('full-evelo')" aria-label="Apraksts"><span class="material-symbols-outlined text-lg">info</span></button></div></div>
+                    <div class="svc-detail" id="detail-full-evelo"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Pieteikšanās soļi -->
-          <div class="pricing-how reveal" style="transition-delay: 0.05s">
-            <span class="pricing-how-label">Kā pieteikties</span>
-            <ol class="pricing-how-steps">
-              <li><span class="pricing-how-num">1</span>Atzīmē vajadzīgos pakalpojumus tabulā</li>
-              <li><span class="pricing-how-num">2</span>Apakšā parādīsies kopējā cena</li>
-              <li><span class="pricing-how-num">3</span>Spied <strong>"Pieteikties servisam"</strong> un aizpildi pieteikumu</li>
-            </ol>
+    <!-- STICKY SUMMARY BAR -->
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-outline/10 py-5 px-4 md:px-16 z-40 translate-y-full transition-transform duration-500 shadow-2xl" id="summary-bar">
+      <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>
+          <span class="font-mono text-[10px] text-on-sv block uppercase tracking-widest">Izvēlētie pakalpojumi</span>
+          <div class="font-display text-xl text-deep-navy" id="selected-count">0 pakalpojumi izvēlēti</div>
+        </div>
+        <div class="flex items-center gap-8 md:gap-12">
+          <div class="text-right">
+            <span class="font-mono text-[10px] text-on-sv block uppercase tracking-widest">Kopā (no)</span>
+            <div class="font-display text-3xl text-primary" id="total-price">€ 0</div>
           </div>
-
-          <div class="pricing-categories reveal" style="transition-delay: 0.1s">
-
-            <!-- DIAGNOSTIKA UN MAZGĀŠANA -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-search pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Diagnostika un mazgāšana</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Velosipēda pilnā diagnostika</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.diagnostics.full">€ 12</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Express apkope (regulēšana + pumpēšana)</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.diagnostics.express">€ 25</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Velosipēda mazgāšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.diagnostics.wash">€ 15</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Servisa stundu likme</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.diagnostics.hourly" data-cfg-suffix="/ h">€ 35 / h</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- V-BREMZES -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-radio-button-off pricing-cat-icon"></i>
-                <span class="pricing-cat-name">V-bremzes</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu regulēšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.adjust">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremzes kluču maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.pads">€ 7</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu troses maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.cable">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.replace">€ 12</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu rokturu maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.grips">€ 8</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- DISKU BREMZES -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-disc pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Disku bremzes</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu regulēšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.adjust">€ 10</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Hidraulisko bremžu atgaisošana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.bleed">€ 30</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremzes kluču maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.pads">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu kluču tīrīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.clean">€ 12</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu rotora taisnošana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.rotor_true">€ 5</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu rotora maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.rotor_swap">€ 12</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bremžu komplekta maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.full_kit">€ 35</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- RATI, RIEPAS, RUMBAS -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-refresh-circle pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Rati, riepas un rumbas</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Riepas / kameras maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.wheels.tube">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Centrēšana (spieķošana)</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.wheels.true">€ 15</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Spieķa maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.wheels.spoke">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Aploces maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.wheels.rim">€ 25</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Riteņa salikšana no jauna</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.wheels.build">€ 40</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Rumbas maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.wheels.hub">€ 30</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- PĀRNESUMI -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-settings pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Pārnesumi</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pārslēdzēja regulēšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.gears.adjust">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pārslēdzēja troses maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.gears.cable">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pārslēdzēja / spriegotāja maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.gears.derailleur">€ 20</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pārslēdzēja roktura maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.gears.shifter">€ 18</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pārslēdzēja austiņas taisnošana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.gears.hanger">€ 10</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- PEDĀĻI, ĶĒDE -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-sync pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Pedāļi un ķēde</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Ķēdes mazgāšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.chain_clean">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Ķēdes maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.chain_swap">€ 10</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Kasetes / brīvrumbas maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.cassette">€ 12</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pedāļu maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.pedals">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pedāļu centra maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.bb">€ 20</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pedāļu centra vītnes atjaunošana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.bb_rethread">€ 20</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Klaņa noņemšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.crank_pull">€ 10</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Pedāļa vītnes atjaunošana klanī</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.pedal_thread">€ 25</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- STŪRE, DAKŠA -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-swap pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Stūre un dakša</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Stūres gultņu maiņa / remonts</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.steering.headset">€ 20</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Stūres maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.steering.stem">€ 15</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Stūres iznesuma maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.steering.stem_swap">€ 10</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Stūres rokturu uzstādīšana / maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.steering.grips">€ 7</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Stūres ragu uzstādīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.steering.bar_ends">€ 7</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Lentas uztīšana uz stūres</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.steering.bar_tape">€ 25</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Dakšas maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.steering.fork">€ 25</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- PIEKARUMI UN AMORTIZATORI -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-git-branch pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Piekarumi un amortizatori</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Piekarumu regulēšana un iestatīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.suspension.adjust">€ 15</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Priekšējās dakšas eļļošana / apkope</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.suspension.lube">€ 25</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Priekšējās dakšas žokļu nomaiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.suspension.lowers">€ 30</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Aizmugures amortizatora apkope</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.suspension.rear_shock">€ 40</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Amortizatora maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.suspension.fork_swap">€ 25</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- ELEKTROVELOSIPĒDS -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-flash pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Elektrovelosipēds</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Elektrosistēmas diagnostika</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.ebike.diag">€ 25</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Akumulatora diagnostika</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.ebike.battery">€ 20</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Programmatūras atjauninājums</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.ebike.software">€ 30</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Motora apkope / tīrīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.ebike.motor">€ 30</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">E-velo pilnā apkope</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.ebike.full">€ 65</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- AKSESUĀRI -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-add-circle pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Aksesuāru uzstādīšana un maiņa</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Sēdekļa / sēdekļa stutes maiņa</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.accessories.saddle">€ 8</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Velodatora / GPS uzstādīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.accessories.computer">€ 10</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bagāžnieka uzstādīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.accessories.rack">€ 15</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Dubļu sargu uzstādīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.accessories.fender">€ 15</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Luktura uzstādīšana (ar ģenerātoru)</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.accessories.light">€ 25</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Bērnu krēsliņa uzstādīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.accessories.child_seat">€ 12</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Palīgritenīšu uzstādīšana</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.accessories.stabilizers">€ 8</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- PILNA APKOPE -->
-            <div class="pricing-cat">
-              <div class="pricing-cat-header">
-                <i class="icon ion-md-star pricing-cat-icon"></i>
-                <span class="pricing-cat-name">Velosipēda pilnā apkope *</span>
-              </div>
-              <div class="pricing-rows">
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Ar vienu ātrumu</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.full_service.single_speed">€ 30</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Ar vairākiem ātrumiem (V-bremzes)</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.full_service.v_brake">€ 40</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Ar vairākiem ātrumiem (disku bremzes)</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.full_service.disc">€ 50</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Oglekļa rāmis ar disku bremzēm</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.full_service.carbon">€ 65</span>
-                </div>
-                <div class="pricing-row">
-                  <span class="pricing-item-name">Elektrovelosipēds (e-velo)</span>
-                  <span class="pricing-item-price" data-cfg-price="prices.full_service.ebike">€ 65</span>
-                </div>
-              </div>
-            </div>
-
-          </div><!-- .pricing-categories -->
-
-          <div class="pricing-note reveal" style="transition-delay: 0.2s">
-            <strong>* Pilnā apkope ietver:</strong> mazgāšana, eļļošana, regulēšana, skrūvju pārbaude, defektācija, ratu centrēšana.<br />
-            Cenas norādītas par darbu — detaļas tiek pieskaitītas papildus. Elektrovelosipēdu apkopei var būt nepieciešama speciālista sertifikācija (Bosch / Shimano).
-          </div>
-
-          <!-- ── Service order CTA bar ── -->
-          <div class="svc-cta-bar reveal" style="transition-delay: 0.3s" id="svc-cta-bar">
-            <div class="svc-cta-left">
-              <i class="icon ion-md-checkbox-outline svc-cta-icon"></i>
-              <span class="svc-cta-text" id="svc-cta-text">Atzīmējiet pakalpojumus augstāk un noformējiet pieteikumu</span>
-            </div>
-            <button class="btn btn-primary" id="svc-cta-btn" disabled>
-              Pieteikties servisam <i class="icon ion-md-arrow-forward"></i>
-            </button>
-          </div>
-
-        </div><!-- .container -->
-      </section>
-
-    </main>
-
-    <!-- ==================== SERVICE ORDER MODAL ==================== -->
-    <div class="svc-overlay" id="svc-overlay"></div>
-
-    <div class="svc-modal" id="svc-modal" role="dialog" aria-modal="true" aria-label="Servisa pieteikums">
-      <div class="svc-modal-inner">
-
-        <!-- Header -->
-        <div class="svc-modal-header">
-          <span class="svc-modal-title">Servisa pieteikums</span>
-          <button class="svc-modal-close" id="svc-modal-close" aria-label="Aizvērt">
-            <i class="icon ion-md-close"></i>
+          <button onclick="scrollToForm()" class="bg-primary-c text-white font-mono text-[11px] px-8 py-4 uppercase tracking-widest hover:bg-deep-navy transition-all">
+            Pieteikties servisam
           </button>
         </div>
-
-        <!-- Scrollable body -->
-        <div class="svc-modal-body">
-
-          <!-- 1. Izvēlētie pakalpojumi -->
-          <div class="svc-form-section">
-            <h3 class="svc-section-title">
-              <i class="icon ion-md-list svc-section-icon"></i>Izvēlētie pakalpojumi
-            </h3>
-            <div id="svc-form-services"></div>
-            <div class="svc-totals" id="svc-form-totals"></div>
-          </div>
-
-          <!-- 2. Kontaktinformācija -->
-          <div class="svc-form-section">
-            <h3 class="svc-section-title">
-              <i class="icon ion-md-person svc-section-icon"></i>Kontaktinformācija
-            </h3>
-            <div class="svc-field-grid">
-              <div class="svc-field">
-                <label class="svc-label" for="svc-name">Vārds, Uzvārds <span class="svc-required">*</span></label>
-                <input type="text" class="svc-input" id="svc-name" placeholder="Piem.: Jānis Bērziņš" autocomplete="name">
-              </div>
-              <div class="svc-field">
-                <label class="svc-label" for="svc-phone">Tālrunis <span class="svc-required">*</span></label>
-                <input type="tel" class="svc-input" id="svc-phone" placeholder="+371 XXXXXXXX" autocomplete="tel">
-              </div>
-              <div class="svc-field svc-field--full">
-                <label class="svc-label" for="svc-email">E-pasts <span class="svc-required">*</span></label>
-                <input type="email" class="svc-input" id="svc-email" placeholder="vards@pasts.lv" autocomplete="email">
-                <p class="svc-field-hint">Uz šo adresi tiks nosūtīts pieteikuma apstiprinājums un PDF.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3. Savākšanas adrese -->
-          <div class="svc-form-section">
-            <h3 class="svc-section-title">
-              <i class="icon ion-md-pin svc-section-icon"></i>Savākšanas adrese
-            </h3>
-            <div class="svc-field">
-              <label class="svc-label" for="svc-pickup">Adrese <span class="svc-required">*</span></label>
-              <input type="text" class="svc-input" id="svc-pickup" placeholder="Iela, mājas nr., pilsēta" autocomplete="street-address">
-            </div>
-            <p class="svc-field-hint">Savāksim velosipēdu no norādītās adreses bez papildu maksas (pasūtījumam virs € 20).</p>
-          </div>
-
-          <!-- 4. Piegādes adrese -->
-          <div class="svc-form-section">
-            <h3 class="svc-section-title">
-              <i class="icon ion-md-return-left svc-section-icon"></i>Piegādes adrese
-            </h3>
-            <label class="svc-same-check">
-              <input type="checkbox" id="svc-same-addr" checked>
-              <span>Tā pati kā savākšanas adrese</span>
-            </label>
-            <div class="svc-field" id="svc-delivery-field" hidden>
-              <label class="svc-label" for="svc-delivery" style="margin-top:0.75rem">Piegādes adrese</label>
-              <input type="text" class="svc-input" id="svc-delivery" placeholder="Iela, mājas nr., pilsēta">
-            </div>
-            <div class="svc-delivery-note" id="svc-delivery-note">
-              <i class="icon ion-md-information-circle"></i>
-              <span id="svc-delivery-note-text">Savākšana + piegāde — aprēķins tiks parādīts pēc pakalpojumu izvēles.</span>
-            </div>
-          </div>
-
-          <!-- 5. Datums un laiks -->
-          <div class="svc-form-section">
-            <h3 class="svc-section-title">
-              <i class="icon ion-md-calendar svc-section-icon"></i>Vēlamais datums un laiks
-            </h3>
-            <div class="svc-field-grid">
-              <div class="svc-field">
-                <label class="svc-label" for="svc-date">Datums <span class="svc-required">*</span></label>
-                <input type="date" class="svc-input" id="svc-date">
-              </div>
-              <div class="svc-field">
-                <label class="svc-label" for="svc-time">Laiks</label>
-                <select class="svc-input" id="svc-time">
-                  <option value="">— izvēlēties —</option>
-                  <option value="09:00">09:00</option>
-                  <option value="10:00">10:00</option>
-                  <option value="11:00">11:00</option>
-                  <option value="12:00">12:00</option>
-                  <option value="13:00">13:00</option>
-                  <option value="14:00">14:00</option>
-                  <option value="15:00">15:00</option>
-                  <option value="16:00">16:00</option>
-                  <option value="17:00">17:00</option>
-                </select>
-              </div>
-            </div>
-            <p class="svc-field-hint">Darbdienas P–Pk, 09:00–17:00. Precīzo laiku apstiprināsim pēc pieteikuma.</p>
-          </div>
-
-          <!-- 6. Piezīmes -->
-          <div class="svc-form-section">
-            <h3 class="svc-section-title">
-              <i class="icon ion-md-chatbubbles svc-section-icon"></i>Papildu piezīmes
-            </h3>
-            <div class="svc-field">
-              <label class="svc-label" for="svc-notes">Aprakstiet problēmu vai īpašas prasības (nav obligāti)</label>
-              <textarea class="svc-input svc-textarea" id="svc-notes" rows="3" placeholder="Piem.: ritenis negriežas, ķēde lec ārā, bremzes neder..."></textarea>
-            </div>
-          </div>
-
-        </div><!-- .svc-modal-body -->
-
-        <!-- Footer -->
-        <div class="svc-modal-footer">
-          <div class="svc-modal-total">
-            <span class="svc-modal-total-label">Kopā (no)</span>
-            <span class="svc-modal-total-val" id="svc-modal-total-val">€ 0</span>
-          </div>
-          <div class="svc-modal-actions">
-            <button class="btn btn-ghost btn-sm" id="svc-pdf-btn">
-              <i class="icon ion-md-document"></i> Saglabāt PDF
-            </button>
-            <button class="btn btn-primary" id="svc-submit-btn">
-              <i class="icon ion-md-send"></i> Nosūtīt pieteikumu
-            </button>
-          </div>
-        </div>
-
-      </div><!-- .svc-modal-inner -->
-    </div><!-- .svc-modal -->
-
-    <!-- ==================== SERVICE STICKY BAR ==================== -->
-    <div class="svc-order-bar" id="svc-order-bar">
-      <span class="svc-bar-summary" id="sob-summary"></span>
-      <button class="btn btn-primary btn-sm" id="sob-open-btn">
-        Pieteikties servisam <i class="icon ion-md-arrow-forward"></i>
-      </button>
+      </div>
     </div>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-
-          <div class="footer-col">
-            <a href="index.html" class="nav-logo footer-brand-logo">
-              <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-            </a>
-            <p class="footer-tagline">
-              Vietējais veloserviss Ozolniekos.<br />
-              Apkope ar savākšanu un piegādi.
-            </p>
-          </div>
-
-          <div class="footer-col">
-            <h4>Navigācija</h4>
-            <ul>
-              <li><a href="index.html">Sākums</a></li>
-              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
-              <li><a href="index.html#faq">FAQ</a></li>
-              <li><a href="shop.html">Veikals</a></li>
-              <li><a href="contacts.html">Kontakti</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Kontakti</h4>
-            <ul class="footer-contact-list">
-              <li class="footer-contact-item">
-                <i class="icon ion-md-pin"></i>
-                <span data-cfg="location.city">Ozolnieki</span>, <span data-cfg="location.country">Latvija</span>
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-call"></i>
-                <a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" style="color:inherit">+371 265 33 400</a>
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-mail"></i>
-                <a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" style="color:inherit">info@bergsvelo.lv</a>
-              </li>
-            </ul>
-          </div>
-
+    <!-- BOOKING FORM -->
+    <section class="py-32 px-4 md:px-16 bg-sc-low border-t border-outline/5" id="booking-form">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-16 text-center">
+          <span class="font-mono text-[11px] text-electric-blue uppercase tracking-widest mb-4 block">Pieteikums</span>
+          <h2 class="font-display text-3xl md:text-4xl font-semibold text-deep-navy">Servisa Pieteikums</h2>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 <span data-cfg="business.name">BergsVelo</span> Veloserviss. Visas tiesības aizsargātas.</p>
-          <div class="footer-pay-row">
-            <p class="footer-pay-label">Drošie maksājumi</p>
-            <div class="pay-icons">
-              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
-              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
-              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
-              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
+        <form id="booking-form-el" action="./php/mail.php" method="POST" class="space-y-10" novalidate>
+          <input type="hidden" name="selected_services" id="hidden-services" value="" />
+          <input type="hidden" name="total_price" id="hidden-total" value="0" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-5">
+              <h3 class="font-display text-xl font-semibold text-deep-navy border-b border-outline/10 pb-4">Kontaktinformācija</h3>
+              <div><label class="font-mono text-[11px] uppercase text-on-sv block mb-2">Vārds, Uzvārds *</label><input type="text" name="name" required placeholder="Jānis Bērziņš" class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm" /></div>
+              <div><label class="font-mono text-[11px] uppercase text-on-sv block mb-2">Telefons *</label><input type="tel" name="phone" required placeholder="+371 20000000" class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm" /></div>
+              <div><label class="font-mono text-[11px] uppercase text-on-sv block mb-2">E-pasts</label><input type="email" name="email" placeholder="piemers@gmail.com" class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm" /></div>
+            </div>
+            <div class="space-y-5">
+              <h3 class="font-display text-xl font-semibold text-deep-navy border-b border-outline/10 pb-4">Savākšana un Piegāde</h3>
+              <div><label class="font-mono text-[11px] uppercase text-on-sv block mb-2">Savākšanas adrese *</label><input type="text" name="address" required placeholder="Iela, Māja, Pilsēta" class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm" /></div>
+              <div><label class="font-mono text-[11px] uppercase text-on-sv block mb-2">Vēlamais datums *</label><input type="date" name="date" required class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm" /></div>
+              <div><label class="font-mono text-[11px] uppercase text-on-sv block mb-2">Vēlamais laiks</label><select name="time" class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm"><option>09:00</option><option>11:00</option><option>13:00</option><option>15:00</option><option>17:00</option></select></div>
             </div>
           </div>
-          <div class="footer-legal-links">
-            <a href="privacy.html">Privātuma politika</a>
-            <a href="terms.html">Lietošanas noteikumi</a>
-            <button class="footer-consent-btn" id="open-consent-settings-footer" onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()">Sīkdatņu iestatījumi</button>
+          <div class="space-y-3">
+            <h3 class="font-display text-xl font-semibold text-deep-navy border-b border-outline/10 pb-4">Papildu piezīmes</h3>
+            <textarea name="message" rows="4" placeholder="Aprakstiet problēmu vai īpašas prasības..." class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm resize-none"></textarea>
           </div>
-        </div>
+          <div class="flex flex-col md:flex-row gap-4 pt-4">
+            <button type="submit" id="booking-submit" class="flex-1 bg-primary text-white font-mono text-[11px] py-5 uppercase tracking-widest hover:bg-deep-navy transition-all shadow-lg">Nosūtīt pieteikumu</button>
+          </div>
+          <p id="booking-status" class="font-mono text-xs text-center min-h-[1rem]"></p>
+        </form>
       </div>
-    </footer>
+    </section>
 
-    <script src="./js/service-order.js" defer></script>
-    <script src="./js/cookie-consent.js" defer></script>
-  </body>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-deep-navy border-t border-white/10 pt-20 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 px-4 md:px-16 max-w-[1440px] mx-auto mb-16">
+      <div class="md:col-span-4">
+        <a href="index.html" class="font-display text-2xl font-bold tracking-tight block mb-6"><span class="text-white">VELO.</span><span class="text-electric-blue">SERVIS</span></a>
+        <p class="font-body text-slate-s/60 max-w-xs text-sm">Vietējais veloserviss <span data-cfg="location.city">Ozolniekos</span>.<br/>Apkope ar savākšanu un piegādi.</p>
+      </div>
+      <div class="md:col-span-3 md:col-start-6">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Navigācija</h4>
+        <ul class="space-y-4 font-body text-slate-s/60 text-sm">
+          <li><a href="index.html" class="hover:text-white transition-colors">Sākums</a></li>
+          <li><a href="workshop.html" class="hover:text-white transition-colors">Serviss &amp; Cenas</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition-colors">Kontakti</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Kontakti</h4>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">location_on</span><span class="font-body text-slate-s/60 text-sm">Latvija</span></li>
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">call</span><a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">+371 265 33 400</a></li>
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">mail</span><a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">info@bergsvelo.lv</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="px-4 md:px-16 max-w-[1440px] mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest">&copy; 2026 <span data-cfg="business.name">VELO.SERVIS</span> Veloserviss. Visas tiesības aizsargātas.</p>
+      <div class="flex gap-6">
+        <a href="privacy.html" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Privātuma politika</a>
+        <a href="terms.html"   class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Lietošanas noteikumi</a>
+        <button onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors cursor-pointer">Sīkdatnes</button>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/37126533400" class="wa-float" target="_blank" rel="noopener" aria-label="Sazināties WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="./js/site-config.js" defer></script>
+  <script src="./js/cart.js" defer></script>
+  <script src="./js/cookie-consent.js" defer></script>
+  <script>
+    // Mobile nav
+    document.getElementById('nav-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('hamburger-icon');
+      icon.textContent = menu.classList.toggle('hidden') ? 'menu' : 'close';
+    });
+
+    // ── Service descriptions ──────────────────────────────────────────────────
+    const SVCS = {
+      'diag-full':    { includes:['Rāmja integritātes pārbaude','Gultņu stāvokļa tests','Riteņu centra novērtēšana','Bremžu efektivitātes tests','Pārnesumu sistēmas pārbaude','Savienojumu stingruma pārbaude'], time:'20–30 min', note:'Ieteicams veikt pirms sezonas sākuma' },
+      'diag-express': { includes:['Bremžu un pārnesumu regulēšana','Riteņu piepūšana līdz optimālajam spiedienam','Ķēdes sasprindzinājuma pārbaude','Galveno skrūvju pārbaude','Kustīgo daļu eļļošana'], time:'30–45 min', note:'Piemērots, ja velo "nav vairs tāds kā bijis"' },
+      'diag-wash':    { includes:['Rāmja un dakšas putotāja mazgāšana','Riteņu tīrīšana','Ķēdes un pārnesumu mazgāšana','Žāvēšana','Virsmas aizsardzības apstrāde'], time:'20–30 min', note:'Drošs alumīnijam, karbona šķiedrai un lodīšu gultņiem' },
+
+      'vbr-adj':   { includes:['Bremžu spilvenu novietojuma regulēšana','Troses sasprindzinājuma regulēšana','Bremžu sviras pozīcijas pielāgošana','Efektivitātes un trokšņa pārbaude'], time:'10–15 min', note:'Ieteicams ik pēc 500 km' },
+      'vbr-pads':  { includes:['Nolietoto kluču nodemontāža','Jaunu kluču uzstādīšana pareizā leņķī','Individuāls pielāgojums loka profilam','Bremzēšanas efektivitātes tests'], time:'15 min', note:'Cena bez klučiem. Kluči no €4' },
+      'vbr-cable': { includes:['Vecas troses nodemontāža','Jaunas troses ievadīšana caur apvalku','Apvalka stāvokļa pārbaude','Gala nobeigums ar aizsargkapuci'], time:'20 min', note:'Cena bez materiāliem. Trose no €3' },
+      'vbr-full':  { includes:['Jauna trose un apvalks','Jauni bremžu kluchi','Pilna bremžu regulēšana','Gala nobeigumi'], time:'30–40 min', note:'Ieteicams, ja trose vecāka par 2 gadiem' },
+
+      'dbr-adj':   { includes:['Kalipera centrēšana pret disku','Kluču atstarpes regulēšana','Bremžu sviras "bite point" pielāgošana','Burzīšanās un trokšņa novēršana'], time:'15–20 min', note:'Disku bremzes prasa precīzāku regulēšanu nekā V-bremzes' },
+      'dbr-bleed': { includes:['Veco šķidrumu iztukšošana no sistēmas','Jauna DOT vai minerāleļļas ievadīšana','Gaisa burbuļu izskalošana','Sistēmas noslēgšana un spiediena tests'], time:'45–60 min', note:'Ieteicams ik pēc 1–2 gadiem' },
+      'dbr-pads':  { includes:['Kluču biezuma mērīšana (limits ~1 mm)','Nolietoto kluču maiņa','Kalibrēšana un iespiedināšana','Pārbaudes brauciens'], time:'20 min', note:'Pārbaudiet ik pēc 1500–2000 km. Cena bez klučiem' },
+      'dbr-full':  { includes:['Jauni bremžu kluchi','Hidrauliskās sistēmas atgaisošana','Rotora stāvokļa un liekuma pārbaude','Pilna regulēšana un tests'], time:'60–75 min', note:'Ieteicams pēc 2 gadiem vai 3000 km' },
+
+      'gear-adj':     { includes:['Aizmugurējā maiņrīka regulēšana','Priekšējā maiņrīka regulēšana','H/L gala skrūvju pielāgošana','Troses sasprindzinājuma kalibrēšana'], time:'20–30 min', note:'Nodrošina precīzu pārslēgšanu bez vilcināšanās' },
+      'gear-cable':   { includes:['Vecas troses nodemontāža','Jaunas troses ievadīšana caur apvalku','Apvalka stāvokļa pārbaude','Pārnesumu kalibrēšana pēc maiņas'], time:'25 min', note:'Cena bez materiāliem. Trose no €3' },
+      'gear-der':     { includes:['Vecā maiņrīka nodemontāža','Jaunā uzstādīšana (Shimano, SRAM u.c.)','Pilna pārnesumu sistēmas kalibrēšana','Gala pārbaude visos pārnesumos'], time:'30–45 min', note:'Cena bez maiņrīka' },
+      'gear-shifter': { includes:['Vecā shiftera demontāža','Jaunā uzstādīšana un stūres lentas atjaunošana','Troses savienošana un kalibrēšana','Pārnesumu darbības pārbaude'], time:'25–35 min', note:'Cena bez shiftera. Saderīgi ar Shimano, SRAM, Campagnolo' },
+
+      'whl-tube':     { includes:['Riteņa nodemontāža no velo','Riepa noņemšana un vecās kameras izņemšana','Riepa iekšpuses pārbaude uz caurduruma cēloni','Jaunas kameras uzstādīšana un piepūšana'], time:'15–20 min', note:'Cena bez kameras. Kamera no €4' },
+      'whl-tyre':     { includes:['Vecās riepas nodemontāža','Jaunas riepas uzstādīšana uz loka','Kameras pārvietošana vai jauna uzstādīšana','Piepūšana līdz ražotāja ieteiktajam spiedienam'], time:'15–20 min', note:'Cena bez riepas. Riepas no €15' },
+      'whl-tubeless': { includes:['Loka tubeless gatavības pārbaude','Tubeless lentes uzstādīšana','Tubeless ventīļa montāža','Hermetiķa (sealant) ievadīšana un riepu piepūšana'], time:'30–40 min', note:'Cena bez materiāliem (lente, ventilis, hermetiķis). Samazina punktēšanas risku' },
+      'whl-true':     { includes:['Spieķu sasprindzinājuma mērīšana','Sānsvārstījuma (lateral) koriģēšana','Vertikālā hop koriģēšana','Rotācijas un brīvgājiena pārbaude'], time:'30–45 min', note:'Būtiski bremžu efektivitātei un braukšanas komfortam. Ieteicams katru sezonu' },
+      'whl-spoke':    { includes:['Bojātā spieķa identificēšana','Demontāža un jauna uzstādīšana (atbilstošs garums)','Spieķa sasprindzinājuma kalibrēšana','Riteņa centrēšana pēc maiņas'], time:'20–30 min', note:'Cena bez spieķa. Veicams nekavējoties, lai novērstu lielākas deformācijas' },
+
+      'chain-wash': { includes:['Ķēdes mazgāšana ar specializētu mašīnu','Ekoloģiski drošs šķīdinātājs','Žāvēšana','Svaiga eļļošana ar ķēdes eļļu'], time:'15 min', note:'Pagarina ķēdes un kasetes kalpošanas laiku' },
+      'chain-rep':  { includes:['Ķēdes nolietojuma mērīšana ar mērinstrumentu','Vecās ķēdes demontāža','Jaunas ķēdes garuma pielāgošana','Savienošana ar quick-link vai pins'], time:'20 min', note:'Mainīt, ja nolietojums >0,75%. Cena bez ķēdes' },
+      'chain-cas':  { includes:['Kasetes nolietojuma novērtēšana','Demontāža ar speciālu atslēgu','Jaunas kasetes uzstādīšana (pareizs moments)','Pilna pārnesumu regulēšana pēc maiņas'], time:'30 min', note:'Ieteicams mainīt kopā ar ķēdi. Cena bez kasetes' },
+      'chain-ring': { includes:['Priekšējā zobrata nolietojuma pārbaude','Vecā demontāža','Jauna uzstādīšana ar momenta atslēgu','Pārnesumu kalibrēšana un ķēdes līnijas pārbaude'], time:'25 min', note:'Cena bez zobrata. Nomainīt, ja zobi vizuāli noplīsuši vai ķēde slīd' },
+
+      'ped-rep':   { includes:['Veco pedāļu atskrūvēšana (kreisā ar pretējo vītni!)','Vītnes tīrīšana un smērvielas uzklāšana','Jauno pedāļu uzstādīšana ar pareizo momentu','Efektivitātes pārbaude'], time:'15 min', note:'Cena bez pedāļiem. Ļoti izplatīts pakalpojums sezonas sākumā' },
+      'crank-rep': { includes:['Kloķa demontāža (square taper, ISIS vai Hollowtech II)','Vārpstas stāvokļa pārbaude','Jauna kloķa uzstādīšana ar momenta atslēgu','Ķēdes līnijas kontrole'], time:'20–30 min', note:'Cena bez kloķa. Norādiet sistēmu — mums jāzina savienojuma veids' },
+      'crank-ext': { includes:['Iesēdušā kloķa cēloņa novērtēšana','Speciāla ekstraktora rīka izmantošana','Vārpstas un gultņa bojājumu pārbaude','Pretkorozijas smērvielas uzklāšana turpmākai montāžai'], time:'20–40 min', note:'Sarežģītākos gadījumos laiks var palielināties' },
+
+      'hs-adj':  { includes:['Stūres gultņa spēles pārbaude','Uzgriežņu regulēšana (threaded) vai starplikas (threadless)','Stūres rotācijas brīvgājiena tests','Spēles un pretestības korekcija'], time:'15 min', note:'Simptoms: stūre klikšķ vai ir spēle braucot taisni' },
+      'hs-rep':  { includes:['Vecā gultņa demontāža (pressing out)','Rāmja un dakšas stāvokļa pārbaude','Jaunā gultņa iepresēšana','Regulēšana un rotācijas tests'], time:'30–45 min', note:'Cena bez gultņa komplekta' },
+      'bb-rep':  { includes:['Vecā kartergultņa demontāža (BSA, PF30 vai cits)','Vārpstas stāvokļa pārbaude','Jauna gultņa uzstādīšana ar momenta atslēgu','Kloķa un ķēdes līnijas pārbaude'], time:'25–35 min', note:'Cena bez gultņa. Norādiet standartu — BSA, PF30, BB86 u.c.' },
+      'hub-serv': { includes:['Riteņa nodemontāža','Muklāja izjaukšana un lodīšu vai patrongultņu tīrīšana','Jaunas smērvielas ievadīšana','Salikšana un brīvgājiena tests'], time:'30–45 min', note:'Ieteicams katru sezonu MTB riteņiem. Pagarina muklāja kalpošanas laiku' },
+
+      'susp-adj':  { includes:['Gaisa spiediena regulēšana atbilstoši braucēja svaram','Rebound (atsitiena ātrums) kalibrēšana','Compression (saspiešanas pretestība) pielāgošana','Sag mērījums un korekcija'], time:'20–30 min', note:'Pareizi noregulēta dakša uzlabo kontroli un mazina nogurumu' },
+      'susp-oil':  { includes:['Veco eļļu iztukšošana no lower leg caurulēm','Starpliku un skrāpju pārbaude un nomaiņa','Jaunas eļļas ievadīšana (ražotāja specs)','Salikšana, spiediena pārbaude un testa brauciens'], time:'60–90 min', note:'Ieteicams ik pēc sezonas vai 100 stundām braukšanas' },
+      'susp-rear': { includes:['Šoka gaisa spiediena regulēšana','Rebound kalibrēšana','Low-speed compression pielāgošana (ja pieejams)','Sag mērīšana un korekcija'], time:'20–30 min', note:'Pareizs šoka iestatījums būtiski ietekmē pilnā piekaruma velo darbību' },
+
+      'full-single':  { includes:['Rāmja mazgāšana','Ķēdes mazgāšana un eļļošana','Bremžu regulēšana un pārbaude','Stūres un sēdekļa stiprinājuma pārbaude','Riteņu piepūšana','Defektācijas ziņojums'], time:'45–60 min', note:'Ieteicams reizi sezonā' },
+      'full-multi-v': { includes:['Viss no Vienātruma apkopes','Pārnesumu regulēšana (aizmugure + priekšpuse)','V-bremžu regulēšana abiem riteņiem','Spieķu sasprindzinājuma pārbaude','Gultņu kustības pārbaude'], time:'60–75 min', note:'Ietaupa dārgākas remonta izmaksas nākotnē' },
+      'full-multi-d': { includes:['Viss no V-Brake apkopes','Disku bremžu regulēšana un kalipera centrēšana','Rotoru stāvokļa un liekuma pārbaude','Riteņu centra pārbaude','Gultņu kustības pārbaude'], time:'75–90 min', note:'Visaptverošākā regulārā apkope' },
+      'full-evelo':   { includes:['Pilna Multi-speed disku apkope','Elektro savienojumu un kontaktu pārbaude','Baterijas kontaktu tīrīšana','Momentatslēgas izmantošana karbona savienojumiem','Programmatūras versijas pārbaude'], time:'90–120 min', note:'E-velo un karbona rāmjiem ar paaugstinātiem drošības standartiem' },
+
+      // Vispārīgie darbi
+      'gen-assemble': { includes:['Visu detaļu pārbaude pret komplektācijas sarakstu','Pilna salikšana no kastes','Bremžu un pārnesumu kalibrēšana','Riteņu piepūšana','Pārbaudes brauciens'], time:'60–90 min', note:'Jauna velo garantija sākas tikai pēc profesionālas salikšanas' },
+      'gen-pack':     { includes:['Stūres, pedāļu un sēdekļa demontāža','Aizsardzības materiālu uzlikšana uz rāmja un dakšas','Riteņu iesaiņošana','Drošs iesaiņojums kastē transportam'], time:'30–45 min', note:'Piemērots pārvadāšanai lidmašīnā vai pasta sūtīšanai' },
+      'gen-frame':    { includes:['Visu komponentu demontāža no vecā rāmja','Gultņu pārnešana vai uzstādīšana jaunajā rāmī','Pilna sistēmu salikšana un kalibrēšana','Ķēdes līnijas un pielāgojumu pārbaude'], time:'2–4 h', note:'Cena bez rāmja. Sarežģīts darbs — cena tiek precizēta individuāli' },
+      'gen-defect':   { includes:['Pilna vizuālā un funkcionālā pārbaude','Bojājumu foto dokumentācija','Detalizēts rakstisks defektācijas akts','Apdrošināšanas sabiedrībām pieņemams dokuments'], time:'30–60 min', note:'Nepieciešams apdrošināšanas gadījuma izskatīšanai' },
+
+      // Papildu bremzes
+      'br-lever':  { includes:['Vecā roktura demontāža','Jaunā uzstādīšana un fiksācija uz stūres','Troses vai hidraulikas savienošana','Bremzēšanas efektivitātes pārbaude'], time:'20–30 min', note:'Cena bez roktura' },
+      'dbr-rotor': { includes:['Diska liekuma un nolietojuma mērīšana','Taisnošana ar specializētu rīku vai maiņa','Kalipera pozīcijas pārbaude pēc korekcijas','Bremzēšanas testa brauciens'], time:'15–25 min', note:'Cena bez diska. Jaunam diskam no €15' },
+      'dbr-lever': { includes:['Vecā roktura demontāža no stūres','Hidraulikas atvienošana (bez šķidruma zuduma)','Jaunā roktura uzstādīšana','Savienošana un spiediena tests'], time:'25–35 min', note:'Cena bez roktura. Hidrauliskiem rokturam nepieciešams atgaisošanas komplekts' },
+
+      // Papildu pārnesumi
+      'gear-hanger':  { includes:['Pārslēdzēja demontāža','Turētāja (hanger) taisnošana ar speciālu instrumentu','Atkārtota uzstādīšana un ķēdes līnijas pārbaude','Pārnesumu regulēšana'], time:'20–30 min', note:'Simptoms: pārnesumi pēkšņi sliktāk strādā pēc kritiena' },
+      'gear-pulleys': { includes:['Veco rullīšu demontāža','Gultņu stāvokļa pārbaude','Jaunu rullīšu uzstādīšana','Pārnesumu darbības pārbaude'], time:'15–20 min', note:'Cena bez rullīšiem. Ieteicams mainīt kopā ar ķēdes nomaiņu' },
+      'gear-elec':    { includes:['Elektronisko savienojumu pārbaude','Programmatūras atjaunināšana caur e-tube vai AXS app','Mehāniskā regulēšana un sistēmas sinhronizācija','Visu funkciju testēšana'], time:'30–45 min', note:'Shimano Di2, SRAM AXS un Campagnolo EPS' },
+      'gear-di2':     { includes:['Shimano Di2 vai SRAM AXS bezvadu savienojuma pārbaude','Komponentu sinhronizācija caur ražotāja app','Programmatūras versiju atjaunināšana','Visu pārslēgšanu testēšana'], time:'30–45 min', note:'Nepieciešams speciāls diagnostikas kabelis vai Bluetooth' },
+
+      // Papildu riteņi
+      'whl-respoke':  { includes:['Visu veco spieķu demontāža','Jaunu spieķu ievēršana (atbilstošs garums un krustojums)','Sasprindzinājuma pakāpeniska kalibrēšana','Precīza riteņa centrēšana'], time:'60–90 min', note:'Cena bez spieķiem. Ieteicams, ja bojāti vairāk par 3 spieķiem' },
+      'whl-rim':      { includes:['Spieķu pāršūšana uz jauno aploci','Sasprindzinājuma kalibrēšana','Precīza riteņa centrēšana','Tubeless gatavības pārbaude'], time:'60–90 min', note:'Cena bez aploces. Ieteicams mainīt, ja aploces siena nodilusi vai bojāta' },
+      'whl-hub':      { includes:['Spieķu pāršūšana no vecās rumbas uz jauno','Sasprindzinājuma kalibrēšana','Riteņa centrēšana','Brīvrumas darbības pārbaude'], time:'60–90 min', note:'Cena bez rumbas. Sarežģīts darbs — cena var mainīties' },
+      'whl-freehub':  { includes:['Brīvrumas demontāža no rumbas','Iekšējo detaļu tīrīšana no vecās smērvielas','Jaunas smērvielas ievadīšana','Salikšana un "tirkšķa" darbības pārbaude'], time:'30–45 min', note:'Simptoms: brīvruma slīd vai slodzes laikā griežas uz priekšu' },
+
+      // Papildu amortizatori
+      'susp-mini':      { includes:['Lower leg (apakšējo caurulīšu) demontāža','Veco eļļu iztukšošana','Putekļu slēdžu un skrāpju pārbaude','Jaunu eļļu ievadīšana lower leg daļā','Salikšana un spiediena pārbaude'], time:'60–90 min', note:'Ieteicams katru sezonu. Neietekmē damper darbību — tas paliek neskarts' },
+      'susp-full':      { includes:['Pilna dakšas izjaukšana (lower + upper leg)','Air shaft un damper tīrīšana','Visu O-ring un skrāpju nomaiņa','Jaunas eļļas (ražotāja specs)','Salikšana, gaisa spiediena kalibrēšana un testa brauciens'], time:'2–4 h', note:'Ieteicams ik pēc 2 sezonām vai 200+ stundām braukšanas' },
+      'susp-rear-full': { includes:['Aizmugurējā šoka pilna izjaukšana','O-ring un skrāpju nomaiņa','Damper eļļas atjaunošana','Air kamera pārspiešana','Regulēšana un testa brauciens'], time:'2–3 h', note:'Ieteicams ik pēc 2 sezonām. Cena bez rezerves daļām' },
+      'susp-swap':      { includes:['Vecā amortizatora vai dakšas demontāža','Jaunā uzstādīšana ar pareiziem momentiem','Spiediena, rebound un compression kalibrēšana atbilstoši braucēja svaram','Stūres augstuma pielāgošana'], time:'30–60 min', note:'Cena bez amortizatora vai dakšas' },
+
+      // Aksesuāri
+      'acc-saddle':     { includes:['Vecā sēdekļa demontāža','Jaunā uzstādīšana ar pareizu leņķi un pozīciju','Augstuma korekcija pēc nepieciešamības','Tapas momentatslēgas pārbaude'], time:'10 min', note:'Cena bez sēdekļa' },
+      'acc-lights':     { includes:['Stiprinājuma vietas izvēle','Priekšējā un/vai aizmugurējā lukstura uzstādīšana','Pareiza leņķa regulēšana','Baterijas vai USB lādēšanas pārbaude'], time:'10–15 min', note:'Cena bez lukturiem. Ieteicam USB uzlādējamus' },
+      'acc-computer':   { includes:['Sensoru uzstādīšana (ātrums, kadence)','Ekrāna stiprinājuma montāža uz stūres','Pāru savienošana (bezvadu) vai troses ievadīšana','Riteņa apkārtmēra kalibrēšana precīziem mērījumiem'], time:'20–30 min', note:'Cena bez velodatora. Saderīgi ar Garmin, Wahoo, Sigma u.c.' },
+      'acc-fenders':    { includes:['Dubļusargu izmēra un tipa saderības pārbaude','Priekšējā un aizmugurējā montāža','Riteņa klīrensa un vibrāciju pārbaude','Skrūvju nostiprināšana ar pareizu momentu'], time:'20–30 min', note:'Cena bez dubļusargiem. Piemēroti tūrisma un pilsētas velo' },
+      'acc-rack':       { includes:['Bagāžnieka saderības pārbaude ar rāmi','Montāža ar iebūvētajiem vai āķveida stiprinājumiem','Horizontālā un vertikālā pozīcijas regulēšana','Slodzes testa pārbaude'], time:'20–30 min', note:'Cena bez bagāžnieka. Ne visi rāmji ir saderīgi — pārbaudām pirms darba' },
+      'acc-bottlecage': { includes:['Stiprinājuma vietas (braze-on vai cauruļu klipsas) pārbaude','Turētāja pieskrūvēšana ar pareizo momentu','Pudeles ievietošanas un izņemšanas tests'], time:'5 min', note:'Cena bez turētāja' }
+    };
+
+    // Build detail panels from SVCS data
+    function buildDetailPanel(id, darkMode) {
+      const svc   = SVCS[id];
+      const panel = document.getElementById('detail-' + id);
+      if (!svc || !panel) return;
+      const bg     = darkMode ? 'background:rgba(46,114,255,.12);border-left:2px solid #2E72FF;padding:14px 20px 16px 20px;' : 'background:rgba(46,114,255,.04);border-left:2px solid #2E72FF;margin-left:58px;padding:12px 20px 16px 20px;';
+      const txtCl  = darkMode ? 'color:rgba(228,232,240,.8)' : 'color:#434655';
+      const tagBg  = darkMode ? 'background:rgba(255,255,255,.08);color:rgba(228,232,240,.7)' : 'background:#eeeeee;color:#434655';
+      const noteCl = darkMode ? 'color:rgba(228,232,240,.5)' : 'color:#747686';
+      panel.innerHTML = `<div style="${bg}">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#2E72FF;text-transform:uppercase;letter-spacing:.15em;margin-bottom:10px;">Kas ietilpst</p>
+        <ul style="margin:0 0 12px;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;">
+          ${svc.includes.map(i=>`<li style="display:flex;align-items:flex-start;gap:8px;font-family:Inter,sans-serif;font-size:13px;${txtCl}"><span class="material-symbols-outlined" style="font-size:14px;color:#2E72FF;margin-top:1px;flex-shrink:0;">check_circle</span>${i}</li>`).join('')}
+        </ul>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;${tagBg};padding:3px 8px;display:inline-flex;align-items:center;gap:4px;"><span class="material-symbols-outlined" style="font-size:12px;">schedule</span>${svc.time}</span>
+          <span style="font-family:Inter,sans-serif;font-size:12px;font-style:italic;${noteCl}">${svc.note}</span>
+        </div>
+      </div>`;
+    }
+
+    document.querySelectorAll('[data-svc]').forEach(row => {
+      buildDetailPanel(row.dataset.svc, !!row.closest('.bg-deep-navy'));
+    });
+
+    // ── Expand / collapse detail panel ───────────────────────────────────────
+    function expandDetail(id, forceOpen) {
+      const panel = document.getElementById('detail-' + id);
+      if (!panel) return;
+      const isOpen = parseInt(panel.style.maxHeight) > 0;
+      const open   = forceOpen !== undefined ? forceOpen : !isOpen;
+      panel.style.maxHeight = open ? panel.scrollHeight + 'px' : '0px';
+    }
+
+    // ── Price calculator ──────────────────────────────────────────────────────
+    let total = 0, count = 0;
+    const bar          = document.getElementById('summary-bar');
+    const priceEl      = document.getElementById('total-price');
+    const countEl      = document.getElementById('selected-count');
+    const hiddenSvc    = document.getElementById('hidden-services');
+    const hiddenTotal  = document.getElementById('hidden-total');
+    const selectedLabels = [];
+
+    function toggleSvc(row, price, svcId) {
+      const chk   = row.querySelector('.chk, .chk-dark');
+      const label = row.querySelector('.font-body')?.textContent?.trim() || svcId;
+      let selecting;
+      if (chk) {
+        const icon = chk.querySelector('.material-symbols-outlined');
+        selecting  = !chk.classList.contains('bg-electric-blue');
+        if (selecting) {
+          chk.classList.add('bg-electric-blue','border-electric-blue');
+          chk.classList.remove('border-outline/20','border-white/30');
+          if (icon) icon.classList.remove('hidden');
+        } else {
+          chk.classList.remove('bg-electric-blue','border-electric-blue');
+          chk.classList.add(row.closest('.bg-deep-navy') ? 'border-white/30' : 'border-outline/20');
+          if (icon) icon.classList.add('hidden');
+        }
+      } else {
+        selecting = !row.classList.contains('svc-selected');
+        row.classList.toggle('svc-selected', selecting);
+      }
+      if (selecting) {
+        total += price; count++;
+        selectedLabels.push(label + ' (€' + price + ')');
+        if (svcId) expandDetail(svcId, true);
+      } else {
+        total -= price; count--;
+        const idx = selectedLabels.indexOf(label + ' (€' + price + ')');
+        if (idx > -1) selectedLabels.splice(idx, 1);
+        if (svcId) expandDetail(svcId, false);
+      }
+      priceEl.textContent = '€ ' + total;
+      countEl.textContent = count + (count === 1 ? ' pakalpojums izvēlēts' : ' pakalpojumi izvēlēti');
+      hiddenTotal.value   = total;
+      hiddenSvc.value     = selectedLabels.join(', ');
+      bar.classList.toggle('translate-y-full', count === 0);
+    }
+
+    function scrollToForm() {
+      document.getElementById('booking-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // ── Booking form submit ───────────────────────────────────────────────────
+    const bform   = document.getElementById('booking-form-el');
+    const bstatus = document.getElementById('booking-status');
+    bform.addEventListener('submit', async e => {
+      e.preventDefault();
+      const btn = document.getElementById('booking-submit');
+      btn.disabled = true; btn.textContent = 'Sūta…'; bstatus.textContent = '';
+      try {
+        const res = await fetch(bform.action, { method:'POST', body:new FormData(bform) });
+        if (res.ok) {
+          bstatus.style.color = '#2E72FF';
+          bstatus.textContent = 'Paldies! Pieteikums saņemts. Sazināsimies drīzumā.';
+          bform.reset(); total = 0; count = 0; selectedLabels.length = 0;
+          priceEl.textContent = '€ 0'; countEl.textContent = '0 pakalpojumi izvēlēti';
+          bar.classList.add('translate-y-full');
+          document.querySelectorAll('.bg-electric-blue').forEach(c => {
+            c.classList.remove('bg-electric-blue','border-electric-blue');
+            c.querySelector('.material-symbols-outlined')?.classList.add('hidden');
+          });
+          document.querySelectorAll('.svc-detail').forEach(p => p.style.maxHeight = '0px');
+        } else { throw new Error(); }
+      } catch {
+        bstatus.style.color = '#ba1a1a';
+        bstatus.textContent = 'Kļūda sūtot pieteikumu. Lūdzu zvaniet mums tieši.';
+      } finally {
+        btn.disabled = false; btn.textContent = 'Nosūtīt pieteikumu';
+      }
+    });
+  </script>
+</body>
 </html>

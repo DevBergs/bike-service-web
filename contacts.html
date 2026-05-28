@@ -1,314 +1,303 @@
 <!DOCTYPE html>
 <html lang="lv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="BergsVelo kontakti — telefons, e-pasts, adrese un rekvizīti. Veloserviss Ozolniekos, Jelgavas novads." />
-    <meta name="keywords" content="bergsvelo kontakti, veloserviss Ozolnieki kontakts, bergsvelo rekvizīti, velo remonts Jelgava" />
-    <meta name="robots" content="index, follow" />
-    <title data-cfg="seo.contacts.title">Kontakti — Veloserviss Pilsētā | TAVSVELO</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VELO.SERVIS kontakti — telefons, e-pasts, adrese un rekvizīti. Mobilais Veloserviss." />
+  <meta name="robots" content="index, follow" />
+  <title data-cfg="seo.contacts.title">Kontakti — Mobilais Veloserviss | VELO.SERVIS</title>
+  <link rel="canonical" href="https://bergsvelo.lv/contacts.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="SITE_URL/contacts.html" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="SITE_URL/contacts.html" />
-    <meta property="og:title" content="Kontakti — BergsVelo Veloserviss Ozolnieki" />
-    <meta property="og:description" content="BergsVelo kontakti, rekvizīti un adrese. Veloserviss Ozolniekos ar savākšanu un piegādi." />
-    <meta property="og:image" content="https://bergsvelo.lv/images/van1.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="lv_LV" />
-    <meta property="og:site_name" content="BergsVelo" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kontakti — BergsVelo Veloserviss" />
-    <meta name="twitter:description" content="BergsVelo kontakti, rekvizīti un adrese. Veloserviss Ozolniekos." />
-    <meta name="twitter:image" content="https://bergsvelo.lv/images/van1.jpg" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "SITE_URL/" },
-            { "@type": "ListItem", "position": 2, "name": "Kontakti", "item": "SITE_URL/contacts.html" }
-          ]
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'deep-navy':'#0A1428','electric-blue':'#2E72FF','primary':'#0038af',
+          'primary-c':'#1b4fd8','on-surface':'#1a1c1c','on-sv':'#434655',
+          'on-sfx':'#0b1b38','on-sfx-v':'#394666','slate-s':'#E2E8F0',
+          'bg':'#f9f9f9','sc':'#eeeeee','sc-low':'#f3f3f4',
+          'outline':'#747686','outline-v':'#c4c5d7',
         },
-        {
-          "@type": "ContactPage",
-          "name": "SITE_NAME — Kontakti un pieraksts",
-          "description": "Piesakies veloservisam. Savākšana un piegāde bez papildu maksas.",
-          "url": "SITE_URL/contacts.html",
-          "mainEntity": { "@id": "SITE_URL/#business" }
-        }
-      ]
-    }
-    </script>
+        fontFamily: {
+          'display':['"Space Grotesk"','sans-serif'],
+          'body':['Inter','sans-serif'],
+          'mono':['"JetBrains Mono"','monospace'],
+        },
+      }},
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass { background:rgba(255,255,255,.85); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(15,30,60,.1); }
+    .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .wa-float { position:fixed; bottom:2rem; right:2rem; z-index:150; width:52px; height:52px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; box-shadow:0 4px 16px rgba(37,211,102,.38); text-decoration:none; transition:transform .28s ease,box-shadow .28s ease; }
+    .wa-float:hover { transform:scale(1.1) translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,.55); }
+  </style>
+</head>
+<body class="bg-bg text-on-surface overflow-x-hidden">
 
-    <!-- Ionicons -->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- JS -->
-    <script src="./js/site-config.js" defer></script>
-    <script src="./js/app.js" defer></script>
-    <script src="./js/cart.js" defer></script>
-  </head>
-  <body>
-
-    <!-- ==================== HEADER ==================== -->
-    <header class="site-header scrolled" id="site-header">
-      <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="nav-logo">
-            <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-          </a>
-
-          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <ul class="nav-menu" id="nav-menu" role="list">
-            <li><a href="index.html" class="nav-link">Sākums</a></li>
-            <li><a href="workshop.html" class="nav-link nav-cta">Serviss</a></li>
-            <li><a href="shop.html" class="nav-link">Veikals</a></li>
-            <li><a href="contacts.html" class="nav-link active">Kontakti</a></li>
-          </ul>
-
-          <a href="shop.html" class="nav-cart" id="nav-cart" aria-label="Grozs">
-            <i class="icon ion-md-cart"></i>
-            <span class="cart-badge" id="cart-badge"></span>
-          </a>
-        </nav>
+  <!-- HEADER -->
+  <header class="fixed top-0 w-full z-50 glass border-b border-on-sfx/10">
+    <nav class="flex justify-between items-center h-20 px-4 md:px-16 max-w-[1440px] mx-auto">
+      <a href="index.html" class="font-display text-2xl font-bold tracking-tight leading-none">
+        <span class="text-deep-navy">VELO.</span><span class="text-electric-blue">SERVIS</span>
+      </a>
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="index.html"    class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Sākums</a>
+        <a href="workshop.html" class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Serviss</a>
+        <a href="contacts.html" class="font-mono text-[11px] uppercase tracking-widest text-primary border-b-2 border-primary pb-0.5">Kontakti</a>
       </div>
-    </header>
+      <div class="flex items-center gap-3">
+        <a href="workshop.html" class="hidden md:block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest hover:bg-transparent hover:text-primary-c border-2 border-primary-c transition-all">Pieteikt servisu</a>
+        <button class="md:hidden p-2 text-deep-navy" id="nav-toggle" aria-label="Izvēlne">
+          <span class="material-symbols-outlined" id="hamburger-icon">menu</span>
+        </button>
+      </div>
+    </nav>
+    <div class="hidden glass border-t border-on-sfx/10 px-4 py-6 space-y-3" id="mobile-menu">
+      <a href="index.html"    class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Sākums</a>
+      <a href="workshop.html" class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Serviss</a>
+      <a href="contacts.html" class="block font-mono text-[11px] uppercase tracking-widest text-primary py-2 border-b border-outline-v/30">Kontakti</a>
+      <a href="workshop.html" class="block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest text-center mt-2">Pieteikt servisu</a>
+    </div>
+  </header>
 
-    <main>
+  <main class="pt-20">
 
-      <!-- ==================== PAGE HERO ==================== -->
-      <section class="page-hero">
-        <div class="page-hero-bg" style="background-image: url('./images/van1.jpg');"></div>
-        <div class="page-hero-overlay"></div>
-        <div class="container">
-          <div class="page-hero-content reveal">
-            <span class="page-hero-eyebrow">Sazināties</span>
-            <h1 class="page-hero-title">
-              Kontakti &amp;<br /><span class="accent">Rekvizīti</span>
-            </h1>
-            <p class="page-hero-desc">
-              Telefons, e-pasts un uzņēmuma dati. Servisa pieteikumu var noformēt tiešsaistē.
-            </p>
-          </div>
+    <!-- HERO -->
+    <section class="relative h-[50vh] min-h-[380px] flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-deep-navy/70 z-10"></div>
+        <img src="./images/bike2.jpg" alt="VELO.SERVIS kontakti" class="w-full h-full object-cover grayscale contrast-125" loading="eager" />
+      </div>
+      <div class="relative z-20 px-4 md:px-16 max-w-[1440px] mx-auto w-full">
+        <div class="max-w-2xl">
+          <span class="font-mono text-[11px] text-electric-blue uppercase tracking-[0.2em] mb-4 block">Saziņa un Dati</span>
+          <h1 class="font-display text-4xl md:text-[60px] font-bold text-white mb-6 leading-tight">Kontakti &amp;<br/>Rekvizīti</h1>
+          <p class="font-body text-lg text-white/80 max-w-lg">Telefons, e-pasts un uzņēmuma dati. Servisa pieteikumu var noformēt tiešsaistē jebkurā laikā.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ==================== CONTACTS + REKVIZĪTI ==================== -->
-      <section class="contact-section">
-        <div class="container">
-          <div class="contact-grid">
+    <!-- INFO GRID -->
+    <section class="py-20 md:py-40 px-4 md:px-16 max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
 
-            <!-- KONTAKTINFORMĀCIJA -->
-            <div class="reveal">
-              <div class="contact-info-card">
-                <h2 class="contact-info-card-title">Kontaktinformācija</h2>
-                <p class="contact-info-card-sub">
-                  Strādājam Ozolniekos un tuvākajā apkārtnē. Zvaniet vai rakstiet — atbildēsim ātri.
-                </p>
-
-                <div class="contact-info-items">
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-pin"></i></div>
-                    <div>
-                      <div class="contact-info-label">Adrese</div>
-                      <div class="contact-info-value"><span data-cfg="location.city">Ozolnieki</span>, <span data-cfg="location.region">Jelgavas novads</span>,<br /><span data-cfg="location.country">Latvija</span></div>
-                    </div>
-                  </div>
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-call"></i></div>
-                    <div>
-                      <div class="contact-info-label">Telefons</div>
-                      <div class="contact-info-value">
-                        <a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" style="color:inherit">+371 265 33 400</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-mail"></i></div>
-                    <div>
-                      <div class="contact-info-label">E-pasts</div>
-                      <div class="contact-info-value">
-                        <a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" style="color:inherit">info@bergsvelo.lv</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-car"></i></div>
-                    <div>
-                      <div class="contact-info-label">Savākšana un piegāde</div>
-                      <div class="contact-info-value">Bez papildu maksas pasūtījumiem virs €&nbsp;20</div>
-                    </div>
-                  </div>
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-time"></i></div>
-                    <div>
-                      <div class="contact-info-label">Darba laiks</div>
-                      <div class="contact-info-value">Pēc iepriekšēja pieraksta</div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- REKVIZĪTI -->
-            <div class="reveal" style="transition-delay: 0.15s">
-              <div class="contact-info-card">
-                <h2 class="contact-info-card-title">Rekvizīti</h2>
-                <p class="contact-info-card-sub">
-                  Uzņēmuma reģistrācijas un juridiskā informācija rēķinu un līgumu noformēšanai.
-                </p>
-
-                <div class="contact-info-items">
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-business"></i></div>
-                    <div>
-                      <div class="contact-info-label">Uzņēmuma nosaukums</div>
-                      <div class="contact-info-value" data-cfg="legal.company_name">BergsVelo</div>
-                    </div>
-                  </div>
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-document"></i></div>
-                    <div>
-                      <div class="contact-info-label">Reģistrācijas nr.</div>
-                      <div class="contact-info-value">XXXXXXXXX</div>
-                    </div>
-                  </div>
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-pin"></i></div>
-                    <div>
-                      <div class="contact-info-label">Juridiskā adrese</div>
-                      <div class="contact-info-value"><span data-cfg="location.city">Ozolnieki</span>, <span data-cfg="location.region">Jelgavas novads</span>,<br /><span data-cfg="location.country">Latvija</span></div>
-                    </div>
-                  </div>
-
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon"><i class="icon ion-md-card"></i></div>
-                    <div>
-                      <div class="contact-info-label">Banka</div>
-                      <div class="contact-info-value"><span data-cfg="legal.bank">Swedbank</span><br />IBAN: <span data-cfg="legal.iban">LVXX HABA XXXX XXXX XXXX X</span></div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
+        <!-- Left: kontakti + forma -->
+        <div class="md:col-span-5 space-y-10">
+          <div>
+            <h2 class="font-display text-3xl md:text-4xl font-semibold text-deep-navy mb-4">Kontaktinformācija</h2>
+            <p class="font-body text-base text-on-sv">Strādājam Ozolniekos un tuvākajā apkārtnē. Zvaniet vai rakstiet — atbildēsim ātri.</p>
           </div>
-
-          <!-- CTA — uz servisu -->
-          <div class="contacts-service-cta reveal" style="transition-delay: 0.2s">
-            <div class="contacts-service-cta-inner">
+          <div class="space-y-6">
+            <div class="flex items-start gap-5 group">
+              <div class="w-11 h-11 flex items-center justify-center border border-outline-v text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                <span class="material-symbols-outlined text-xl">location_on</span>
+              </div>
               <div>
-                <p class="contacts-service-cta-label">Gribi pieteikties servisam?</p>
-                <p class="contacts-service-cta-desc">Atzīmē vajadzīgos pakalpojumus cenrādī, norādi adresi un vēlamo laiku — mēs sazināsimies, lai apstiprinātu.</p>
+                <span class="font-mono text-[11px] uppercase text-on-sv block mb-1">Adrese</span>
+                <p class="font-body text-base text-on-surface font-medium">Latvijā, Latvija</p>
               </div>
-              <a href="workshop.html#svc-cta-bar" class="btn btn-primary btn-lg">
-                Pieteikt servisu <i class="icon ion-md-arrow-forward"></i>
-              </a>
+            </div>
+            <div class="flex items-start gap-5 group">
+              <div class="w-11 h-11 flex items-center justify-center border border-outline-v text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                <span class="material-symbols-outlined text-xl">call</span>
+              </div>
+              <div>
+                <span class="font-mono text-[11px] uppercase text-on-sv block mb-1">Telefons</span>
+                <a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" class="font-body text-base text-on-surface font-medium hover:text-electric-blue transition-colors">+371 265 33 400</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-5 group">
+              <div class="w-11 h-11 flex items-center justify-center border border-outline-v text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                <span class="material-symbols-outlined text-xl">mail</span>
+              </div>
+              <div>
+                <span class="font-mono text-[11px] uppercase text-on-sv block mb-1">E-pasts</span>
+                <a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" class="font-body text-base text-on-surface font-medium hover:text-electric-blue transition-colors">info@bergsvelo.lv</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-5 group">
+              <div class="w-11 h-11 flex items-center justify-center border border-outline-v text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                <span class="material-symbols-outlined text-xl">local_shipping</span>
+              </div>
+              <div>
+                <span class="font-mono text-[11px] uppercase text-on-sv block mb-1">Savākšana un piegāde</span>
+                <p class="font-body text-base text-on-surface font-medium">Bez papildu maksas no €<span data-cfg="delivery.free_from">20</span></p>
+              </div>
+            </div>
+            <div class="flex items-start gap-5 group">
+              <div class="w-11 h-11 flex items-center justify-center border border-outline-v text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                <span class="material-symbols-outlined text-xl">schedule</span>
+              </div>
+              <div>
+                <span class="font-mono text-[11px] uppercase text-on-sv block mb-1">Darba laiks</span>
+                <p class="font-body text-base text-on-surface font-medium">Pēc pieraksta · <span data-cfg="hours.display">8:00 – 18:00</span></p>
+              </div>
             </div>
           </div>
 
+          <!-- Contact form -->
+          <div class="pt-8 border-t border-outline-v/40">
+            <h3 class="font-display text-xl font-semibold text-deep-navy mb-6 uppercase tracking-wide">Nosūtīt ziņu</h3>
+            <form id="contact-form" action="./php/mail.php" method="POST" class="space-y-4" novalidate>
+              <div>
+                <label class="font-mono text-[11px] uppercase text-on-sv block mb-2">Vārds, Uzvārds *</label>
+                <input type="text" name="name" required placeholder="Jānis Bērziņš" class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm" />
+              </div>
+              <div>
+                <label class="font-mono text-[11px] uppercase text-on-sv block mb-2">Telefons *</label>
+                <input type="tel" name="phone" required placeholder="+371 20000000" class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm" />
+              </div>
+              <div>
+                <label class="font-mono text-[11px] uppercase text-on-sv block mb-2">E-pasts</label>
+                <input type="email" name="email" placeholder="piemers@gmail.com" class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm" />
+              </div>
+              <div>
+                <label class="font-mono text-[11px] uppercase text-on-sv block mb-2">Ziņa *</label>
+                <textarea name="message" required rows="4" placeholder="Aprakstiet vajadzīgo pakalpojumu vai uzdodiet jautājumu..." class="w-full border border-outline-v focus:border-primary focus:outline-none px-4 py-3 bg-white font-body text-sm resize-none"></textarea>
+              </div>
+              <button type="submit" id="contact-submit" class="w-full bg-primary text-white font-mono text-[11px] py-4 uppercase tracking-widest hover:bg-deep-navy transition-all">
+                Nosūtīt ziņu
+              </button>
+              <p id="form-status" class="font-mono text-xs text-center mt-2 min-h-[1rem]"></p>
+            </form>
+          </div>
         </div>
-      </section>
 
-    </main>
+        <!-- Spacer -->
+        <div class="hidden md:block md:col-span-1"></div>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-
-          <div class="footer-col">
-            <a href="index.html" class="nav-logo footer-brand-logo">
-              <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-            </a>
-            <p class="footer-tagline">
-              Vietējais veloserviss Ozolniekos.<br />
-              Apkope ar savākšanu un piegādi.
-            </p>
-          </div>
-
-          <div class="footer-col">
-            <h4>Navigācija</h4>
-            <ul>
-              <li><a href="index.html">Sākums</a></li>
-              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
-              <li><a href="index.html#faq">FAQ</a></li>
-              <li><a href="shop.html">Veikals</a></li>
-              <li><a href="contacts.html">Kontakti</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Kontakti</h4>
-            <ul class="footer-contact-list">
-              <li class="footer-contact-item">
-                <i class="icon ion-md-pin"></i>
-                <span data-cfg="location.city">Ozolnieki</span>, <span data-cfg="location.country">Latvija</span>
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-call"></i>
-                <a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" style="color:inherit">+371 265 33 400</a>
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-mail"></i>
-                <a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" style="color:inherit">info@bergsvelo.lv</a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 <span data-cfg="business.name">BergsVelo</span> Veloserviss. Visas tiesības aizsargātas.</p>
-          <div class="footer-pay-row">
-            <p class="footer-pay-label">Drošie maksājumi</p>
-            <div class="pay-icons">
-              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
-              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
-              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
-              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
+        <!-- Right: Rekvizīti -->
+        <div class="md:col-span-6">
+          <div class="glass p-8 md:p-12 border-t-4 border-t-primary">
+            <div class="mb-10">
+              <h2 class="font-display text-2xl md:text-3xl font-semibold text-deep-navy mb-4">Rekvizīti</h2>
+              <p class="font-body text-base text-on-sv">Uzņēmuma reģistrācijas un juridiskā informācija rēķinu un līgumu noformēšanai.</p>
+            </div>
+            <div class="space-y-6">
+              <div class="pb-5 border-b border-outline-v/30">
+                <span class="font-mono text-[11px] uppercase text-on-sv">Uzņēmuma nosaukums</span>
+                <p class="font-body text-lg text-on-surface font-semibold mt-1" data-cfg="legal.company_name">VELO.SERVIS</p>
+              </div>
+              <div class="pb-5 border-b border-outline-v/30">
+                <span class="font-mono text-[11px] uppercase text-on-sv">Uzņēmuma tips</span>
+                <p class="font-body text-lg text-on-surface font-semibold mt-1" data-cfg="legal.company_type">Individuālais uzņēmums</p>
+              </div>
+              <div class="pb-5 border-b border-outline-v/30">
+                <span class="font-mono text-[11px] uppercase text-on-sv">Reģistrācijas nr.</span>
+                <p class="font-body text-lg text-on-surface font-semibold mt-1" data-cfg="legal.reg_nr">—</p>
+              </div>
+              <div class="pb-5 border-b border-outline-v/30">
+                <span class="font-mono text-[11px] uppercase text-on-sv">Juridiskā adrese</span>
+                <p class="font-body text-lg text-on-surface font-semibold mt-1" data-cfg="legal.address_legal">Latvija</p>
+              </div>
+              <div class="pb-5 border-b border-outline-v/30">
+                <span class="font-mono text-[11px] uppercase text-on-sv">Banka</span>
+                <p class="font-body text-lg text-on-surface font-semibold mt-1" data-cfg="legal.bank">—</p>
+                <p class="font-mono text-xs text-on-sv mt-1">IBAN: <span data-cfg="legal.iban">—</span></p>
+              </div>
+            </div>
+            <div class="mt-10 bg-sc-low p-5 flex items-start gap-4 border-l-2 border-primary">
+              <span class="material-symbols-outlined text-primary shrink-0">info</span>
+              <p class="font-body text-sm text-on-sv italic">Visi norēķini tiek veikti bezskaidras naudas formā uz norādīto bankas kontu vai ar maksājumu karti.</p>
             </div>
           </div>
-          <div class="footer-legal-links">
-            <a href="privacy.html">Privātuma politika</a>
-            <a href="terms.html">Lietošanas noteikumi</a>
-            <button class="footer-consent-btn" id="open-consent-settings-footer" onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()">Sīkdatņu iestatījumi</button>
-          </div>
         </div>
+
       </div>
-    </footer>
+    </section>
 
-    <script src="./js/cookie-consent.js" defer></script>
-  </body>
+    <!-- CTA -->
+    <section class="py-20 md:py-32 relative overflow-hidden" style="background:linear-gradient(135deg,#0A1428 0%,#1b4fd8 100%);">
+      <div class="relative z-10 px-4 md:px-16 max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="max-w-2xl">
+          <h2 class="font-display text-3xl md:text-4xl font-semibold text-white mb-6">Gribi pieteikties servisam?</h2>
+          <p class="font-body text-lg text-white/80">Atzīmē vajadzīgos pakalpojumus cenrādī, norādi adresi un vēlamo laiku — mēs sazināsimies, lai apstiprinātu.</p>
+        </div>
+        <a href="workshop.html" class="shrink-0 inline-flex items-center gap-3 bg-white text-primary font-mono text-[11px] px-10 py-5 uppercase tracking-widest hover:bg-electric-blue hover:text-white transition-all">
+          Pieteikt servisu <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-deep-navy border-t border-white/10 pt-20 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 px-4 md:px-16 max-w-[1440px] mx-auto mb-16">
+      <div class="md:col-span-4">
+        <a href="index.html" class="font-display text-2xl font-bold tracking-tight block mb-6"><span class="text-white">VELO.</span><span class="text-electric-blue">SERVIS</span></a>
+        <p class="font-body text-slate-s/60 max-w-xs text-sm">Vietējais veloserviss <span data-cfg="location.city">Ozolniekos</span>.<br/>Apkope ar savākšanu un piegādi.</p>
+      </div>
+      <div class="md:col-span-3 md:col-start-6">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Navigācija</h4>
+        <ul class="space-y-4 font-body text-slate-s/60 text-sm">
+          <li><a href="index.html"    class="hover:text-white transition-colors">Sākums</a></li>
+          <li><a href="workshop.html" class="hover:text-white transition-colors">Serviss &amp; Cenas</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition-colors">Kontakti</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Kontakti</h4>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">location_on</span><span class="font-body text-slate-s/60 text-sm">Latvija</span></li>
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">call</span><a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">+371 265 33 400</a></li>
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">mail</span><a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">info@bergsvelo.lv</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="px-4 md:px-16 max-w-[1440px] mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest">&copy; 2026 <span data-cfg="business.name">VELO.SERVIS</span> Veloserviss. Visas tiesības aizsargātas.</p>
+      <div class="flex gap-6">
+        <a href="privacy.html" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Privātuma politika</a>
+        <a href="terms.html"   class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Lietošanas noteikumi</a>
+        <button onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors cursor-pointer">Sīkdatnes</button>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/37126533400" class="wa-float" target="_blank" rel="noopener" aria-label="Sazināties WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="./js/site-config.js" defer></script>
+  <script src="./js/cart.js" defer></script>
+  <script src="./js/cookie-consent.js" defer></script>
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('hamburger-icon');
+      const open = menu.classList.toggle('hidden') === false;
+      icon.textContent = open ? 'close' : 'menu';
+    });
+
+    const form   = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const btn = document.getElementById('contact-submit');
+      btn.disabled = true; btn.textContent = 'Sūta…'; status.textContent = '';
+      try {
+        const res = await fetch(form.action, { method:'POST', body:new FormData(form) });
+        if (res.ok) {
+          status.style.color = '#2E72FF';
+          status.textContent = 'Paldies! Ziņa ir nosūtīta. Sazināsimies drīzumā.';
+          form.reset();
+        } else { throw new Error(); }
+      } catch {
+        status.style.color = '#ba1a1a';
+        status.textContent = 'Kļūda sūtot ziņu. Lūdzu zvaniet mums tieši.';
+      } finally {
+        btn.disabled = false; btn.textContent = 'Nosūtīt ziņu';
+      }
+    });
+  </script>
+</body>
 </html>

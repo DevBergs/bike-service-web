@@ -1,535 +1,514 @@
 <!DOCTYPE html>
 <html lang="lv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="BergsVelo — veloserviss Ozolniekos un Jelgavas novadā. Savākšana, remonts un piegāde no jūsu durvīm. Bremzes, pārnesumi, pilnā apkope. Piesakies tagad!" />
-    <meta name="keywords" content="veloserviss Ozolnieki, veloserviss Jelgava, velosipēda apkope, remonts, mobilais veloserviss, bergsvelo" />
-    <meta name="author" content="Aivis Karlsbergs" />
-    <meta name="robots" content="index, follow" />
-    <title data-cfg="seo.index.title">TAVSVELO — Veloserviss Pilsētā | Savākšana un Piegāde</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VELO.SERVIS — mobilais veloserviss. Savākšana, remonts un piegāde no jūsu durvīm. Bremzes, pārnesumi, pilnā apkope. Piesakies tagad!" />
+  <meta name="keywords" content="velosipēda apkope, remonts, mobilais veloserviss, velo.servis" />
+  <meta name="author" content="Aivis Karlsbergs" />
+  <meta name="robots" content="index, follow" />
+  <title data-cfg="seo.index.title">VELO.SERVIS — Mobilais Veloserviss | Savākšana un Piegāde</title>
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://bergsvelo.lv/" />
+  <link rel="canonical" href="https://bergsvelo.lv/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bergsvelo.lv/" />
+  <meta property="og:title" content="VELO.SERVIS — Mobilais Veloserviss | Savākšana un Piegāde" />
+  <meta property="og:description" content="Mobilais veloserviss Ozolniekos. Savākšana, remonts un piegāde bez papildu maksas. Bremzes, pārnesumi, pilnā apkope." />
+  <meta property="og:image" content="https://bergsvelo.lv/images/bike2.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="lv_LV" />
+  <meta property="og:site_name" content="VELO.SERVIS" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VELO.SERVIS — Mobilais Veloserviss" />
+  <meta name="twitter:description" content="Mobilais veloserviss Ozolniekos. Savākšana, remonts un piegāde bez papildu maksas." />
+  <meta name="twitter:image" content="https://bergsvelo.lv/images/bike2.jpg" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bergsvelo.lv/" />
-    <meta property="og:title" content="BERGSVELO — Veloserviss Ozolniekos | Savākšana un Piegāde" />
-    <meta property="og:description" content="Mobilais veloserviss Ozolniekos. Savākšana, remonts un piegāde bez papildu maksas. Bremzes, pārnesumi, pilnā apkope." />
-    <meta property="og:image" content="https://bergsvelo.lv/images/bike2.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="lv_LV" />
-    <meta property="og:site_name" content="BergsVelo" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="BERGSVELO — Veloserviss Ozolniekos" />
-    <meta name="twitter:description" content="Mobilais veloserviss Ozolniekos. Savākšana, remonts un piegāde bez papildu maksas." />
-    <meta name="twitter:image" content="https://bergsvelo.lv/images/bike2.jpg" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": ["LocalBusiness", "BicycleStore"],
-          "@id": "SITE_URL/#business",
-          "name": "SITE_NAME",
-          "alternateName": "SITE_NAME",
-          "description": "Velosipēdu apkopes un remonta serviss. Mobilā savākšana un piegāde bez papildu maksas.",
-          "url": "SITE_URL",
-          "logo": "SITE_URL/images/logo.png",
-          "image": "SITE_URL/images/bike2.jpg",
-          "telephone": "SITE_PHONE",
-          "email": "SITE_EMAIL",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "SITE_CITY",
-            "addressRegion": "SITE_REGION",
-            "addressCountry": "LV"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 0,
-            "longitude": 0
-          },
-          "areaServed": [
-            { "@type": "City", "name": "SITE_CITY" },
-            { "@type": "AdministrativeArea", "name": "SITE_REGION" }
-          ],
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "description": "Pēc iepriekšēja pieraksta"
-          },
-          "priceRange": "€€",
-          "currenciesAccepted": "EUR",
-          "paymentAccepted": "Cash, Bank Transfer, Revolut",
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Veloservisa pakalpojumi",
-            "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bremžu regulēšana" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ķēdes maiņa" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Riteņu centrēšana" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pilnā apkope" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Velosipēda savākšana un piegāde" } }
-            ]
-          },
-          "founder": {
-            "@type": "Person",
-            "@id": "SITE_URL/#founder",
-            "name": "SITE_FOUNDER",
-            "jobTitle": "Velosipēdu mehāniķis"
-          }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "BicycleStore"],
+        "@id": "https://bergsvelo.lv/#business",
+        "name": "VELO.SERVIS",
+        "description": "Velosipēdu apkopes un remonta serviss. Mobilā savākšana un piegāde bez papildu maksas.",
+        "url": "https://bergsvelo.lv",
+        "telephone": "+37126533400",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Latvija",
+          "addressRegion": "Latvia",
+          "addressCountry": "LV"
         },
-        {
-          "@type": "WebSite",
-          "@id": "SITE_URL/#website",
-          "url": "SITE_URL",
-          "name": "SITE_NAME",
-          "description": "Veloserviss — savākšana, remonts, piegāde",
-          "publisher": { "@id": "SITE_URL/#business" },
-          "inLanguage": "lv"
-        }
-      ]
+        "areaServed": [
+          { "@type": "Country", "name": "Latvia" },
+          
+        ],
+        "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "description": "Pēc iepriekšēja pieraksta" },
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bergsvelo.lv/#website",
+        "url": "https://bergsvelo.lv",
+        "name": "VELO.SERVIS",
+        "description": "Veloserviss — savākšana, remonts, piegāde",
+        "inLanguage": "lv"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Vai uzstādāt detaļas, ko klients nopircis pats?", "acceptedAnswer": { "@type": "Answer", "text": "Jā! Labprāt uzstādām jebkuras jaunas oriģinālās detaļas, ko iegādājāties tiešsaistē vai veikalā. Vienīgais izņēmums — detaļas, kuras uzskatām par nedrošām vai kas nav saderīgas ar jūsu velosipēda sistēmu." } },
+      { "@type": "Question", "name": "Vai savākšana un piegāde ir bezmaksas?", "acceptedAnswer": { "@type": "Answer", "text": "Jā! Savākšana un piegāde jūsu apkārtnē ir bez papildu maksas. Minimālais pasūtījums — €20 par pakalpojumu." } }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-navy':   '#0A1428',
+            'electric-blue': '#2E72FF',
+            'primary':     '#0038af',
+            'primary-c':   '#1b4fd8',
+            'on-surface':  '#1a1c1c',
+            'on-sv':       '#434655',
+            'on-sfx':      '#0b1b38',
+            'on-sfx-v':    '#394666',
+            'slate-s':     '#E2E8F0',
+            'bg':          '#f9f9f9',
+            'sc':          '#eeeeee',
+            'sc-low':      '#f3f3f4',
+            'outline':     '#747686',
+            'outline-v':   '#c4c5d7',
+          },
+          fontFamily: {
+            'display': ['"Space Grotesk"', 'sans-serif'],
+            'body':    ['Inter', 'sans-serif'],
+            'mono':    ['"JetBrains Mono"', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(15,30,60,0.1);
     }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Vai uzstādāt detaļas, ko klients nopircis pats?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jā! Labprāt uzstādām jebkuras jaunas oriģinālās detaļas, ko iegādājāties tiešsaistē vai veikalā. Vienīgais izņēmums — detaļas, kuras uzskatām par nedrošām vai kas nav saderīgas ar jūsu velosipēda sistēmu. Šaubu gadījumā — vienmēr konsultēsim iepriekš."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Cik ilgi aizņem apkope vai remonts?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Vairumā gadījumu velosipēds tiek apkopots tajā pašā dienā vai nākamajā dienā. Precīzāki laiki norādīti cenu lapā. Ja nepieciešams pasūtīt detaļas, velosipēds tiek atgriezts 1–7 dienu laikā."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Kādas maksājumu metodes pieņemat?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pieņemam bankas pārskaitījumu, Revolut un skaidru naudu. Maksājums tiek veikts brīdī, kad atgriežam jūsu velosipēdu — pēc darba pabeigšanas."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vai savākšana un piegāde ir bezmaksas?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jā! Savākšana un piegāde Ozolniekos un tuvākajā apkārtnē ir bez papildu maksas. Minimālais pasūtījums — €20 par pakalpojumu. Ja dzīvojat ārpus mūsu parastās zonas — sazinieties, vienosimies par cenu."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Kāda ir jūsu apkalpošanas zona?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Galvenokārt strādājam Ozolniekos un Jelgavas novadā. Ja dzīvojat tālāk — zvaniet, mēs atraisīsim risinājumu un vienosimies par papildu ceļa izmaksām."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vai piedāvājat pakalpojumus organizācijām vai grupām?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jā! Piedāvājam apkopes pakalpojumus skolām, uzņēmumiem un citām organizācijām ar vairākiem velosipēdiem. Sazinieties, lai pārrunātu grafiku un cenu."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Kādi ir darba laiki?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Parastais darba laiks ir no 8:00 līdz 18:00. Esam elastīgi — ja šis laiks jums neiederas, sazinieties un vienosimies par piemērotāko laiku."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Ko darīt, ja nezinu, kāda apkope nepieciešama?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Neuztraucieties — vienkārši aprakstiet problēmu, ko pamanāt. Mēs apskatīsim velosipēdu, noskaidrosim problēmu un sniegsim godīgu novērtējumu. Konsultācija bez papildu maksas."
-          }
-        }
-      ]
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .fill-icon { font-variation-settings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .acc-content { max-height: 0; overflow: hidden; transition: max-height .3s ease-out; }
+    .acc-item.open .acc-content { max-height: 400px; }
+    .acc-item.open .acc-icon { transform: rotate(45deg); }
+    .acc-icon { transition: transform .3s ease; display: inline-block; }
+    .wa-float {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 150;
+      width: 52px; height: 52px; background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; color: #fff;
+      box-shadow: 0 4px 16px rgba(37,211,102,.38);
+      transition: transform .28s ease, box-shadow .28s ease;
+      text-decoration: none;
     }
-    </script>
+    .wa-float:hover { transform: scale(1.1) translateY(-2px); box-shadow: 0 8px 28px rgba(37,211,102,.55); }
+    .tech-grid {
+      background-image: radial-gradient(circle, #e2e8f0 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+<body class="bg-bg text-on-surface overflow-x-hidden">
 
-    <!-- Ionicons -->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="fixed top-0 w-full z-50 glass border-b border-on-sfx/10">
+    <nav class="flex justify-between items-center h-20 px-4 md:px-16 max-w-[1440px] mx-auto">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
+      <a href="index.html" class="font-display text-2xl font-bold tracking-tight leading-none">
+        <span class="text-deep-navy">VELO.</span><span class="text-electric-blue">SERVIS</span>
+      </a>
 
-    <!-- JS -->
-    <script src="./js/site-config.js" defer></script>
-    <script src="./js/app.js" defer></script>
-    <script src="./js/cart.js" defer></script>
-  </head>
-  <body>
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="index.html"     class="font-mono text-[11px] uppercase tracking-widest text-primary border-b-2 border-primary pb-0.5">Sākums</a>
+        <a href="workshop.html"  class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Serviss</a>
+        <a href="contacts.html"  class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Kontakti</a>
+      </div>
 
-    <!-- ==================== HEADER ==================== -->
-    <header class="site-header" id="site-header">
-      <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="nav-logo">
-            <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
+      <div class="flex items-center gap-3">
+        <a href="workshop.html" class="hidden md:block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest hover:bg-transparent hover:text-primary-c border-2 border-primary-c hover:border-primary-c transition-all">
+          Pieteikt servisu
+        </a>
+        <button class="md:hidden p-2 text-deep-navy" id="nav-toggle" aria-label="Izvēlne" aria-expanded="false">
+          <span class="material-symbols-outlined" id="hamburger-icon">menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="hidden glass border-t border-on-sfx/10 px-4 py-6 space-y-3" id="mobile-menu">
+      <a href="index.html"    class="block font-mono text-[11px] uppercase tracking-widest text-primary py-2 border-b border-outline-v/30">Sākums</a>
+      <a href="workshop.html" class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Serviss</a>
+      <a href="contacts.html" class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Kontakti</a>
+      <a href="workshop.html" class="block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest text-center mt-2">Pieteikt servisu</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="min-h-screen grid grid-cols-1 md:grid-cols-[45fr_55fr]">
+
+      <!-- Left: dark panel -->
+      <div class="bg-[#0a0a0a] flex flex-col justify-end pb-16 md:pb-20 px-10 md:px-16 pt-32 md:pt-0 relative overflow-hidden">
+
+        <!-- vertical accent line -->
+        <div class="absolute left-0 top-[15%] bottom-[15%] w-[2px] bg-primary-c hidden md:block pointer-events-none"></div>
+
+        <!-- ghost watermark -->
+        <div class="absolute bottom-0 right-0 font-display font-black text-[200px] md:text-[260px] leading-none text-white/[0.025] select-none pointer-events-none translate-x-8 translate-y-4">VS</div>
+
+        <!-- status indicator -->
+        <div class="mb-8 flex items-center gap-3 relative z-10">
+          <span class="w-2 h-2 bg-electric-blue rounded-full animate-pulse flex-shrink-0"></span>
+          <span class="font-mono text-[10px] uppercase tracking-[0.25em] text-white/40">Mobilais veloserviss · Latvija</span>
+        </div>
+
+        <!-- main heading -->
+        <h1 class="font-display uppercase leading-[0.85] tracking-tight mb-10 relative z-10">
+          <span class="block text-[72px] md:text-[96px] lg:text-[116px] font-black text-white">VELO.</span>
+          <span class="block text-[72px] md:text-[96px] lg:text-[116px] font-black text-electric-blue">SERVIS</span>
+        </h1>
+
+        <!-- tagline -->
+        <p class="font-mono text-[12px] text-white/40 uppercase tracking-[0.2em] mb-12 relative z-10">
+          Savākšana &nbsp;·&nbsp; Apkope &nbsp;·&nbsp; Piegāde
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row gap-4 relative z-10">
+          <a href="workshop.html" class="bg-primary-c text-white font-mono text-[11px] px-10 py-5 uppercase tracking-widest hover:bg-transparent hover:text-primary-c border-2 border-primary-c transition-all text-center">
+            Pieteikt servisu
           </a>
+          <div class="flex items-center gap-3 px-6 py-4 border border-white/10">
+            <span class="material-symbols-outlined text-electric-blue text-xl">local_shipping</span>
+            <span class="font-mono text-[11px] uppercase tracking-wide text-white/60">Bezmaksas piegāde</span>
+          </div>
+        </div>
+      </div>
 
-          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+      <!-- Right: full-bleed photo -->
+      <div class="relative h-[55vh] md:h-auto overflow-hidden">
+        <img src="./images/bike2.jpg" alt="VELO.SERVIS — velosipēda apkope" class="w-full h-full object-cover" loading="eager" />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/50 via-transparent to-transparent pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/30 to-transparent pointer-events-none md:hidden"></div>
+      </div>
 
-          <ul class="nav-menu" id="nav-menu" role="list">
-            <li><a href="index.html" class="nav-link active">Sākums</a></li>
-            <li><a href="workshop.html" class="nav-link nav-cta">Serviss</a></li>
-            <li><a href="shop.html" class="nav-link">Veikals</a></li>
-            <li><a href="contacts.html" class="nav-link">Kontakti</a></li>
+    </section>
+
+    <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+    <section class="py-20 md:py-40 bg-white">
+      <div class="px-4 md:px-16 max-w-[1440px] mx-auto">
+        <div class="text-center mb-24">
+          <span class="font-mono text-[11px] uppercase tracking-[0.3em] text-primary block mb-4">Kā tas darbojas</span>
+          <h2 class="font-display text-3xl md:text-5xl font-semibold uppercase mb-6 text-deep-navy">Trīs vienkārši soļi</h2>
+          <p class="font-body text-base text-on-sv max-w-xl mx-auto opacity-70">
+            Mēs padarām velo servisu ērtu — nav jādomā par transportu vai laiku.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="group border-l border-outline-v pl-8 pt-4 hover:border-primary transition-colors duration-500">
+            <div class="font-display text-[64px] font-bold text-slate-s mb-6 leading-none group-hover:text-primary/10 transition-colors select-none">01</div>
+            <div class="w-12 h-12 bg-sc-low flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-primary">calendar_today</span>
+            </div>
+            <h3 class="font-display text-2xl font-semibold uppercase mb-4 text-deep-navy">Piesakies</h3>
+            <p class="font-body text-base text-on-sv leading-relaxed">
+              Sazinieties ar mums un norunājiet ērtāko laiku. Norādiet adresi un servisa veidu — par pārējo parūpēsimies mēs.
+            </p>
+          </div>
+          <div class="group border-l border-outline-v pl-8 pt-4 hover:border-primary transition-colors duration-500">
+            <div class="font-display text-[64px] font-bold text-slate-s mb-6 leading-none group-hover:text-primary/10 transition-colors select-none">02</div>
+            <div class="w-12 h-12 bg-sc-low flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-primary">build</span>
+            </div>
+            <h3 class="font-display text-2xl font-semibold uppercase mb-4 text-deep-navy">Apkope</h3>
+            <p class="font-body text-base text-on-sv leading-relaxed">
+              Aizbraukšu pēc velosipēda un dažu dienu laikā veikšu profesionālu apkopi vai remontu — kvalitatīvi un rūpīgi.
+            </p>
+          </div>
+          <div class="group border-l border-outline-v pl-8 pt-4 hover:border-primary transition-colors duration-500">
+            <div class="font-display text-[64px] font-bold text-slate-s mb-6 leading-none group-hover:text-primary/10 transition-colors select-none">03</div>
+            <div class="w-12 h-12 bg-sc-low flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-primary">delivery_dining</span>
+            </div>
+            <h3 class="font-display text-2xl font-semibold uppercase mb-4 text-deep-navy">Saņem atpakaļ</h3>
+            <p class="font-body text-base text-on-sv leading-relaxed">
+              Piegādāšu tavu velosipēdu atpakaļ norunātajā vietā un laikā — pilnīgi gatavu nākamajai braucienreizei.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT (dark) ═══════════════ -->
+    <section class="py-20 md:py-40 bg-deep-navy text-white overflow-hidden">
+      <div class="px-4 md:px-16 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <div class="lg:col-span-5 relative order-2 lg:order-1">
+          <div class="border border-white/10 p-4 md:p-6">
+            <div class="relative">
+              <img src="./images/close-up-working-bike.jpg" alt="Velosipēda apkope darbnīcā" class="w-full h-full object-cover" loading="lazy" />
+              <div class="absolute -top-4 -left-4 w-20 h-20 border-t-2 border-l-2 border-electric-blue pointer-events-none"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7 order-1 lg:order-2 mb-16 lg:mb-0">
+          <span class="font-mono text-[11px] uppercase tracking-[0.3em] text-electric-blue block mb-4">Par mums</span>
+          <h2 class="font-display text-3xl md:text-5xl font-semibold uppercase mb-8 leading-tight">
+            Profesionāls serviss<br />ar personīgu pieeju
+          </h2>
+          <p class="font-body text-lg text-slate-s/80 mb-10 leading-relaxed">
+            Esam mobilais veloserviss, kas piedāvā pilnu apkopes pakalpojumu klāstu — no bremžu regulēšanas līdz pilnai velosipēda tīrīšanai un montāžai. Katrs velosipēds tiek apkalpots ar uzmanību un rūpību.
+          </p>
+          <ul class="space-y-4 mb-12">
+            <li class="flex items-center gap-4 group">
+              <span class="material-symbols-outlined fill-icon text-electric-blue">check_circle</span>
+              <span class="font-mono text-[11px] uppercase tracking-wider text-slate-s group-hover:text-white transition-colors">Brīva savākšana no jebkuras vietas</span>
+            </li>
+            <li class="flex items-center gap-4 group">
+              <span class="material-symbols-outlined fill-icon text-electric-blue">check_circle</span>
+              <span class="font-mono text-[11px] uppercase tracking-wider text-slate-s group-hover:text-white transition-colors">Ātra apkalpošana — dažas dienas</span>
+            </li>
+            <li class="flex items-center gap-4 group">
+              <span class="material-symbols-outlined fill-icon text-electric-blue">check_circle</span>
+              <span class="font-mono text-[11px] uppercase tracking-wider text-slate-s group-hover:text-white transition-colors">Piegāde atpakaļ iekļauta</span>
+            </li>
+            <li class="flex items-center gap-4 group">
+              <span class="material-symbols-outlined fill-icon text-electric-blue">check_circle</span>
+              <span class="font-mono text-[11px] uppercase tracking-wider text-slate-s group-hover:text-white transition-colors">Skaidrs un godīgs cenu saraksts</span>
+            </li>
           </ul>
-
-          <a href="shop.html" class="nav-cart" id="nav-cart" aria-label="Grozs">
-            <i class="icon ion-md-cart"></i>
-            <span class="cart-badge" id="cart-badge"></span>
+          <a href="workshop.html" class="inline-block bg-electric-blue text-white font-mono text-[11px] px-10 py-5 uppercase tracking-widest hover:bg-transparent border-2 border-electric-blue transition-all">
+            Skatīt cenas
           </a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-
-      <!-- ==================== HERO ==================== -->
-      <section class="hero" aria-label="Galvenā sadaļa">
-        <div class="container">
-          <div class="hero-split">
-
-            <div class="hero-left">
-              <span class="hero-eyebrow reveal"><span data-cfg="location.city">Ozolnieki</span> &nbsp;·&nbsp; <span data-cfg="location.country">Latvija</span></span>
-              <h1 class="hero-title reveal" style="transition-delay: 0.1s">
-                <span data-cfg="business.name_spaced">Tavs Velo</span>
-              </h1>
-              <p class="hero-sub reveal" style="transition-delay: 0.2s">
-                Bezmaksas savākšana un piegāde.<br />
-                Apkope — 1–2 dienās.
-              </p>
-              <div class="hero-actions reveal" style="transition-delay: 0.3s">
-                <a href="workshop.html" class="btn btn-primary">Pieteikt servisu</a>
-              </div>
-            </div>
-
-            <div class="hero-right reveal" style="transition-delay: 0.15s">
-              <div class="hero-img-wrap">
-                <img src="./images/bike2.jpg" alt="Velosipēda apkope — BergsVelo darbnīca" loading="eager" />
-              </div>
-              <div class="hero-badge">Bezmaksas piegāde no €<span data-cfg="delivery.free_from">20</span></div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ==================== HOW IT WORKS ==================== -->
-      <section class="section section-light">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-label">Kā tas darbojas</span>
-            <h2 class="section-title">Trīs vienkārši soļi</h2>
-            <p class="section-desc">
-              Mēs padarām velo servisu ērtu — nav jādomā par transportu vai laiku
-            </p>
-          </div>
-
-          <div class="steps-grid">
-            <div class="step-card reveal" style="transition-delay: 0.05s">
-              <div class="step-num">01</div>
-              <div class="step-icon-wrap">
-                <i class="icon ion-md-call"></i>
-              </div>
-              <h3 class="step-title">Piesakies</h3>
-              <p class="step-desc">
-                Sazinieties ar mums un norunājiet ērtāko laiku. Norādiet adresi un servisa veidu — par pārējo parūpēsimies mēs.
-              </p>
-            </div>
-
-            <div class="step-card reveal" style="transition-delay: 0.15s">
-              <div class="step-num">02</div>
-              <div class="step-icon-wrap">
-                <i class="icon ion-md-construct"></i>
-              </div>
-              <h3 class="step-title">Apkope</h3>
-              <p class="step-desc">
-                Aizbraukšu pēc velosipēda un dažu dienu laikā veikšu profesionālu apkopi vai remontu — kvalitatīvi un rūpīgi.
-              </p>
-            </div>
-
-            <div class="step-card reveal" style="transition-delay: 0.25s">
-              <div class="step-num">03</div>
-              <div class="step-icon-wrap">
-                <i class="icon ion-md-bicycle"></i>
-              </div>
-              <h3 class="step-title">Saņem atpakaļ</h3>
-              <p class="step-desc">
-                Piegādāšu tavu velosipēdu atpakaļ norunātajā vietā un laikā — pilnīgi gatavu nākamajai braucienreizei.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==================== HIGHLIGHT / ABOUT ==================== -->
-      <section class="section section-dark">
-        <div class="container">
-          <div class="highlight-grid">
-            <div class="reveal-left">
-              <div class="highlight-image">
-                <img src="./images/close-up-working-bike.jpg" alt="Velosipēda apkope darbnīcā" loading="lazy" />
-              </div>
-            </div>
-
-            <div class="highlight-content reveal-right">
-              <span class="section-label">Par mums</span>
-              <h2 class="section-title inv">
-                Profesionāls serviss<br />ar personīgu pieeju
-              </h2>
-              <p class="section-desc inv" style="text-align:left; margin: 1rem 0 1.75rem; max-width: none;">
-                Esam vietējais veloserviss Ozolniekos, kas piedāvā pilnu apkopes pakalpojumu klāstu — no bremžu regulēšanas līdz pilnai velosipēda tīrīšanai un montāžai. Katrs velosipēds tiek apkalpots ar uzmanību un rūpību.
-              </p>
-
-              <ul class="feature-list">
-                <li>
-                  <i class="icon ion-md-checkmark-circle"></i>
-                  Brīva savākšana no jebkuras vietas
-                </li>
-                <li>
-                  <i class="icon ion-md-checkmark-circle"></i>
-                  Ātra apkalpošana — dažas dienas
-                </li>
-                <li>
-                  <i class="icon ion-md-checkmark-circle"></i>
-                  Piegāde atpakaļ iekļauta
-                </li>
-                <li>
-                  <i class="icon ion-md-checkmark-circle"></i>
-                  Skaidrs un godīgs cenu saraksts
-                </li>
-              </ul>
-
-              <a href="workshop.html" class="btn btn-primary">Skatīt cenas</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==================== FAQ ==================== -->
-      <section class="section faq-section" id="faq">
-        <div class="container">
-
-          <div class="faq-header section-header reveal">
-            <span class="section-label">Biežāk uzdotie jautājumi</span>
-            <h2 class="section-title inv">FAQ</h2>
-            <p class="section-desc inv">
-              Neatrodi atbildi? Sazinieties tieši — ar prieku palīdzēsim.
-            </p>
-          </div>
-
-          <div class="faq-list">
-
-            <details class="faq-item reveal" style="transition-delay: 0.05s">
-              <summary class="faq-question">
-                <span class="faq-num">01</span>
-                <span>Vai uzstādāt detaļas, ko klients nopircis pats?</span>
-                <span class="faq-icon">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Jā! Labprāt uzstādām jebkuras jaunas oriģinālās detaļas, ko iegādājāties tiešsaistē vai veikalā. Vienīgais izņēmums — detaļas, kuras uzskatām par nedrošām vai kas nav saderīgas ar jūsu velosipēda sistēmu. Šaubu gadījumā — vienmēr konsultēsim iepriekš.</p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal" style="transition-delay: 0.1s">
-              <summary class="faq-question">
-                <span class="faq-num">02</span>
-                <span>Cik ilgi aizņem apkope vai remonts?</span>
-                <span class="faq-icon">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Vairumā gadījumu velosipēds tiek apkopots tajā pašā dienā vai nākamajā dienā. Precīzāki laiki norādīti cenu lapā — tas atkarīgs no darba apjoma un velosipēda stāvokļa. Ja nepieciešams pasūtīt detaļas, velosipēds tiek atgriezts <strong>1–7 dienu laikā</strong>.</p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal" style="transition-delay: 0.15s">
-              <summary class="faq-question">
-                <span class="faq-num">03</span>
-                <span>Kādas maksājumu metodes pieņemat?</span>
-                <span class="faq-icon">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Pieņemam bankas pārskaitījumu, Revolut un skaidru naudu. Maksājums tiek veikts brīdī, kad atgriežam jūsu velosipēdu — pēc darba pabeigšanas.</p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal" style="transition-delay: 0.2s">
-              <summary class="faq-question">
-                <span class="faq-num">04</span>
-                <span>Vai savākšana un piegāde ir bezmaksas?</span>
-                <span class="faq-icon">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Jā! Savākšana un piegāde Ozolniekos un tuvākajā apkārtnē ir bez papildu maksas. Minimālais pasūtījums — <strong>€ 20</strong> par pakalpojumu. Ja dzīvojat ārpus mūsu parastās zonas — sazinieties, vienosimies par cenu.</p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal" style="transition-delay: 0.25s">
-              <summary class="faq-question">
-                <span class="faq-num">05</span>
-                <span>Kāda ir jūsu apkalpošanas zona?</span>
-                <span class="faq-icon">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Galvenokārt strādājam Ozolniekos un Jelgavas novadā. Ja dzīvojat tālāk — zvaniet, mēs atraisīsim risinājumu un vienosimies par papildu ceļa izmaksām.</p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal" style="transition-delay: 0.3s">
-              <summary class="faq-question">
-                <span class="faq-num">06</span>
-                <span>Vai piedāvājat pakalpojumus organizācijām vai grupām?</span>
-                <span class="faq-icon">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Jā! Piedāvājam apkopes pakalpojumus skolām, uzņēmumiem un citām organizācijām ar vairākiem velosipēdiem. Sazinieties, lai pārrunātu grafiku un cenu.</p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal" style="transition-delay: 0.35s">
-              <summary class="faq-question">
-                <span class="faq-num">07</span>
-                <span>Kādi ir darba laiki?</span>
-                <span class="faq-icon">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Parastais darba laiks ir no <strong>8:00 līdz 18:00</strong>. Esam elastīgi — ja šis laiks jums neiederas, sazinieties un vienosimies par piemērotāko laiku.</p>
-              </div>
-            </details>
-
-            <details class="faq-item reveal" style="transition-delay: 0.4s">
-              <summary class="faq-question">
-                <span class="faq-num">08</span>
-                <span>Ko darīt, ja nezinu, kāda apkope nepieciešama?</span>
-                <span class="faq-icon">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Neuztraucieties — vienkārši aprakstiet problēmu, ko pamanāt. Mēs apskatīsim velosipēdu, noskaidrosim problēmu un sniegsim godīgu novērtējumu. Konsultācija bez papildu maksas.</p>
-              </div>
-            </details>
-
-          </div><!-- .faq-list -->
-        </div>
-      </section>
-
-      <!-- ==================== CTA ==================== -->
-      <section class="section cta-section">
-        <div class="container">
-          <div class="cta-inner reveal">
-            <span class="section-label">Sāciet tagad</span>
-            <h2 class="cta-title">Vai tavam velosipēdam<br />nepieciešama apkope?</h2>
-            <p class="cta-desc">
-              Sazinieties ar mums un pieteikt servisu jau šodien. Savākšana un piegāde — bez maksas.
-            </p>
-            <a href="contacts.html" class="btn btn-primary btn-lg">
-              Pieteikt servisu
-              <i class="icon ion-md-arrow-forward"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-
-          <div class="footer-col">
-            <a href="index.html" class="nav-logo footer-brand-logo">
-              <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-            </a>
-            <p class="footer-tagline">
-              Vietējais veloserviss <span data-cfg="location.city">Ozolniekos</span>.<br />
-              Apkope ar savākšanu un piegādi.
-            </p>
-          </div>
-
-          <div class="footer-col">
-            <h4>Navigācija</h4>
-            <ul>
-              <li><a href="index.html">Sākums</a></li>
-              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
-              <li><a href="index.html#faq">FAQ</a></li>
-              <li><a href="shop.html">Veikals</a></li>
-              <li><a href="contacts.html">Kontakti</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Kontakti</h4>
-            <ul class="footer-contact-list">
-              <li class="footer-contact-item">
-                <i class="icon ion-md-pin"></i>
-                <span data-cfg="location.city">Ozolnieki</span>, <span data-cfg="location.country">Latvija</span>
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-call"></i>
-                <a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display">+371 265 33 400</a>
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-mail"></i>
-                <a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email">info@bergsvelo.lv</a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 <span data-cfg="business.name">BergsVelo</span> Veloserviss. Visas tiesības aizsargātas.</p>
-          <!-- ── Maksājumu metodes (SVG lokāli hostētas, bez ārējiem pieprasījumiem) ── -->
-          <div class="footer-pay-row">
-            <p class="footer-pay-label">Drošie maksājumi</p>
-            <div class="pay-icons">
-              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
-              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
-              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
-              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
-            </div>
-          </div>
-          <div class="footer-legal-links">
-            <a href="privacy.html">Privātuma politika</a>
-            <a href="terms.html">Lietošanas noteikumi</a>
-            <button class="footer-consent-btn" id="open-consent-settings-footer" onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()">Sīkdatņu iestatījumi</button>
-          </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="./js/cookie-consent.js" defer></script>
-  </body>
+    <!-- ═══════════════ FAQ ═══════════════ -->
+    <section class="py-20 md:py-40 bg-bg" id="faq">
+      <div class="px-4 md:px-16 max-w-[1000px] mx-auto">
+        <div class="text-center mb-20">
+          <span class="font-mono text-[11px] uppercase tracking-[0.3em] text-primary block mb-4">Biežāk uzdotie jautājumi</span>
+          <h2 class="font-display text-3xl md:text-5xl font-semibold uppercase mb-6 text-deep-navy">FAQ</h2>
+          <p class="font-body text-base text-on-sv opacity-70">Neatrodi atbildi? Sazinieties tieši — ar prieku palīdzēsim.</p>
+        </div>
+        <div class="space-y-2" id="faq-list">
+
+          <div class="acc-item glass">
+            <button class="w-full flex items-center justify-between p-8 text-left" onclick="toggleAcc(this)">
+              <div class="flex items-center gap-6"><span class="font-mono text-slate-s text-sm">01</span><span class="font-display font-semibold text-base uppercase tracking-wide text-on-surface">Vai uzstādāt detaļas, ko klients nopircis pats?</span></div>
+              <span class="material-symbols-outlined acc-icon text-primary shrink-0">add</span>
+            </button>
+            <div class="acc-content">
+              <div class="px-8 md:px-24 pb-8 font-body text-on-sv leading-relaxed">Jā! Labprāt uzstādām jebkuras jaunas oriģinālās detaļas, ko iegādājāties tiešsaistē vai veikalā. Vienīgais izņēmums — detaļas, kuras uzskatām par nedrošām vai kas nav saderīgas ar jūsu velosipēda sistēmu. Šaubu gadījumā — vienmēr konsultēsim iepriekš.</div>
+            </div>
+          </div>
+
+          <div class="acc-item glass">
+            <button class="w-full flex items-center justify-between p-8 text-left" onclick="toggleAcc(this)">
+              <div class="flex items-center gap-6"><span class="font-mono text-slate-s text-sm">02</span><span class="font-display font-semibold text-base uppercase tracking-wide text-on-surface">Cik ilgi aizņem apkope vai remonts?</span></div>
+              <span class="material-symbols-outlined acc-icon text-primary shrink-0">add</span>
+            </button>
+            <div class="acc-content">
+              <div class="px-8 md:px-24 pb-8 font-body text-on-sv leading-relaxed">Vairumā gadījumu velosipēds tiek apkopots tajā pašā dienā vai nākamajā dienā. Ja nepieciešams pasūtīt detaļas, velosipēds tiek atgriezts <strong>1–7 dienu laikā</strong>.</div>
+            </div>
+          </div>
+
+          <div class="acc-item glass">
+            <button class="w-full flex items-center justify-between p-8 text-left" onclick="toggleAcc(this)">
+              <div class="flex items-center gap-6"><span class="font-mono text-slate-s text-sm">03</span><span class="font-display font-semibold text-base uppercase tracking-wide text-on-surface">Kādas maksājumu metodes pieņemat?</span></div>
+              <span class="material-symbols-outlined acc-icon text-primary shrink-0">add</span>
+            </button>
+            <div class="acc-content">
+              <div class="px-8 md:px-24 pb-8 font-body text-on-sv leading-relaxed">Pieņemam bankas pārskaitījumu, Revolut un skaidru naudu. Maksājums tiek veikts brīdī, kad atgriežam jūsu velosipēdu — pēc darba pabeigšanas.</div>
+            </div>
+          </div>
+
+          <div class="acc-item glass">
+            <button class="w-full flex items-center justify-between p-8 text-left" onclick="toggleAcc(this)">
+              <div class="flex items-center gap-6"><span class="font-mono text-slate-s text-sm">04</span><span class="font-display font-semibold text-base uppercase tracking-wide text-on-surface">Vai savākšana un piegāde ir bezmaksas?</span></div>
+              <span class="material-symbols-outlined acc-icon text-primary shrink-0">add</span>
+            </button>
+            <div class="acc-content">
+              <div class="px-8 md:px-24 pb-8 font-body text-on-sv leading-relaxed">Jā! Savākšana un piegāde jūsu apkārtnē ir bez papildu maksas. Minimālais pasūtījums — <strong>€ 20</strong> par pakalpojumu. Ja dzīvojat ārpus mūsu zonas — sazinieties, vienosimies.</div>
+            </div>
+          </div>
+
+          <div class="acc-item glass">
+            <button class="w-full flex items-center justify-between p-8 text-left" onclick="toggleAcc(this)">
+              <div class="flex items-center gap-6"><span class="font-mono text-slate-s text-sm">05</span><span class="font-display font-semibold text-base uppercase tracking-wide text-on-surface">Kāda ir jūsu apkalpošanas zona?</span></div>
+              <span class="material-symbols-outlined acc-icon text-primary shrink-0">add</span>
+            </button>
+            <div class="acc-content">
+              <div class="px-8 md:px-24 pb-8 font-body text-on-sv leading-relaxed">Apkalpojam klientus visā Latvijā. Ja dzīvojat tālāk — zvaniet, vienosimies par papildu ceļa izmaksām.</div>
+            </div>
+          </div>
+
+          <div class="acc-item glass">
+            <button class="w-full flex items-center justify-between p-8 text-left" onclick="toggleAcc(this)">
+              <div class="flex items-center gap-6"><span class="font-mono text-slate-s text-sm">06</span><span class="font-display font-semibold text-base uppercase tracking-wide text-on-surface">Vai piedāvājat pakalpojumus organizācijām?</span></div>
+              <span class="material-symbols-outlined acc-icon text-primary shrink-0">add</span>
+            </button>
+            <div class="acc-content">
+              <div class="px-8 md:px-24 pb-8 font-body text-on-sv leading-relaxed">Jā! Piedāvājam apkopes pakalpojumus skolām, uzņēmumiem un citām organizācijām ar vairākiem velosipēdiem. Sazinieties, lai pārrunātu grafiku un cenu.</div>
+            </div>
+          </div>
+
+          <div class="acc-item glass">
+            <button class="w-full flex items-center justify-between p-8 text-left" onclick="toggleAcc(this)">
+              <div class="flex items-center gap-6"><span class="font-mono text-slate-s text-sm">07</span><span class="font-display font-semibold text-base uppercase tracking-wide text-on-surface">Kādi ir darba laiki?</span></div>
+              <span class="material-symbols-outlined acc-icon text-primary shrink-0">add</span>
+            </button>
+            <div class="acc-content">
+              <div class="px-8 md:px-24 pb-8 font-body text-on-sv leading-relaxed">Parastais darba laiks ir no <strong>8:00 līdz 18:00</strong>. Esam elastīgi — ja šis laiks jums neiederas, sazinieties un vienosimies.</div>
+            </div>
+          </div>
+
+          <div class="acc-item glass">
+            <button class="w-full flex items-center justify-between p-8 text-left" onclick="toggleAcc(this)">
+              <div class="flex items-center gap-6"><span class="font-mono text-slate-s text-sm">08</span><span class="font-display font-semibold text-base uppercase tracking-wide text-on-surface">Ko darīt, ja nezinu, kāda apkope nepieciešama?</span></div>
+              <span class="material-symbols-outlined acc-icon text-primary shrink-0">add</span>
+            </button>
+            <div class="acc-content">
+              <div class="px-8 md:px-24 pb-8 font-body text-on-sv leading-relaxed">Neuztraucieties — vienkārši aprakstiet problēmu, ko pamanāt. Mēs apskatīsim velosipēdu un sniegsim godīgu novērtējumu. Konsultācija bez papildu maksas.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CTA ═══════════════ -->
+    <section class="py-24 md:py-40 relative">
+      <div class="absolute inset-0 bg-deep-navy -z-20"></div>
+      <div class="px-4 md:px-16 max-w-[1440px] mx-auto text-center border border-white/10 py-20 md:py-24" style="background:rgba(255,255,255,.05); backdrop-filter:blur(20px);">
+        <span class="font-mono text-[11px] uppercase tracking-[0.3em] text-electric-blue block mb-6">Sāciet tagad</span>
+        <h2 class="font-display text-3xl md:text-[52px] font-semibold text-white uppercase mb-8 leading-tight">
+          Vai tavam velosipēdam<br />nepieciešama apkope?
+        </h2>
+        <p class="font-body text-lg text-slate-s/70 max-w-2xl mx-auto mb-12">
+          Sazinieties ar mums un pieteikt servisu jau šodien. Savākšana un piegāde — bez maksas.
+        </p>
+        <a href="contacts.html" class="inline-flex items-center gap-4 bg-electric-blue text-white font-mono text-[11px] px-12 py-6 uppercase tracking-[0.2em] hover:bg-white hover:text-deep-navy border-2 border-electric-blue transition-all">
+          Pieteikt servisu
+          <span class="material-symbols-outlined text-xl">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="bg-deep-navy border-t border-white/10 pt-20 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 px-4 md:px-16 max-w-[1440px] mx-auto mb-16">
+      <div class="md:col-span-4">
+        <a href="index.html" class="font-display text-2xl font-bold tracking-tight block mb-6">
+          <span class="text-white">VELO.</span><span class="text-electric-blue">SERVIS</span>
+        </a>
+        <p class="font-body text-slate-s/60 max-w-xs mb-4">
+          Vietējais veloserviss <span data-cfg="location.city">Ozolniekos</span>.<br />Apkope ar savākšanu un piegādi.
+        </p>
+      </div>
+      <div class="md:col-span-3 md:col-start-6">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Navigācija</h4>
+        <ul class="space-y-4 font-body text-slate-s/60 text-sm">
+          <li><a href="index.html"    class="hover:text-white transition-colors">Sākums</a></li>
+          <li><a href="workshop.html" class="hover:text-white transition-colors">Serviss &amp; Cenas</a></li>
+          <li><a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition-colors">Kontakti</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Kontakti</h4>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-electric-blue text-xl shrink-0">location_on</span>
+            <span class="font-body text-slate-s/60 text-sm">Latvija</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-electric-blue text-xl shrink-0">call</span>
+            <a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">+371 265 33 400</a>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-electric-blue text-xl shrink-0">mail</span>
+            <a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">info@bergsvelo.lv</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="px-4 md:px-16 max-w-[1440px] mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest">
+        &copy; 2026 <span data-cfg="business.name">VELO.SERVIS</span> Veloserviss. Visas tiesības aizsargātas.
+      </p>
+      <div class="flex gap-6">
+        <a href="privacy.html" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Privātuma politika</a>
+        <a href="terms.html"   class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Lietošanas noteikumi</a>
+        <button onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors cursor-pointer">Sīkdatnes</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/37126533400" class="wa-float" target="_blank" rel="noopener" aria-label="Sazināties WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="./js/site-config.js" defer></script>
+  <script src="./js/cart.js" defer></script>
+  <script src="./js/cookie-consent.js" defer></script>
+
+  <script>
+    // Mobile nav
+    const navToggle   = document.getElementById('nav-toggle');
+    const mobileMenu  = document.getElementById('mobile-menu');
+    const hambIcon    = document.getElementById('hamburger-icon');
+    navToggle.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('hidden') === false;
+      hambIcon.textContent = open ? 'close' : 'menu';
+      navToggle.setAttribute('aria-expanded', open);
+    });
+
+    // FAQ accordion
+    function toggleAcc(btn) {
+      const item   = btn.closest('.acc-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.acc-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+  </script>
+</body>
 </html>

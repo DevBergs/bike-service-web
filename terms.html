@@ -1,358 +1,244 @@
 <!DOCTYPE html>
 <html lang="lv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="BergsVelo lietošanas noteikumi — veikala pirkumu nosacījumi, pakalpojumu kārtība, atcelšanas politika." />
-    <meta name="robots" content="index, follow" />
-    <title data-cfg="seo.terms.title">Lietošanas Noteikumi — TAVSVELO</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VELO.SERVIS lietošanas noteikumi — veikala pirkumu nosacījumi, pakalpojumu kārtība un pušu tiesības." />
+  <meta name="robots" content="index, follow" />
+  <title data-cfg="seo.terms.title">Lietošanas Noteikumi — VELO.SERVIS</title>
+  <link rel="canonical" href="https://bergsvelo.lv/terms.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://bergsvelo.lv/terms.html" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'deep-navy':'#0A1428','electric-blue':'#2E72FF','primary':'#0038af',
+          'primary-c':'#1b4fd8','on-surface':'#1a1c1c','on-sv':'#434655',
+          'on-sfx':'#0b1b38','on-sfx-v':'#394666','slate-s':'#E2E8F0',
+          'bg':'#f9f9f9','sc':'#eeeeee','sc-low':'#f3f3f4',
+          'outline':'#747686','outline-v':'#c4c5d7',
+        },
+        fontFamily: {
+          'display':['"Space Grotesk"','sans-serif'],
+          'body':['Inter','sans-serif'],
+          'mono':['"JetBrains Mono"','monospace'],
+        },
+      }},
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass { background:rgba(255,255,255,.85); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(15,30,60,.1); }
+    .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .wa-float { position:fixed; bottom:2rem; right:2rem; z-index:150; width:52px; height:52px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; box-shadow:0 4px 16px rgba(37,211,102,.38); text-decoration:none; transition:transform .28s ease,box-shadow .28s ease; }
+    .wa-float:hover { transform:scale(1.1) translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,.55); }
+    /* Terms content */
+    .priv h2 { font-family:'Space Grotesk',sans-serif; font-size:1.4rem; font-weight:600; color:#0A1428; margin:3rem 0 1rem; padding-top:2rem; border-top:1px solid #c4c5d7; text-transform:uppercase; letter-spacing:0.04em; }
+    .priv h2:first-of-type { border-top:none; padding-top:0; margin-top:0; }
+    .priv h3 { font-family:'Space Grotesk',sans-serif; font-size:1.05rem; font-weight:600; color:#0A1428; margin:2rem 0 0.75rem; }
+    .priv p { margin-bottom:1rem; line-height:1.7; color:#434655; }
+    .priv ul { margin:0.75rem 0 1rem 1.5rem; }
+    .priv ul li { margin-bottom:0.4rem; line-height:1.65; color:#434655; list-style:disc; }
+    .priv a { color:#2E72FF; text-decoration:underline; text-underline-offset:2px; }
+    .priv strong { color:#1a1c1c; }
+    .priv-meta { display:flex; flex-wrap:wrap; gap:0.75rem 2rem; font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:#747686; text-transform:uppercase; letter-spacing:0.08em; border-left:3px solid #2E72FF; padding-left:1rem; margin-bottom:2.5rem; }
+    .priv-box { background:#f3f3f4; border-left:3px solid #1b4fd8; padding:1.25rem 1.5rem; margin:1rem 0 1.5rem; font-size:0.9rem; line-height:1.65; color:#434655; }
+    .priv-box strong { color:#0A1428; }
+    .priv-box a { color:#2E72FF; }
+  </style>
+</head>
+<body class="bg-bg text-on-surface overflow-x-hidden">
 
-    <!-- Ionicons -->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- JS -->
-    <script src="./js/site-config.js" defer></script>
-    <script src="./js/app.js" defer></script>
-    <script src="./js/cart.js" defer></script>
-    <script src="./js/cookie-consent.js" defer></script>
-
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "https://bergsvelo.lv/" },
-        { "@type": "ListItem", "position": 2, "name": "Lietošanas noteikumi", "item": "https://bergsvelo.lv/terms.html" }
-      ]
-    }
-    </script>
-  </head>
-  <body>
-
-    <!-- ==================== HEADER ==================== -->
-    <header class="site-header scrolled" id="site-header">
-      <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="nav-logo">
-            <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-          </a>
-
-          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <ul class="nav-menu" id="nav-menu" role="list">
-            <li><a href="index.html" class="nav-link">Sākums</a></li>
-            <li><a href="workshop.html" class="nav-link nav-cta">Serviss</a></li>
-            <li><a href="shop.html" class="nav-link">Veikals</a></li>
-            <li><a href="contacts.html" class="nav-link">Kontakti</a></li>
-          </ul>
-
-          <a href="shop.html" class="nav-cart" id="nav-cart" aria-label="Grozs">
-            <i class="icon ion-md-cart"></i>
-            <span class="cart-badge" id="cart-badge"></span>
-          </a>
-        </nav>
+  <!-- HEADER -->
+  <header class="fixed top-0 w-full z-50 glass border-b border-on-sfx/10">
+    <nav class="flex justify-between items-center h-20 px-4 md:px-16 max-w-[1440px] mx-auto">
+      <a href="index.html" class="font-display text-2xl font-bold tracking-tight leading-none">
+        <span class="text-deep-navy">VELO.</span><span class="text-electric-blue">SERVIS</span>
+      </a>
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="index.html"    class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Sākums</a>
+        <a href="workshop.html" class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Serviss</a>
+        <a href="contacts.html" class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Kontakti</a>
       </div>
-    </header>
-
-    <main>
-
-      <!-- ==================== PAGE HERO ==================== -->
-      <section class="page-hero">
-        <div class="page-hero-bg" style="background-image: url('./images/serviss.jpg');"></div>
-        <div class="page-hero-overlay"></div>
-        <div class="container">
-          <div class="page-hero-content reveal">
-            <span class="page-hero-eyebrow">Juridiskie noteikumi</span>
-            <h1 class="page-hero-title">
-              Lietošanas<br /><span class="accent">Noteikumi</span>
-            </h1>
-            <p class="page-hero-desc">
-              Pakalpojumu sniegšanas kārtība, veikala pirkumu nosacījumi un pušu tiesības.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==================== TERMS CONTENT ==================== -->
-      <section class="privacy-section">
-        <div class="container">
-          <div class="privacy-wrap">
-
-            <div class="privacy-meta">
-              <span>Pēdējo reizi atjaunota: <strong>2026-02-20</strong></span>
-              <span>Spēkā no: <strong>2026-02-20</strong></span>
-            </div>
-
-            <p>
-              Šie lietošanas noteikumi regulē attiecības starp BergsVelo
-              (<em>"Pārdevējs"</em> / <em>"Pakalpojumu sniedzējs"</em>) un personu,
-              kas izmanto vietni bergsvelo.lv (<em>"Klients"</em>). Izmantojot mūsu
-              vietni vai pakalpojumus, jūs piekrītat šiem noteikumiem.
-            </p>
-
-            <!-- ── 1. PAKALPOJUMU SNIEDZĒJS ── -->
-            <h2 id="pakealpojumu-sniedzejs">1. Pakalpojumu Sniedzējs</h2>
-            <div class="privacy-infobox">
-              <strong>BergsVelo</strong><br />
-              Reģistrācijas Nr.: <em>[JĀAIZPILDA]</em><br />
-              Adrese: Ozolnieki, Jelgavas novads, Latvija<br />
-              E-pasts: <a href="mailto:info@bergsvelo.lv">info@bergsvelo.lv</a><br />
-              Tālrunis: <a href="tel:+37126533400">+371 265 33 400</a><br />
-              PVN reģistrācijas numurs: <em>[JĀAIZPILDA vai "Nav PVN maksātājs"]</em>
-            </div>
-
-            <!-- ── 2. VEIKALA PIRKUMI ── -->
-            <h2 id="veikals">2. Veikala Pirkumi (Lietoti Velosipēdi un Preces)</h2>
-
-            <h3>2.1 Pasūtījuma noformēšana</h3>
-            <p>
-              Veicot pirkumu mūsu veikalā, jūs iesniedzat saistošu piedāvājumu par preces iegādi.
-              Pasūtījums tiek uzskatīts par apstiprinātu brīdī, kad BergsVelo nosūta
-              apstiprinājumu pa e-pastu.
-            </p>
-
-            <h3>2.2 Cenas</h3>
-            <p>
-              Visas norādītās cenas ir <strong>EUR ar PVN</strong> (vai bez PVN, ja
-              BergsVelo nav PVN maksātājs — <em>[JĀPRECIZĒ]</em>). BergsVelo patur
-              tiesības mainīt cenas bez iepriekšēja brīdinājuma, taču jau apstiprinātus
-              pasūtījumus cenas izmaiņas neskar.
-            </p>
-
-            <h3>2.3 Apmaksa</h3>
-            <p>
-              Pieejamās maksājumu metodes:
-            </p>
-            <ul>
-              <li>Bankas karte (Visa, Mastercard) — apstrādā <strong>Stripe</strong></li>
-              <li>Bankas pārskaitījums</li>
-              <li>Revolut</li>
-              <li>Skaidra nauda (saņemot preci)</li>
-            </ul>
-            <p>
-              Maksājums ir jāveic pilnā apmērā pirms preces nodošanas, ja nav panākta
-              cita vienošanās.
-            </p>
-
-            <h3>2.4 Piegāde</h3>
-            <p>
-              Lietotie velosipēdi un preces tiek piegādātas Ozolniekos un Jelgavas novadā.
-              Piegāde ir <strong>bez papildu maksas</strong> apkalpošanas zonā.
-              Par piegādi ārpus zonas — vienojieties individuāli.
-              Piegādes laiks: 1–3 darba dienas pēc apmaksas apstiprināšanas, ja nav panākta
-              cita vienošanās.
-            </p>
-
-            <h3>2.5 Atteikuma tiesības (ES Patērētāju tiesību direktīva)</h3>
-            <p>
-              Saskaņā ar Latvijas Patērētāju tiesību aizsardzības likumu un ES direktīvu
-              2011/83/ES, jums ir tiesības atteikties no distances pirkuma <strong>14 dienu
-              laikā</strong> no preces saņemšanas, nenorādot iemeslu.
-            </p>
-            <p>
-              <strong>Izņēmumi atteikuma tiesībām:</strong>
-            </p>
-            <ul>
-              <li>Preces, kas izgatavotas pēc individuāla pasūtījuma</li>
-              <li>Preces, kurās ir acīmredzami lietošanas pazīmes pēc piegādes</li>
-              <li>Digitālie saturs, kas piegādāts, klients piekritis atteikties no atteikuma tiesībām</li>
-            </ul>
-            <p>
-              Lai izmantotu atteikuma tiesības, rakstiet uz
-              <a href="mailto:info@bergsvelo.lv">info@bergsvelo.lv</a>.
-              Preces jāatgriež oriģinālajā stāvoklī. Atgriešanas izmaksas sedz klients,
-              ja nav panākta cita vienošanās.
-            </p>
-
-            <h3>2.6 Preces stāvokļa apraksts</h3>
-            <p>
-              Lietotas preces tiek aprakstītas pēc labākās pārzināšanas. Fiziskās preces
-              stāvoklis var atšķirties no fotoattēliem lietošanas pazīmju dēļ.
-              Klients var pieprasīt papildu informāciju vai fotoattēlus pirms pirkuma.
-            </p>
-
-            <!-- ── 3. VELOSERVISS ── -->
-            <h2 id="veloserviss">3. Veloservisa Pakalpojumi</h2>
-
-            <h3>3.1 Pasūtījuma apstiprināšana</h3>
-            <p>
-              Servisa pasūtījums uzskatāms par apstiprinātu pēc velosipēda savākšanas
-              vai rakstiski (e-pastā) pēc tāmes apstiprināšanas no klienta puses.
-            </p>
-
-            <h3>3.2 Tāme un darbu apjoms</h3>
-            <p>
-              Pirms darbu uzsākšanas BergsVelo sniedz tāmi. Ja darbu gaitā atklājas
-              papildu nepieciešamība (piem., papildu detaļas), klients tiek informēts
-              un darbi tiek uzsākti tikai pēc apstiprināšanas.
-            </p>
-
-            <h3>3.3 Garantija uz veiktajiem darbiem</h3>
-            <p>
-              Uz BergsVelo veiktajiem darbiem tiek sniegta <strong>[JĀAIZPILDA — piem. "3 mēnešu"] garantija</strong>.
-              Garantija neattiecas uz dabisko nolietošanos, klientu pašu veiktajām izmaiņām
-              vai neatbilstošas lietošanas radītiem bojājumiem.
-            </p>
-
-            <h3>3.4 Detaļas</h3>
-            <p>
-              BergsVelo izmanto oriģinālās vai sertificētas aizstājdetaļas. Klients var
-              iesniegt pats iegādātas detaļas uzstādīšanai — BergsVelo nav atbildīgs par
-              to kvalitāti vai saderību.
-            </p>
-
-            <h3>3.5 Savākšana un piegāde</h3>
-            <p>
-              BergsVelo nodrošina bezmaksas savākšanu un piegādi apkalpošanas zonā.
-              Klients atbild par velosipēda drošu iesaiņošanu vai nodrošina piekļuvi
-              savākšanas brīdī.
-            </p>
-
-            <!-- ── 4. ATBILDĪBAS IEROBEŽOJUMS ── -->
-            <h2 id="atbildiba">4. Atbildības Ierobežojums</h2>
-            <p>
-              BergsVelo atbildība ir ierobežota līdz faktiski samaksātajai summai par
-              konkrēto pakalpojumu vai preci. BergsVelo nav atbildīgs par netiešiem
-              zaudējumiem, izrietošajiem zaudējumiem vai peļņas zaudējumu.
-            </p>
-            <p>
-              BergsVelo nav atbildīgs par velosipēda bojājumiem, kas radušies:
-            </p>
-            <ul>
-              <li>Pirms nodošanas servisā esošo skrāpju dēļ</li>
-              <li>Klienta norādītu nepareizi veiktu pārveidojumu dēļ</li>
-              <li>Trešo pušu detaļu izmantošanas dēļ, ko piegādājis klients</li>
-            </ul>
-
-            <!-- ── 5. INTELEKTUĀLAIS ĪPAŠUMS ── -->
-            <h2 id="intelektuaals-ipasums">5. Intelektuālais Īpašums</h2>
-            <p>
-              Visi vietnes bergsvelo.lv materiāli — teksti, attēli, dizains, logo —
-              ir BergsVelo intelektuālais īpašums. To kopēšana vai tālāka izplatīšana
-              bez rakstiskas atļaujas ir aizliegta.
-            </p>
-
-            <!-- ── 6. STRĪDU RISINĀŠANA ── -->
-            <h2 id="stridu-risinasana">6. Strīdu Risināšana</h2>
-            <p>
-              Strīdus mēs cenšamies risināt sarunu ceļā. Ja vienošanās netiek panākta,
-              strīdi tiek risināti Latvijas Republikas tiesās pēc BergsVelo atrašanās vietas
-              (Jelgavas rajona tiesa).
-            </p>
-            <p>
-              Patērētāji var vērsties arī Patērētāju tiesību aizsardzības centrā (PTAC):
-              <a href="https://www.ptac.gov.lv" target="_blank" rel="noopener">www.ptac.gov.lv</a>.
-            </p>
-            <p>
-              ES Patērētāju strīdu izšķiršanas platforma (ODR):
-              <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.
-            </p>
-
-            <!-- ── 7. PIEMĒROJAMIE TIESĪBU AKTI ── -->
-            <h2 id="tiesibas">7. Piemērojamie Tiesību Akti</h2>
-            <p>
-              Šie noteikumi tiek regulēti saskaņā ar Latvijas Republikas tiesību aktiem,
-              tai skaitā:
-            </p>
-            <ul>
-              <li>Latvijas Civillikums</li>
-              <li>Patērētāju tiesību aizsardzības likums</li>
-              <li>Elektronisko sakaru likums</li>
-              <li>ES Direktīva 2011/83/ES par patērētāju tiesībām</li>
-            </ul>
-
-            <!-- ── 8. IZMAIŅAS ── -->
-            <h2 id="izmainas-terms">8. Izmaiņas Noteikumos</h2>
-            <p>
-              BergsVelo patur tiesības mainīt šos noteikumus. Izmaiņas stājas spēkā
-              pēc publicēšanas vietnē. Turpinot izmantot vietni pēc izmaiņu publicēšanas,
-              jūs piekrītat jaunajiem noteikumiem.
-            </p>
-
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-
-          <div class="footer-col">
-            <a href="index.html" class="nav-logo footer-brand-logo">
-              <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-            </a>
-            <p class="footer-tagline">
-              Vietējais veloserviss Ozolniekos.<br />
-              Apkope ar savākšanu un piegādi.
-            </p>
-          </div>
-
-          <div class="footer-col">
-            <h4>Navigācija</h4>
-            <ul>
-              <li><a href="index.html">Sākums</a></li>
-              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
-              <li><a href="index.html#faq">FAQ</a></li>
-              <li><a href="shop.html">Veikals</a></li>
-              <li><a href="contacts.html">Kontakti</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Kontakti</h4>
-            <ul class="footer-contact-list">
-              <li class="footer-contact-item">
-                <i class="icon ion-md-pin"></i>
-                Ozolnieki, Latvija
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-call"></i>
-                +371 265 33 400
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-mail"></i>
-                info@bergsvelo.lv
-              </li>
-            </ul>
-          </div>
-
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 BergsVelo Veloserviss. Visas tiesības aizsargātas.</p>
-          <div class="footer-pay-row">
-            <p class="footer-pay-label">Drošie maksājumi</p>
-            <div class="pay-icons">
-              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
-              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
-              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
-              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
-            </div>
-          </div>
-          <div class="footer-legal-links">
-            <a href="privacy.html">Privātuma politika</a>
-            <a href="terms.html" class="active">Lietošanas noteikumi</a>
-            <button id="open-consent-settings-footer" class="footer-consent-btn">Sīkdatņu iestatījumi</button>
-          </div>
-        </div>
+      <div class="flex items-center gap-3">
+        <a href="workshop.html" class="hidden md:block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest hover:bg-transparent hover:text-primary-c border-2 border-primary-c transition-all">Pieteikt servisu</a>
+        <button class="md:hidden p-2 text-deep-navy" id="nav-toggle" aria-label="Izvēlne">
+          <span class="material-symbols-outlined" id="hamburger-icon">menu</span>
+        </button>
       </div>
-    </footer>
+    </nav>
+    <div class="hidden glass border-t border-on-sfx/10 px-4 py-6 space-y-3" id="mobile-menu">
+      <a href="index.html"    class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Sākums</a>
+      <a href="workshop.html" class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Serviss</a>
+      <a href="contacts.html" class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Kontakti</a>
+      <a href="workshop.html" class="block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest text-center mt-2">Pieteikt servisu</a>
+    </div>
+  </header>
 
-  </body>
+  <main class="pt-20">
+
+    <!-- HERO -->
+    <section class="relative h-[40vh] min-h-[300px] flex items-end pb-12 overflow-hidden">
+      <div class="absolute inset-0 bg-deep-navy"></div>
+      <div class="absolute inset-0 opacity-20" style="background-image:radial-gradient(circle,#2E72FF 1px,transparent 1px);background-size:32px 32px;"></div>
+      <div class="relative px-4 md:px-16 max-w-[1440px] mx-auto w-full">
+        <span class="font-mono text-[11px] text-electric-blue uppercase tracking-[0.2em] mb-3 block">Juridiskie noteikumi</span>
+        <h1 class="font-display text-4xl md:text-[56px] font-bold text-white leading-tight">
+          Lietošanas<br /><span class="text-electric-blue">Noteikumi</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="py-16 px-4 md:px-16 max-w-[1440px] mx-auto">
+      <div class="max-w-4xl priv">
+
+        <div class="priv-meta">
+          <span>Pēdējo reizi atjaunota: <strong>2026-02-20</strong></span>
+          <span>Spēkā no: <strong>2026-02-20</strong></span>
+        </div>
+
+        <p>Šie lietošanas noteikumi regulē attiecības starp <strong>VELO.SERVIS</strong> (<em>"Pārdevējs"</em> / <em>"Pakalpojumu sniedzējs"</em>) un personu, kas izmanto vietni (<em>"Klients"</em>). Izmantojot mūsu vietni vai pakalpojumus, jūs piekrītat šiem noteikumiem.</p>
+
+        <h2 id="pakalpojumu-sniedzejs">1. Pakalpojumu Sniedzējs</h2>
+        <div class="priv-box">
+          <strong data-cfg="legal.company_name">VELO.SERVIS</strong><br />
+          Reģistrācijas Nr.: <em data-cfg="legal.reg_nr">[JĀAIZPILDA]</em><br />
+          Adrese: <span data-cfg="legal.address_legal">Latvija</span><br />
+          E-pasts: <a href="mailto:info@bergsvelo.lv" data-cfg="contact.email">info@bergsvelo.lv</a><br />
+          Tālrunis: <a href="tel:+37126533400" data-cfg="contact.phone_display">+371 265 33 400</a><br />
+          PVN reģistrācijas numurs: <em data-cfg="legal.vat_nr">[Nav PVN maksātājs]</em>
+        </div>
+
+        <h2 id="veikals">2. Veikala Pirkumi (Lietoti Velosipēdi un Preces)</h2>
+        <h3>2.1 Pasūtījuma noformēšana</h3>
+        <p>Veicot pirkumu mūsu veikalā, jūs iesniedzat saistošu piedāvājumu par preces iegādi. Pasūtījums tiek uzskatīts par apstiprinātu brīdī, kad VELO.SERVIS nosūta apstiprinājumu pa e-pastu.</p>
+        <h3>2.2 Cenas</h3>
+        <p>Visas norādītās cenas ir <strong>EUR ar PVN</strong> (vai bez PVN, ja VELO.SERVIS nav PVN maksātājs — <em>[JĀPRECIZĒ]</em>). VELO.SERVIS patur tiesības mainīt cenas bez iepriekšēja brīdinājuma, taču jau apstiprinātus pasūtījumus cenas izmaiņas neskar.</p>
+        <h3>2.3 Apmaksa</h3>
+        <p>Pieejamās maksājumu metodes:</p>
+        <ul>
+          <li>Bankas karte (Visa, Mastercard) — apstrādā <strong>Stripe</strong></li>
+          <li>Bankas pārskaitījums</li>
+          <li>Revolut</li>
+          <li>Skaidra nauda (saņemot preci)</li>
+        </ul>
+        <p>Maksājums ir jāveic pilnā apmērā pirms preces nodošanas, ja nav panākta cita vienošanās.</p>
+        <h3>2.4 Piegāde</h3>
+        <p>Lietotie velosipēdi un preces tiek piegādātas visā Latvijā. Piegāde ir <strong>bez papildu maksas</strong> apkalpošanas zonā. Par piegādi ārpus zonas — vienojieties individuāli. Piegādes laiks: 1–3 darba dienas pēc apmaksas apstiprināšanas.</p>
+        <h3>2.5 Atteikuma tiesības (ES Patērētāju tiesību direktīva)</h3>
+        <p>Saskaņā ar Latvijas Patērētāju tiesību aizsardzības likumu un ES direktīvu 2011/83/ES, jums ir tiesības atteikties no distances pirkuma <strong>14 dienu laikā</strong> no preces saņemšanas, nenorādot iemeslu.</p>
+        <p><strong>Izņēmumi atteikuma tiesībām:</strong></p>
+        <ul>
+          <li>Preces, kas izgatavotas pēc individuāla pasūtījuma</li>
+          <li>Preces, kurās ir acīmredzami lietošanas pazīmes pēc piegādes</li>
+          <li>Digitālais saturs, kas piegādāts pēc klienta piekrišanas atteikties no atteikuma tiesībām</li>
+        </ul>
+        <p>Lai izmantotu atteikuma tiesības, rakstiet uz <a href="mailto:info@bergsvelo.lv">info@bergsvelo.lv</a>. Preces jāatgriež oriģinālajā stāvoklī. Atgriešanas izmaksas sedz klients.</p>
+        <h3>2.6 Preces stāvokļa apraksts</h3>
+        <p>Lietotas preces tiek aprakstītas pēc labākās pārzināšanas. Fiziskās preces stāvoklis var atšķirties no fotoattēliem lietošanas pazīmju dēļ. Klients var pieprasīt papildu informāciju vai fotoattēlus pirms pirkuma.</p>
+
+        <h2 id="veloserviss">3. Veloservisa Pakalpojumi</h2>
+        <h3>3.1 Pasūtījuma apstiprināšana</h3>
+        <p>Servisa pasūtījums uzskatāms par apstiprinātu pēc velosipēda savākšanas vai rakstiski (e-pastā) pēc tāmes apstiprināšanas no klienta puses.</p>
+        <h3>3.2 Tāme un darbu apjoms</h3>
+        <p>Pirms darbu uzsākšanas VELO.SERVIS sniedz tāmi. Ja darbu gaitā atklājas papildu nepieciešamība, klients tiek informēts un darbi tiek uzsākti tikai pēc apstiprināšanas.</p>
+        <h3>3.3 Garantija uz veiktajiem darbiem</h3>
+        <p>Uz VELO.SERVIS veiktajiem darbiem tiek sniegta <strong>[JĀAIZPILDA — piem. "3 mēnešu"] garantija</strong>. Garantija neattiecas uz dabisko nolietošanos, klientu pašu veiktajām izmaiņām vai neatbilstošas lietošanas radītiem bojājumiem.</p>
+        <h3>3.4 Detaļas</h3>
+        <p>VELO.SERVIS izmanto oriģinālās vai sertificētas aizstājdetaļas. Klients var iesniegt pats iegādātas detaļas uzstādīšanai — VELO.SERVIS nav atbildīgs par to kvalitāti vai saderību.</p>
+        <h3>3.5 Savākšana un piegāde</h3>
+        <p>VELO.SERVIS nodrošina bezmaksas savākšanu un piegādi apkalpošanas zonā. Klients atbild par velosipēda drošu iesaiņošanu vai nodrošina piekļuvi savākšanas brīdī.</p>
+
+        <h2 id="atbildiba">4. Atbildības Ierobežojums</h2>
+        <p>VELO.SERVIS atbildība ir ierobežota līdz faktiski samaksātajai summai par konkrēto pakalpojumu vai preci. VELO.SERVIS nav atbildīgs par netiešiem zaudējumiem, izrietošajiem zaudējumiem vai peļņas zaudējumu.</p>
+        <p>VELO.SERVIS nav atbildīgs par velosipēda bojājumiem, kas radušies:</p>
+        <ul>
+          <li>Pirms nodošanas servisā esošo skrāpju dēļ</li>
+          <li>Klienta norādītu nepareizi veiktu pārveidojumu dēļ</li>
+          <li>Trešo pušu detaļu izmantošanas dēļ, ko piegādājis klients</li>
+        </ul>
+
+        <h2 id="intelektuaals-ipasums">5. Intelektuālais Īpašums</h2>
+        <p>Visi vietnes materiāli — teksti, attēli, dizains, logo — ir VELO.SERVIS intelektuālais īpašums. To kopēšana vai tālāka izplatīšana bez rakstiskas atļaujas ir aizliegta.</p>
+
+        <h2 id="stridu-risinasana">6. Strīdu Risināšana</h2>
+        <p>Strīdus mēs cenšamies risināt sarunu ceļā. Ja vienošanās netiek panākta, strīdi tiek risināti Latvijas Republikas tiesās pēc pušu vienošanās.</p>
+        <p>Patērētāji var vērsties arī Patērētāju tiesību aizsardzības centrā (PTAC): <a href="https://www.ptac.gov.lv" target="_blank" rel="noopener">www.ptac.gov.lv</a>.</p>
+        <p>ES Patērētāju strīdu izšķiršanas platforma (ODR): <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.</p>
+
+        <h2 id="tiesibas">7. Piemērojamie Tiesību Akti</h2>
+        <p>Šie noteikumi tiek regulēti saskaņā ar Latvijas Republikas tiesību aktiem, tai skaitā:</p>
+        <ul>
+          <li>Latvijas Civillikums</li>
+          <li>Patērētāju tiesību aizsardzības likums</li>
+          <li>Elektronisko sakaru likums</li>
+          <li>ES Direktīva 2011/83/ES par patērētāju tiesībām</li>
+        </ul>
+
+        <h2 id="izmainas-terms">8. Izmaiņas Noteikumos</h2>
+        <p>VELO.SERVIS patur tiesības mainīt šos noteikumus. Izmaiņas stājas spēkā pēc publicēšanas vietnē. Turpinot izmantot vietni pēc izmaiņu publicēšanas, jūs piekrītat jaunajiem noteikumiem.</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-deep-navy border-t border-white/10 pt-20 pb-8 mt-16">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 px-4 md:px-16 max-w-[1440px] mx-auto mb-16">
+      <div class="md:col-span-4">
+        <a href="index.html" class="font-display text-2xl font-bold tracking-tight block mb-6"><span class="text-white">VELO.</span><span class="text-electric-blue">SERVIS</span></a>
+        <p class="font-body text-slate-s/60 max-w-xs text-sm">Vietējais veloserviss <span data-cfg="location.city">Ozolniekos</span>.<br/>Apkope ar savākšanu un piegādi.</p>
+      </div>
+      <div class="md:col-span-3 md:col-start-6">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Navigācija</h4>
+        <ul class="space-y-4 font-body text-slate-s/60 text-sm">
+          <li><a href="index.html"    class="hover:text-white transition-colors">Sākums</a></li>
+          <li><a href="workshop.html" class="hover:text-white transition-colors">Serviss &amp; Cenas</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition-colors">Kontakti</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Kontakti</h4>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">location_on</span><span class="font-body text-slate-s/60 text-sm">Latvija</span></li>
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">call</span><a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">+371 265 33 400</a></li>
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">mail</span><a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">info@bergsvelo.lv</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="px-4 md:px-16 max-w-[1440px] mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest">&copy; 2026 <span data-cfg="business.name">VELO.SERVIS</span> Veloserviss. Visas tiesības aizsargātas.</p>
+      <div class="flex gap-6">
+        <a href="privacy.html" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Privātuma politika</a>
+        <a href="terms.html"   class="font-mono text-[10px] text-electric-blue uppercase tracking-widest">Lietošanas noteikumi</a>
+        <button onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors cursor-pointer">Sīkdatnes</button>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/37126533400" class="wa-float" target="_blank" rel="noopener" aria-label="Sazināties WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="./js/site-config.js" defer></script>
+  <script src="./js/cart.js" defer></script>
+  <script src="./js/cookie-consent.js" defer></script>
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('hamburger-icon');
+      const open = menu.classList.toggle('hidden') === false;
+      icon.textContent = open ? 'close' : 'menu';
+    });
+  </script>
+</body>
 </html>

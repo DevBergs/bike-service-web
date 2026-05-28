@@ -1,877 +1,714 @@
 <!DOCTYPE html>
 <html lang="lv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pērc pārbaudītus lietotos velosipēdus un kopšanas līdzekļus — BergsVelo veikals Ozolniekos. Godīgas cenas, rūpīgi pārbaudīta kvalitāte. Bezmaksas piegāde." />
-    <meta name="keywords" content="lietoti velosipēdi Jelgava, lietoti velosipēdi Ozolnieki, Trek velo pārdošana, velo kopšanas līdzekļi, bergsvelo veikals" />
-    <meta name="robots" content="index, follow" />
-    <title data-cfg="seo.shop.title">Lietoti Velosipēdi &amp; Kopšanas Līdzekļi — TAVSVELO Veikals</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VELO.SERVIS veikals — bremzes, pārnesumi, riepas, pedāļi un aksesuāri ar piegādi uz mājām.." /
+  <meta name="robots" content="index, follow" />
+  <title>Velosipēdu Daļu Veikals — VELO.SERVIS</title>
+  <link rel="canonical" href="https://bergsvelo.lv/shop.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://bergsvelo.lv/shop.html" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bergsvelo.lv/shop.html" />
-    <meta property="og:title" content="Lietoti Velosipēdi &amp; Kopšanas Līdzekļi — BERGSVELO Veikals" />
-    <meta property="og:description" content="Pārbaudīti lietoti velosipēdi un kopšanas līdzekļi. Godīgas cenas, bezmaksas piegāde Jelgavas novadā." />
-    <meta property="og:image" content="https://bergsvelo.lv/images/header_bike.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="lv_LV" />
-    <meta property="og:site_name" content="BergsVelo" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Lietoti Velosipēdi — BergsVelo Veikals" />
-    <meta name="twitter:description" content="Pārbaudīti lietoti velosipēdi un kopšanas līdzekļi. Godīgas cenas, bezmaksas piegāde." />
-    <meta name="twitter:image" content="https://bergsvelo.lv/images/header_bike.jpg" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "https://bergsvelo.lv/" },
-            { "@type": "ListItem", "position": 2, "name": "Veikals", "item": "https://bergsvelo.lv/shop.html" }
-          ]
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'deep-navy':'#0A1428','electric-blue':'#2E72FF','primary':'#0038af',
+          'primary-c':'#1b4fd8','on-surface':'#1a1c1c','on-sv':'#434655',
+          'on-sfx':'#0b1b38','on-sfx-v':'#394666','slate-s':'#E2E8F0',
+          'bg':'#f9f9f9','sc':'#eeeeee','sc-low':'#f3f3f4',
+          'outline':'#747686','outline-v':'#c4c5d7','error':'#ba1a1a',
         },
-        {
-          "@type": "Store",
-          "@id": "https://bergsvelo.lv/shop.html#store",
-          "name": "BergsVelo Veikals",
-          "description": "Lietoti velosipēdi un kopšanas līdzekļi Ozolniekos. Pārbaudīta kvalitāte, godīgas cenas, bezmaksas piegāde.",
-          "url": "https://bergsvelo.lv/shop.html",
-          "parentOrganization": { "@id": "https://bergsvelo.lv/#business" },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "BergsVelo Veikals",
-            "itemListElement": [
-              {
-                "@type": "OfferCatalog",
-                "name": "Lietoti velosipēdi",
-                "description": "Pārbaudīti lietoti velosipēdi ar godīgu novērtējumu"
-              },
-              {
-                "@type": "OfferCatalog",
-                "name": "Kopšanas līdzekļi",
-                "description": "Ķēdes eļļa, mazgāšanas līdzekļi un citi velo kopšanas produkti"
-              }
-            ]
-          }
-        }
-      ]
-    }
-    </script>
+        fontFamily: {
+          'display':['"Space Grotesk"','sans-serif'],
+          'body':['Inter','sans-serif'],
+          'mono':['"JetBrains Mono"','monospace'],
+        },
+      }},
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family:'Inter',sans-serif; }
+    .glass { background:rgba(255,255,255,.85); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(15,30,60,.1); }
+    .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .tech-grid { background-image:radial-gradient(circle,#e2e8f0 1px,transparent 1px); background-size:40px 40px; }
+    .wa-float { position:fixed; bottom:2rem; right:2rem; z-index:150; width:52px; height:52px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; box-shadow:0 4px 16px rgba(37,211,102,.38); text-decoration:none; transition:transform .28s,box-shadow .28s; }
+    .wa-float:hover { transform:scale(1.1) translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,.55); }
+    #checkout-modal { transition:opacity .25s,visibility .25s; }
+    #checkout-modal.open { opacity:1; visibility:visible; }
+    .field { display:block; width:100%; border:1px solid #c4c5d7; padding:10px 14px; font-family:'JetBrains Mono',monospace; font-size:13px; color:#1a1c1c; background:#fff; outline:none; transition:border-color .2s; }
+    .field:focus { border-color:#2E72FF; }
+    .field.err { border-color:#ba1a1a; }
+    label.lbl { display:block; font-family:'JetBrains Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#394666; margin-bottom:5px; }
+  </style>
+</head>
+<body class="bg-bg text-on-surface overflow-x-hidden">
 
-    <!-- Ionicons -->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- JS -->
-    <script src="./js/site-config.js" defer></script>
-    <script src="./js/app.js" defer></script>
-    <script src="./js/cart.js" defer></script>
-  </head>
-  <body data-page="shop">
-
-    <!-- ==================== HEADER ==================== -->
-    <header class="site-header scrolled" id="site-header">
-      <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="nav-logo">
-            <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-          </a>
-
-          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <ul class="nav-menu" id="nav-menu" role="list">
-            <li><a href="index.html" class="nav-link">Sākums</a></li>
-            <li><a href="workshop.html" class="nav-link nav-cta">Serviss</a></li>
-            <li><a href="shop.html" class="nav-link active">Veikals</a></li>
-            <li><a href="contacts.html" class="nav-link">Kontakti</a></li>
-          </ul>
-
-          <button class="nav-cart" id="nav-cart" aria-label="Atvērt grozu">
-            <i class="icon ion-md-cart"></i>
-            <span class="cart-badge" id="cart-badge"></span>
-          </button>
-        </nav>
+  <!-- NAV -->
+  <header class="fixed top-0 w-full z-50 glass border-b border-on-sfx/10">
+    <nav class="flex justify-between items-center h-20 px-4 md:px-16 max-w-[1440px] mx-auto">
+      <a href="index.html" class="font-display text-2xl font-bold tracking-tight leading-none">
+        <span class="text-deep-navy">VELO.</span><span class="text-electric-blue">SERVIS</span>
+      </a>
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="index.html"    class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Sākums</a>
+        <a href="workshop.html" class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Serviss</a>
+        <a href="shop.html"     class="font-mono text-[11px] uppercase tracking-widest text-primary border-b-2 border-primary pb-0.5">Veikals</a>
+        <a href="contacts.html" class="font-mono text-[11px] uppercase tracking-widest text-on-sfx-v hover:text-primary transition-colors">Kontakti</a>
       </div>
-    </header>
-
-    <main>
-
-      <!-- ==================== PAGE HERO ==================== -->
-      <section class="page-hero">
-        <div class="page-hero-bg" style="background-image: url('./images/header_bike.jpg');"></div>
-        <div class="page-hero-overlay"></div>
-        <div class="container">
-          <div class="page-hero-content reveal">
-            <span class="page-hero-eyebrow">Bergsvelo</span>
-            <h1 class="page-hero-title">
-              Mūsu<br /><span class="accent">Veikals</span>
-            </h1>
-            <p class="page-hero-desc">
-              Lietoti velosipēdi un kopšanas līdzekļi — godīgas cenas, pārbaudīta kvalitāte.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==================== SHOP ==================== -->
-      <section class="shop-section">
-        <div class="container">
-
-          <!-- Category filters -->
-          <div class="shop-filters" id="shop-filters" role="tablist">
-            <button class="shop-filter-btn active" data-filter="all" role="tab" aria-selected="true">Visi</button>
-            <button class="shop-filter-btn" data-filter="bike" role="tab" aria-selected="false">Lietoti velo</button>
-            <button class="shop-filter-btn" data-filter="product" role="tab" aria-selected="false">Kopšanas līdzekļi</button>
-          </div>
-
-          <!-- Product grid -->
-          <div class="shop-grid" id="shop-grid">
-            <!-- Rendered by JS below -->
-          </div>
-
-        </div>
-      </section>
-
-    </main>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-
-          <div class="footer-col">
-            <a href="index.html" class="nav-logo footer-brand-logo">
-              <span class="logo-mark" data-cfg="business.logo_part1">TAVS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
-            </a>
-            <p class="footer-tagline">
-              Vietējais veloserviss Ozolniekos.<br />
-              Apkope ar savākšanu un piegādi.
-            </p>
-          </div>
-
-          <div class="footer-col">
-            <h4>Navigācija</h4>
-            <ul>
-              <li><a href="index.html">Sākums</a></li>
-              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
-              <li><a href="index.html#faq">FAQ</a></li>
-              <li><a href="shop.html">Veikals</a></li>
-              <li><a href="contacts.html">Kontakti</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Kontakti</h4>
-            <ul class="footer-contact-list">
-              <li class="footer-contact-item">
-                <i class="icon ion-md-pin"></i>
-                Ozolnieki, Latvija
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-call"></i>
-                +371 265 33 400
-              </li>
-              <li class="footer-contact-item">
-                <i class="icon ion-md-mail"></i>
-                info@bergsvelo.lv
-              </li>
-            </ul>
-          </div>
-
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 BergsVelo Veloserviss. Visas tiesības aizsargātas.</p>
-          <div class="footer-pay-row">
-            <p class="footer-pay-label">Drošie maksājumi</p>
-            <div class="pay-icons">
-              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
-              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
-              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
-              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
-            </div>
-          </div>
-          <div class="footer-legal-links">
-            <a href="privacy.html">Privātuma politika</a>
-            <a href="terms.html">Lietošanas noteikumi</a>
-            <button class="footer-consent-btn" id="open-consent-settings-footer" onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()">Sīkdatņu iestatījumi</button>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- ==================== CART DRAWER ==================== -->
-    <div class="cart-overlay" id="cart-overlay"></div>
-    <aside class="cart-drawer" id="cart-drawer" aria-label="Iepirkumu grozs" role="complementary">
-      <div class="cart-drawer-header">
-        <div class="cart-drawer-title">
-          Grozs
-          <span class="cart-count-label" id="cart-count-label">0 preču</span>
-        </div>
-        <button class="cart-drawer-close" id="cart-close" aria-label="Aizvērt grozu">
-          <i class="icon ion-md-close"></i>
+      <div class="flex items-center gap-3">
+        <a href="workshop.html" class="hidden md:block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest hover:bg-transparent hover:text-primary-c border-2 border-primary-c transition-all">Pieteikt servisu</a>
+        <button onclick="toggleCart()" class="relative p-2 text-on-surface hover:text-primary transition-colors" aria-label="Grozs">
+          <span class="material-symbols-outlined text-xl">shopping_cart</span>
+          <span class="absolute -top-1 -right-1 bg-electric-blue text-white text-[10px] min-w-[16px] h-4 rounded-full hidden items-center justify-center font-bold px-0.5" id="cart-badge"></span>
+        </button>
+        <button class="md:hidden p-2 text-deep-navy" id="nav-toggle" aria-label="Izvēlne">
+          <span class="material-symbols-outlined" id="hamburger-icon">menu</span>
         </button>
       </div>
+    </nav>
+    <div class="hidden glass border-t border-on-sfx/10 px-4 py-6 space-y-3" id="mobile-menu">
+      <a href="index.html"    class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Sākums</a>
+      <a href="workshop.html" class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Serviss</a>
+      <a href="shop.html"     class="block font-mono text-[11px] uppercase tracking-widest text-primary py-2 border-b border-outline-v/30">Veikals</a>
+      <a href="contacts.html" class="block font-mono text-[11px] uppercase tracking-widest text-on-sfx-v py-2 border-b border-outline-v/30">Kontakti</a>
+      <a href="workshop.html" class="block bg-primary-c text-white font-mono text-[11px] px-6 py-3 uppercase tracking-widest text-center mt-2">Pieteikt servisu</a>
+    </div>
+  </header>
 
-      <div class="cart-items-list" id="cart-items-list">
-        <!-- rendered by JS -->
-      </div>
-
-      <div class="cart-drawer-footer">
-        <div class="cart-subtotal">
-          <span class="cart-subtotal-label">Kopā</span>
-          <span class="cart-subtotal-amount" id="cart-total">€0</span>
-        </div>
-        <p class="cart-note">Piegāde un nodokļi tiek aprēķināti pie apmaksas.</p>
-
-        <!-- ── Kartes apmaksa ── -->
-        <div class="checkout-method-section">
-          <p class="checkout-method-label">Ar karti</p>
-          <button class="cart-checkout-btn" id="checkout-btn" disabled>
-            <i class="icon ion-md-lock"></i>
-            Apmaksāt ar karti
-          </button>
-          <div class="cart-pay-row">
-            <div class="pay-icons">
-              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
-              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
-              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
-              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── Dalītājs ── -->
-        <div class="checkout-divider"><span>vai</span></div>
-
-        <!-- ── Internetbanka ── -->
-        <div class="checkout-method-section">
-          <p class="checkout-method-label">Internetbanka</p>
-          <div class="bank-buttons">
-            <button class="bank-btn bank-btn--swedbank" data-bank="HABALV22" disabled>Swedbank</button>
-            <button class="bank-btn bank-btn--seb"      data-bank="UNLALV2X" disabled>SEB</button>
-            <button class="bank-btn bank-btn--citadele" data-bank="PARXLV22" disabled>Citadele</button>
-            <button class="bank-btn bank-btn--luminor"  data-bank="RIKOLV2X" disabled>Luminor</button>
-          </div>
-          <p class="cart-note" style="margin-top:0.45rem">Pārvirzīs uz bankas drošo apmaksas lapu.</p>
-        </div>
-      </div>
-    </aside>
-
-    <!-- ==================== SUCCESS MODAL ==================== -->
-    <div class="shop-success-overlay" id="success-overlay">
-      <div class="shop-success-modal">
-        <i class="icon ion-md-checkmark-circle shop-success-icon"></i>
-        <h2 class="shop-success-title">Paldies!</h2>
-        <p class="shop-success-text">
-          Jūsu pasūtījums ir saņemts. Mēs ar jums sazināsimies tuvākajā laikā, lai vienotos par savākšanu vai piegādi.
+  <!-- HERO -->
+  <header class="relative pt-40 pb-20 px-4 md:px-16 max-w-[1440px] mx-auto tech-grid">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div class="col-span-1 md:col-span-8">
+        <div class="inline-block py-1 px-3 bg-sc text-on-sv font-mono text-[11px] mb-6 uppercase tracking-widest">VELO.SERVIS · Velosipēdu daļas</div>
+        <h1 class="font-display text-4xl md:text-[72px] font-bold text-deep-navy mb-6 uppercase tracking-tight leading-none">Velo <span class="text-electric-blue">Veikals</span></h1>
+        <p class="font-body text-lg text-on-sv max-w-2xl leading-relaxed mb-8">
+          Bremzes, pārnesumi, riepas, pedāļi un aksesuāri — top zīmoli, godīgas cenas. Pasūti online, saņem ar piegādi 5–9 darba dienās.
         </p>
-        <button class="shop-success-close" id="success-close">Turpināt iepirkties</button>
+        <div class="flex flex-wrap gap-6 text-sm font-body text-on-sv">
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-electric-blue text-base">local_shipping</span>Piegāde 5–9 d.d.</div>
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-electric-blue text-base">account_balance</span>Bankas pārskaitījums</div>
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-electric-blue text-base">build</span>Uzstādīšana servisā — pieejama</div>
+        </div>
       </div>
     </div>
+  </header>
 
-    <!-- ==================== SHOP SCRIPT ==================== -->
-    <script>
-    // ── DATA ─────────────────────────────────────────────────
+  <!-- FILTER BAR -->
+  <div class="sticky top-20 z-40 bg-white/95 border-y border-on-sfx/10">
+    <div class="max-w-[1440px] mx-auto px-4 md:px-16 py-4 flex gap-2 overflow-x-auto pb-4">
+      <button onclick="filterProducts('all')"        id="filter-all"        class="flt-btn active">Visi</button>
+      <button onclick="filterProducts('bremzes')"    id="filter-bremzes"    class="flt-btn">Bremzes</button>
+      <button onclick="filterProducts('pārnesumi')"  id="filter-pārnesumi"  class="flt-btn">Pārnesumi</button>
+      <button onclick="filterProducts('riepas')"     id="filter-riepas"     class="flt-btn">Riepas</button>
+      <button onclick="filterProducts('pedāļi')"     id="filter-pedāļi"     class="flt-btn">Pedāļi</button>
+      <button onclick="filterProducts('stūres')"     id="filter-stūres"     class="flt-btn">Stūres</button>
+      <button onclick="filterProducts('sēdekļi')"    id="filter-sēdekļi"    class="flt-btn">Sēdekļi</button>
+      <button onclick="filterProducts('aksesuāri')"  id="filter-aksesuāri"  class="flt-btn">Aksesuāri</button>
+    </div>
+  </div>
+  <style>
+    .flt-btn { flex-shrink:0; padding:6px 20px; font-family:'JetBrains Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; border:1px solid #c4c5d7; color:#394666; transition:all .2s; white-space:nowrap; }
+    .flt-btn:hover, .flt-btn.active { background:#0A1428; color:#fff; border-color:#0A1428; }
+  </style>
 
-    // Velosipēdi — lai rādītu: active: true
-    const BIKES = [
-      {
-        id: '01', type: 'bike', active: false, sold: false,
-        title: 'Trek Marlin 5', year: 2021,
-        category: 'Kalnu velo', condition: 'Lieliska', price: 380,
-        description: 'Labi saglabājies Trek Marlin 5 kalnu velosipēds. Hidrauliskās disku bremzes, alumīnija rāmis, dropper neiekļauts. Ideāls pilsētai un meža takām.',
-        specs: ['21 ātrumi', 'Disku bremzes', '27.5" rati']
-      },
-      {
-        id: '02', type: 'bike', active: false, sold: false,
-        title: 'Giant Escape 3', year: 2020,
-        category: 'Pilsētas velo', condition: 'Laba', price: 220,
-        description: 'Viegls alumīnija pilsētas velo ar plašu pārnesumu diapazonu. Piemērots ikdienas braucieniem un darba iepirkšanās. Spoguļi, slēdzene komplektā.',
-        specs: ['24 ātrumi', 'V-bremzes', '700c rati']
-      },
-      {
-        id: '03', type: 'bike', active: false, sold: false,
-        title: 'Specialized Rockhopper', year: 2019,
-        category: 'Kalnu velo', condition: 'Laba', price: 290,
-        description: 'Klasiskais Specialized Rockhopper. Nomainīta ķēde un pārnesumi. Lieliski piemērots aktīvam braucienam bez kompromisiem.',
-        specs: ['27 ātrumi', 'Mehāniskās disku bremzes', '29" rati']
-      },
-      {
-        id: '04', type: 'bike', active: false, sold: false,
-        title: 'Cube Attention', year: 2022,
-        category: 'Kalnu velo', condition: 'Teicama', price: 520,
-        description: 'Gandrīz jauns Cube Attention. Rāmis bez skrāpējumiem. Pilna komplektācija — sūknis, bagāžnieks, lukturis.',
-        specs: ['2x10 ātrumi', 'Hidraulikas', '29" rati']
-      },
-      {
-        id: '05', type: 'bike', active: false, sold: false,
-        title: 'Scott Sub Cross 40', year: 2021,
-        category: 'Trekinga velo', condition: 'Lieliska', price: 350,
-        description: 'Universāls trekinga velo Scott Sub Cross. Amortizācija priekšā, stingra mugura. Piemērots gan asfaltam, gan grants ceļiem.',
-        specs: ['21 ātrumi', 'Disku bremzes', '28" rati']
-      },
-      {
-        id: '06', type: 'bike', active: false, sold: false,
-        title: 'Cannondale Quick 5', year: 2020,
-        category: 'Pilsētas velo', condition: 'Laba', price: 240,
-        description: 'Viegls un ātrs Cannondale Quick 5. Nomainītas bremžu kluces, pieejams arī bagāžnieks. Ātrs un manevrējams pilsētā.',
-        specs: ['21 ātrumi', 'V-bremzes', '700c rati']
-      },
-      {
-        id: '07', type: 'bike', active: false, sold: false,
-        title: 'Merida Big.Nine 20', year: 2019,
-        category: 'Kalnu velo', condition: 'Vidēja', price: 175,
-        description: 'Labs Merida Big.Nine 20 par pieejamu cenu. Darbspējīgs, bet nepieciešama neliela apkope. Ideāls pirmajam kalnu velo.',
-        specs: ['21 ātrumi', 'V-bremzes', '29" rati']
-      },
-      {
-        id: '08', type: 'bike', active: false, sold: false,
-        title: 'Trek FX 2', year: 2022,
-        category: 'Pilsētas velo', condition: 'Teicama', price: 420,
-        description: 'Teicamā stāvoklī Trek FX 2 šosejas-pilsētas hibrīds. Iegādāts 2022. gadā, izmantots reti. Dropper pievienots.',
-        specs: ['21 ātrumi', 'Hidrauliskās disku bremzes', '700c rati']
-      },
-      {
-        id: '09', type: 'bike', active: false, sold: false,
-        title: 'Ghost Kato 26', year: 2018,
-        category: 'Kalnu velo', condition: 'Apmierinjoša', price: 120,
-        description: 'Lēts iesācēja kalnu velo. Pilnīgi darbspējīgs, nedaudz nodilis lakojums. Lieliski piemērots bērniem vai pirmajai kalnu velo pieredzei.',
-        specs: ['21 ātrumi', 'V-bremzes', '26" rati']
-      },
-      {
-        id: '10', type: 'bike', active: false, sold: false,
-        title: 'Cube Aim Pro', year: 2023,
-        category: 'Kalnu velo', condition: 'Teicama', price: 580,
-        description: 'Jaunākais modelis — Cube Aim Pro 2023. Gandrīz nesāk lietots. Garantija vēl spēkā. Dropper, lukturis, sūknis komplektā.',
-        specs: ['2x9 ātrumi', 'Hidraulikas Shimano', '29" rati']
-      },
-    ];
+  <!-- PRODUCT GRID -->
+  <main class="py-20 px-4 md:px-16 max-w-[1440px] mx-auto">
+    <div id="success-msg" class="hidden mb-10 p-6 bg-sc-low border-l-4 border-primary text-center">
+      <span class="material-symbols-outlined text-primary text-3xl block mb-2">check_circle</span>
+      <p class="font-mono text-sm text-primary uppercase tracking-widest">Paldies! Pasūtījums saņemts. Sazināsimies 1 darba dienas laikā.</p>
+    </div>
+    <div id="empty-msg" class="hidden py-24 text-center">
+      <span class="material-symbols-outlined text-6xl text-outline-v mb-4 block">inventory_2</span>
+      <p class="font-mono text-sm text-outline uppercase tracking-widest">Šajā kategorijā pašlaik nav preču</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="product-grid"></div>
+  </main>
 
-    // Kopšanas līdzekļi — placeholders
+  <!-- CART SIDEBAR -->
+  <div class="fixed inset-y-0 right-0 w-full md:w-[420px] bg-white z-[100] translate-x-full transition-transform duration-500 shadow-2xl flex flex-col" id="cart-sidebar">
+    <div class="p-6 flex justify-between items-center border-b border-on-sfx/10">
+      <h2 class="font-display text-2xl font-semibold uppercase tracking-tight text-deep-navy">Grozs</h2>
+      <button onclick="toggleCart()" class="p-2 hover:rotate-90 transition-transform">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="flex-1 overflow-y-auto p-6" id="cart-items-container">
+      <p class="font-body text-sm text-on-sv text-center mt-10" id="empty-cart-msg">Grozs ir tukšs.</p>
+    </div>
+    <div class="p-6 border-t border-outline-v/30 space-y-4">
+      <div class="flex justify-between items-center">
+        <span class="font-mono text-[11px] uppercase tracking-widest text-on-sv">Preces kopā</span>
+        <span class="font-mono text-2xl text-deep-navy" id="cart-total-display">€ 0</span>
+      </div>
+      <p class="font-body text-xs text-outline">Piegādes izmaksas tiks precizētas. Apmaksa ar bankas pārskaitījumu pēc apstiprināšanas.</p>
+      <button onclick="openCheckout()" id="checkout-btn" disabled
+        class="w-full bg-primary-c text-white font-mono text-[11px] py-4 uppercase tracking-widest hover:bg-deep-navy transition-all disabled:opacity-40 disabled:pointer-events-none">
+        Noformēt pasūtījumu →
+      </button>
+    </div>
+  </div>
+  <div onclick="toggleCart()" class="fixed inset-0 bg-black/30 z-[99] hidden" id="cart-overlay"></div>
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkout-modal" class="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/50 opacity-0 invisible">
+    <div class="bg-white w-full max-w-lg max-h-[92vh] overflow-y-auto shadow-2xl">
+      <div class="p-6 border-b border-on-sfx/10 flex justify-between items-center sticky top-0 bg-white z-10">
+        <div>
+          <h2 class="font-display text-xl font-semibold uppercase tracking-tight text-deep-navy">Pasūtījums</h2>
+          <p class="font-mono text-[10px] text-outline uppercase tracking-widest mt-0.5">Aizpildiet piegādes informāciju</p>
+        </div>
+        <button onclick="closeCheckout()" class="p-2 hover:rotate-90 transition-transform text-on-surface">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <form id="order-form" class="p-6 space-y-5" novalidate>
+
+        <div>
+          <p class="font-mono text-[11px] uppercase tracking-widest text-electric-blue border-b border-outline-v/40 pb-2 mb-4">Kontaktinformācija</p>
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <div><label class="lbl" for="f-name">Vārds *</label><input class="field" type="text" id="f-name" autocomplete="given-name" required /></div>
+            <div><label class="lbl" for="f-surname">Uzvārds *</label><input class="field" type="text" id="f-surname" autocomplete="family-name" required /></div>
+          </div>
+          <div class="mb-3"><label class="lbl" for="f-email">E-pasts *</label><input class="field" type="email" id="f-email" autocomplete="email" required /></div>
+          <div><label class="lbl" for="f-phone">Tālrunis *</label><input class="field" type="tel" id="f-phone" autocomplete="tel" placeholder="+371" required /></div>
+        </div>
+
+        <div>
+          <p class="font-mono text-[11px] uppercase tracking-widest text-electric-blue border-b border-outline-v/40 pb-2 mb-4">Piegādes adrese</p>
+          <div class="mb-3"><label class="lbl" for="f-street">Iela, māja, dzīvoklis *</label><input class="field" type="text" id="f-street" autocomplete="address-line1" required /></div>
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <div><label class="lbl" for="f-city">Pilsēta / Pagasts *</label><input class="field" type="text" id="f-city" autocomplete="address-level2" required /></div>
+            <div><label class="lbl" for="f-zip">Pasta indekss *</label><input class="field" type="text" id="f-zip" autocomplete="postal-code" placeholder="LV-XXXX" required /></div>
+          </div>
+          <div><label class="lbl" for="f-notes">Piezīmes</label><textarea class="field" id="f-notes" rows="3" placeholder="Papildu instrukcijas, uzstādīšanas pieprasījums..."></textarea></div>
+        </div>
+
+        <div class="bg-sc-low p-4">
+          <p class="font-mono text-[11px] uppercase tracking-widest text-on-sv mb-3">Pasūtījuma kopsavilkums</p>
+          <div id="modal-order-summary" class="space-y-2 mb-3 font-body text-sm text-on-sv divide-y divide-outline-v/20"></div>
+          <div class="flex justify-between items-center pt-3 border-t border-outline-v">
+            <span class="font-mono text-[11px] uppercase tracking-widest text-on-sv">Kopā</span>
+            <span class="font-mono text-lg font-bold text-deep-navy" id="modal-order-total">€ 0</span>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-4 bg-blue-50 border border-electric-blue/20">
+          <span class="material-symbols-outlined text-electric-blue shrink-0 mt-0.5 text-base">account_balance</span>
+          <div>
+            <p class="font-mono text-[11px] uppercase tracking-widest text-electric-blue mb-1">Maksājums: Bankas pārskaitījums</p>
+            <p class="font-body text-xs text-on-sv">Pēc apstiprināšanas saņemsi rēķinu uz e-pastu. Prece tiek pasūtīta un nosūtīta pēc apmaksas saņemšanas.</p>
+          </div>
+        </div>
+
+        <div id="form-error" class="hidden p-3 bg-red-50 border border-error text-error font-body text-sm rounded"></div>
+
+        <button type="submit" id="submit-btn"
+          class="w-full bg-primary-c text-white font-mono text-[11px] py-4 uppercase tracking-widest hover:bg-deep-navy transition-all flex items-center justify-center gap-2">
+          <span id="submit-label">Apstiprināt pasūtījumu</span>
+          <span id="submit-spinner" class="hidden material-symbols-outlined text-sm">progress_activity</span>
+        </button>
+        <p class="font-body text-xs text-outline text-center">Nospiežot pogu, piekrīti <a href="terms.html" class="underline hover:text-primary">Lietošanas noteikumiem</a>.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-deep-navy border-t border-white/10 pt-20 pb-8 mt-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 px-4 md:px-16 max-w-[1440px] mx-auto mb-16">
+      <div class="md:col-span-4">
+        <a href="index.html" class="font-display text-2xl font-bold tracking-tight block mb-6"><span class="text-white">VELO.</span><span class="text-electric-blue">SERVIS</span></a>
+        <p class="font-body text-slate-s/60 max-w-xs text-sm">Velosipēdu serviss un daļu veikals Ozolniekos. Piegāde visā Latvijā.</p>
+      </div>
+      <div class="md:col-span-3 md:col-start-6">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Navigācija</h4>
+        <ul class="space-y-4 font-body text-slate-s/60 text-sm">
+          <li><a href="index.html"    class="hover:text-white transition-colors">Sākums</a></li>
+          <li><a href="workshop.html" class="hover:text-white transition-colors">Serviss &amp; Cenas</a></li>
+          <li><a href="shop.html"     class="hover:text-white transition-colors">Veikals</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition-colors">Kontakti</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <h4 class="font-mono text-[11px] text-white uppercase tracking-widest mb-8">Kontakti</h4>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">location_on</span><span class="font-body text-slate-s/60 text-sm">Latvija</span></li>
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">call</span><a href="tel:+37126533400" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">+371 265 33 400</a></li>
+          <li class="flex items-start gap-4"><span class="material-symbols-outlined text-electric-blue shrink-0">mail</span><a href="mailto:info@bergsvelo.lv" class="font-body text-slate-s/60 text-sm hover:text-white transition-colors">info@bergsvelo.lv</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="px-4 md:px-16 max-w-[1440px] mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest">&copy; 2026 VELO.SERVIS. Visas tiesības aizsargātas.</p>
+      <div class="flex gap-6">
+        <a href="privacy.html" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Privātuma politika</a>
+        <a href="terms.html"   class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Lietošanas noteikumi</a>
+        <button onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()" class="font-mono text-[10px] text-slate-s/40 uppercase tracking-widest hover:text-white transition-colors">Sīkdatnes</button>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/37126533400" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="./js/site-config.js" defer></script>
+  <script src="./js/cookie-consent.js" defer></script>
+  <script>
+
+    // ── Mobile nav ─────────────────────────────────────────────────────────────
+    document.getElementById('nav-toggle').addEventListener('click', () => {
+      const m = document.getElementById('mobile-menu');
+      const i = document.getElementById('hamburger-icon');
+      i.textContent = m.classList.toggle('hidden') === false ? 'close' : 'menu';
+    });
+
+    // ══════════════════════════════════════════════════════════════════════════
+    //  PRODUKTU SARAKSTS — pievienojiet / rediģējiet preces šeit
+    //
+    //  cat iespējas: 'bremzes' | 'pārnesumi' | 'riepas' | 'pedāļi' |
+    //                'stūres'  | 'sēdekļi'   | 'aksesuāri'
+    //  img: ceļš uz attēlu (piem. 'images/products/chain-kmc-x9.jpg') vai null
+    // ══════════════════════════════════════════════════════════════════════════
     const PRODUCTS = [
+
+      // ── BREMZES ──────────────────────────────────────────────────────────────
       {
-        id: 'p01', type: 'product', active: true, sold: false,
-        category: 'Kopšanas līdzekļi', title: 'Ķēdes eļļa (125ml)',
-        price: 8.99,
-        description: 'Universāla ķēdes eļļa sausam un mitram laikam. PTFE formula nodrošina ilgu aizsardzību.',
-        specs: ['125ml', 'Universāla', 'PTFE formula'],
-        image: null
+        id: 'br-01', cat: 'bremzes', inStock: true, price: 14,
+        name: 'Shimano BR-T4000 V-bremžu kluchi',
+        img: null,
+        desc: 'Standarta V-bremžu kluchi ar alumīnija balstu. Saderīgi ar visām V-bremžu sistēmām. Komplektā 2 pāri — priekš un aizmugure.',
       },
       {
-        id: 'p02', type: 'product', active: true, sold: false,
-        category: 'Kopšanas līdzekļi', title: 'Velo mazgāšanas komplekts',
-        price: 14.99,
-        description: 'Pilns mazgāšanas komplekts — attaukotājs, berze un sūklis. Ideāls sezonas sākumam.',
-        specs: ['3 daļas', 'Bio formula', 'Ķēdei + rāmim'],
-        image: null
+        id: 'br-02', cat: 'bremzes', inStock: true, price: 22,
+        name: 'Shimano SM-BH59 hidrauliskā šļūtene 1000mm',
+        img: null,
+        desc: 'Oriģinālā Shimano hidrauliskā šļūtene disku bremzēm. 1000mm, saderīga ar Shimano M315–M9100 sērijām. Iekļauts montāžas komplekts.',
       },
       {
-        id: 'p03', type: 'product', active: true, sold: false,
-        category: 'Kopšanas līdzekļi', title: 'Smērviela lodīšu gultņiem',
-        price: 6.50,
-        description: 'Augstas temperatūras smērviela lodīšu gultņiem, vārpstām un stūres mezglam.',
-        specs: ['60ml', 'Litozes bāze', 'UV izturīga'],
-        image: null
+        id: 'br-03', cat: 'bremzes', inStock: true, price: 118,
+        name: 'Magura MT Trail Sport hidrauliskās bremzes',
+        img: null,
+        desc: '4-virzuļu hidrauliskās disku bremzes MTB un gravel. Komplektā priekšējā + aizmugurējā svira ar 160mm rotoriem. Vācu ražojums.',
       },
       {
-        id: 'p04', type: 'product', active: true, sold: false,
-        category: 'Kopšanas līdzekļi', title: 'Rāmja aizsardzības plēve',
-        price: 9.90,
-        description: 'Caurspīdīga aizsardzības plēve kritiskajiem rāmja punktiem — ķēdes vadlīnija, dakšas iekšpuse, vadrāvēji.',
-        specs: ['Universāla', '3M materiāls', '5 gab. komplekts'],
-        image: null
+        id: 'br-04', cat: 'bremzes', inStock: true, price: 52,
+        name: 'Shimano BR-MT200 hidrauliskās bremzes (1 gab.)',
+        img: null,
+        desc: 'Ieejas klases hidrauliskās disku bremzes. Minerāleļļa, 2-virzuļi. Saderīgas ar 160/180mm rotoriem. Piemērotas MTB un trekingam.',
+      },
+
+      // ── PĀRNESUMI ─────────────────────────────────────────────────────────────
+      {
+        id: 'pr-01', cat: 'pārnesumi', inStock: true, price: 24,
+        name: 'Shimano CS-HG200 kasete 7-ātrumu (14-28T)',
+        img: null,
+        desc: 'Shimano HG kasete 7 ātrumiem. Universāla — MTB, hibrīd un pilsētas velo. Uzstādāma uz standarta HG brīvrumu.',
       },
       {
-        id: 'p05', type: 'product', active: true, sold: false,
-        category: 'Kopšanas līdzekļi', title: 'Pneimatiskais tīrītājs',
-        price: 7.20,
-        description: 'Saspiesta gaisa sprausla putekļu un smalku skrāpju iztīrīšanai no pārnesumiem un ventiļiem.',
-        specs: ['400ml', 'Ātrs uzgalis', 'Bez ūdens'],
-        image: null
+        id: 'pr-02', cat: 'pārnesumi', inStock: true, price: 34,
+        name: 'Shimano CS-HG50-8 kasete 8-ātrumu (11-32T)',
+        img: null,
+        desc: 'Shimano Acera klases kasete 8 ātrumiem. Zobu diapazons 11-32T — laba pārklājuma attiecība kalniem un plakanam reljefam.',
       },
       {
-        id: 'p06', type: 'product', active: true, sold: false,
-        category: 'Kopšanas līdzekļi', title: 'Bremžu disku tīrītājs',
-        price: 5.80,
-        description: 'Bezeļļas tīrītājs hidraulisko bremžu diskiem. Nodrošina optimālu bremzēšanas veiktspēju.',
-        specs: ['200ml', 'Bezeļļas', 'Rotors + kluces'],
-        image: null
+        id: 'pr-03', cat: 'pārnesumi', inStock: true, price: 28,
+        name: 'KMC X9 ķēde 9-ātrumu',
+        img: null,
+        desc: 'KMC X9 — populārākā 9-ātrumu ķēde. Saderīga ar Shimano, SRAM un Campagnolo. Komplektā Quick-Link savienojums bez rīka.',
+      },
+      {
+        id: 'pr-04', cat: 'pārnesumi', inStock: true, price: 38,
+        name: 'Shimano CN-HG601 ķēde 11-ātrumu',
+        img: null,
+        desc: 'Shimano 105 klases ķēde 11 ātrumu sistēmām. HG-X tehnoloģija — klusāka pārslēgšana un palielināta noturība. Shimano/SRAM.',
+      },
+      {
+        id: 'pr-05', cat: 'pārnesumi', inStock: true, price: 35,
+        name: 'Shimano RD-M2000 Altus aizmugurējais maiņrīks',
+        img: null,
+        desc: '8-ātrumu aizmugurējais maiņrīks MTB velo. Max kasete 34T. Stabila darbība netīros apstākļos. Saderīgs ar Shimano HG kasetēm.',
+      },
+      {
+        id: 'pr-06', cat: 'pārnesumi', inStock: true, price: 48,
+        name: 'Shimano RD-M4120 Alivio maiņrīks 9-ātrumu',
+        img: null,
+        desc: 'Shimano Alivio aizmugurējais maiņrīks 9 ātrumiem. Uzlabota darbība salīdzinājumā ar Altus. Max kasete 36T, Shadow tehnoloģija.',
+      },
+      {
+        id: 'pr-07', cat: 'pārnesumi', inStock: true, price: 22,
+        name: 'Shimano SL-M315 maiņrīku shifteri 7/8-ātrumu',
+        img: null,
+        desc: 'Shimano Altus/Acera klases shifteri. Pieejami atsevišķi priekšā vai aizmugurē. Ergonomisks dizains, precīza pārslēgšana.',
+      },
+
+      // ── RIEPAS ───────────────────────────────────────────────────────────────
+      {
+        id: 'ri-01', cat: 'riepas', inStock: true, price: 46,
+        name: 'Schwalbe Marathon 700×38c — tūringa/hibrīd',
+        img: null,
+        desc: 'Leģendārā Schwalbe Marathon — gandrīz nepunktējama riepa. SmartGuard aizsardzības slānis. 700×38c, derīga asfaltam un grants ceļiem.',
+      },
+      {
+        id: 'ri-02', cat: 'riepas', inStock: true, price: 54,
+        name: 'Continental Race King 29×2.2 MTB',
+        img: null,
+        desc: 'Continental Race King — ātra XC/trail MTB riepa. 29" × 2.2", ProTection pretpunkēšanas tehnoloģija. Laba valstekļa saķere.',
+      },
+      {
+        id: 'ri-03', cat: 'riepas', inStock: true, price: 30,
+        name: 'Vittoria Zaffiro Pro 700×25c šosejas',
+        img: null,
+        desc: 'Ikdienas šosejas riepa ar labu noturību un pretpunkēšanas aizsardzību. 700×25c, neilona corpus, derīga 6–8 bar spiedienam.',
+      },
+      {
+        id: 'ri-04', cat: 'riepas', inStock: true, price: 38,
+        name: 'Schwalbe Big Apple 26×2.35 pilsētas/komforts',
+        img: null,
+        desc: 'Schwalbe Big Apple — mīkstā braukšanas sajūta pilsētā pateicoties zemam spiedienam un platajam profīlam. 26" × 2.35".',
+      },
+      {
+        id: 'ri-05', cat: 'riepas', inStock: true, price: 9,
+        name: 'Schwalbe SV15 kamera 700c Presta 40mm',
+        img: null,
+        desc: 'Schwalbe butila kameras 700c riteņiem ar Presta ventili (40mm garums). Saderīga ar 25–45c riepām. Uzticama un viegla.',
+      },
+      {
+        id: 'ri-06', cat: 'riepas', inStock: true, price: 9,
+        name: 'Schwalbe AV13 kamera 26" Schrader',
+        img: null,
+        desc: 'Schwalbe butila kameras 26" MTB riteņiem ar auto (Schrader) ventili. Piemērota 1.5–2.5" platuma riepām.',
+      },
+
+      // ── PEDĀĻI ───────────────────────────────────────────────────────────────
+      {
+        id: 'pe-01', cat: 'pedāļi', inStock: true, price: 34,
+        name: 'Shimano PD-EF202 platforma — flat pedāļi',
+        img: null,
+        desc: 'Shimano plakanie alumīnija pedāļi MTB un pilsētas velo. Plata platforma ar 10 čiekuriem katrā pusē. 9/16" vītne.',
+      },
+      {
+        id: 'pe-02', cat: 'pedāļi', inStock: true, price: 52,
+        name: 'Crankbrothers Stamp 1 S/M — MTB flat',
+        img: null,
+        desc: 'Crankbrothers Stamp 1 — viens no populārākajiem MTB flat pedāļiem. Plata platforma ar regulējamiem čiekuriem. S/M izmērs.',
+      },
+      {
+        id: 'pe-03', cat: 'pedāļi', inStock: true, price: 45,
+        name: 'Shimano PD-M520L SPD kliku pedāļi',
+        img: null,
+        desc: 'Shimano SPD divpusēji kliku pedāļi MTB un trekingam. Platforma ar čiekuriem papildu saķerei. Komplektā SM-SH51 kliki.',
+      },
+
+      // ── STŪRES ───────────────────────────────────────────────────────────────
+      {
+        id: 'st-01', cat: 'stūres', inStock: true, price: 24,
+        name: 'RFR MTB stūre Flat 740mm, 31.8mm',
+        img: null,
+        desc: 'Alumīnija plakana MTB stūre. Platums 740mm, stiprinājuma diametrs 31.8mm, pacelšanās 5°. Piemērota trail un XC braukšanai.',
+      },
+      {
+        id: 'st-02', cat: 'stūres', inStock: true, price: 34,
+        name: 'RFR šosejas tauriņstūre Compact 420mm, 31.8mm',
+        img: null,
+        desc: 'Alumīnija šosejas tauriņstūre kompaktā formā. Platums 420mm, 31.8mm spaile. Ergonomiskas rievotās sadaļas labākam satveram.',
+      },
+      {
+        id: 'st-03', cat: 'stūres', inStock: true, price: 18,
+        name: 'RFR stiepnis 31.8mm, 80mm, 6°',
+        img: null,
+        desc: 'Alumīnija stūres stiepnis MTB un hibrīd velo. 31.8mm stūres iekava, 80mm garums, 6° pacelšanās. Viegls un izturīgs.',
+      },
+
+      // ── SĒDEKĻI ──────────────────────────────────────────────────────────────
+      {
+        id: 'se-01', cat: 'sēdekļi', inStock: true, price: 36,
+        name: 'Selle Royal Moa Athletic sēdeklis',
+        img: null,
+        desc: 'Ergonomisks komforta sēdeklis ikdienas braukšanai. Royalgel ieliktnis mazina vibrācijas. Platums 263mm, 335mm garums.',
+      },
+      {
+        id: 'se-02', cat: 'sēdekļi', inStock: true, price: 48,
+        name: 'WTB Volt Sport 142mm — MTB/trail',
+        img: null,
+        desc: 'WTB Volt — viens no populārākajiem MTB sēdekļiem. 142mm platums, CrMo sliedes, PU polsterējums. Trail un enduro braukšanai.',
+      },
+      {
+        id: 'se-03', cat: 'sēdekļi', inStock: true, price: 28,
+        name: 'Selle Royal Viento sēdekļa stīpa 27.2×350mm',
+        img: null,
+        desc: 'Alumīnija sēdekļa stīpa. Diametrs 27.2mm, garums 350mm. Piemērota lielākajai daļai MTB un hibrīd velo ar standarta stīpas ligzdu.',
+      },
+
+      // ── AKSESUĀRI ────────────────────────────────────────────────────────────
+      {
+        id: 'ak-01', cat: 'aksesuāri', inStock: true, price: 52,
+        name: 'Topeak Turbo Morph G pumpa ar manometru',
+        img: null,
+        desc: 'Daudzfunkcionāla rokas pumpa — izmantojama kā grīdas pumpa ar salokāmu rokturi. Integrēts manometrs līdz 160 psi. Presta + Schrader.',
+      },
+      {
+        id: 'ak-02', cat: 'aksesuāri', inStock: true, price: 34,
+        name: 'SKS Bluemels 35 dubļusargi 700c pāris',
+        img: null,
+        desc: 'SKS Bluemels plastmasas dubļusargi 700c riteņiem ar 35–44mm riepām. Pilna garuma aizsardzība, viegls montāžs. Komplektā priekš + aizmugure.',
+      },
+      {
+        id: 'ak-03', cat: 'aksesuāri', inStock: true, price: 64,
+        name: 'Cat Eye Volt 800 priekšējais lukturis USB',
+        img: null,
+        desc: '800 lūmenu priekšējais lukturis ar USB-C uzlādēšanu. 5 gaismas režīmi. Stiprinājums stūrei 22–35mm. Darbības laiks līdz 20h.',
+      },
+      {
+        id: 'ak-04', cat: 'aksesuāri', inStock: true, price: 188,
+        name: 'Garmin Varia RTL515 aizmugurējais radars',
+        img: null,
+        desc: 'Garmin Varia RTL515 — aizmugurējais lukturis ar radaru. Brīdina par automašīnām līdz 140m attālumā. Sinhronizējas ar Garmin Edge un Wahoo.',
+      },
+      {
+        id: 'ak-05', cat: 'aksesuāri', inStock: true, price: 26,
+        name: 'Topeak Ninja Cage XL pudeles turētājs',
+        img: null,
+        desc: 'Alumīnija pudeles turētājs lielākām pudelēm līdz 1L un neparasta formas pudelēm. Braze-on montāža, regulējams spiediens.',
+      },
+      {
+        id: 'ak-06', cat: 'aksesuāri', inStock: true, price: 38,
+        name: 'Garmin Edge 130 Plus GPS velodators',
+        img: null,
+        desc: 'Kompakts GPS velodators ar 25h baterijas darbību. ClimbPro kalnu analīze, Strava Live Segments, maršruta navigācija. 35g.',
       },
     ];
 
-    // ── IMAGE DISCOVERY ───────────────────────────────────────
+    // ── Kategoriju filtri ─────────────────────────────────────────────────────
+    const ALL_CATS = ['all','bremzes','pārnesumi','riepas','pedāļi','stūres','sēdekļi','aksesuāri'];
+    let activeFilter = 'all';
 
-    function tryLoad(src) {
-      return new Promise(resolve => {
-        const img = new Image();
-        img.onload  = () => resolve(src);
-        img.onerror = () => resolve(null);
-        img.src = src;
+    function filterProducts(cat) {
+      activeFilter = cat;
+      ALL_CATS.forEach(c => {
+        const btn = document.getElementById('filter-' + c);
+        if (btn) btn.className = 'flt-btn' + (c === cat ? ' active' : '');
       });
+      renderProducts();
     }
 
-    async function findImage(basePath) {
-      const exts = ['jpg', 'jpeg', 'png', 'webp'];
-      for (const ext of exts) {
-        const src = await tryLoad(`${basePath}.${ext}`);
-        if (src) return src;
-      }
-      return null;
-    }
-
-    async function discoverImages(id) {
-      const folder = String(id).padStart(2, '0');
-      const imgs = [];
-      for (let i = 1; i <= 10; i++) {
-        const base = `photos/${folder}/${folder}_${i}`;
-        const src = await findImage(base);
-        if (!src) break;
-        imgs.push(src);
-      }
-      return imgs;
-    }
-
-    // ── BUILD GALLERY (for bike cards) ────────────────────────
-
-    function buildGallery(card, images) {
-      const main = card.querySelector('.bike-main-img');
-      const noPhoto = card.querySelector('.bike-no-photo');
-      const counter = card.querySelector('.bike-photo-count');
-      const thumbs = card.querySelector('.bike-thumbs');
-
-      if (!images.length) return;
-
-      noPhoto.style.display = 'none';
-      main.style.display = 'block';
-      main.src = images[0];
-
-      let current = 0;
-
-      if (images.length > 1) {
-        counter.textContent = `1 / ${images.length}`;
-        counter.style.display = 'block';
-
-        images.forEach((src, idx) => {
-          const btn = document.createElement('button');
-          btn.className = 'bike-thumb' + (idx === 0 ? ' active' : '');
-          btn.setAttribute('aria-label', `Foto ${idx + 1}`);
-          const t = new Image();
-          t.src = src;
-          btn.appendChild(t);
-          btn.addEventListener('click', () => {
-            main.style.opacity = '0';
-            setTimeout(() => {
-              main.src = src;
-              main.style.opacity = '1';
-            }, 120);
-            counter.textContent = `${idx + 1} / ${images.length}`;
-            thumbs.querySelectorAll('.bike-thumb').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            current = idx;
-          });
-          thumbs.appendChild(btn);
-        });
-      }
-    }
-
-    // ── CONDITION HELPERS ─────────────────────────────────────
-
-    const COND_MAP = {
-      'Teicama': 'cond-excellent',
-      'Lieliska': 'cond-great',
-      'Laba': 'cond-good',
-      'Vidēja': 'cond-ok',
-      'Apmierinjoša': 'cond-fair',
-    };
-
-    // ── CREATE BIKE CARD ──────────────────────────────────────
-
-    function createBikeCard(bike) {
-      const card = document.createElement('div');
-      card.className = 'bike-card reveal' + (bike.sold ? ' bike-sold' : '');
-      card.dataset.type = 'bike';
-
-      card.innerHTML = `
-        <div class="bike-gallery">
-          <div class="bike-gallery-main">
-            <div class="bike-no-photo">
-              <i class="icon ion-md-bicycle"></i>
-              <span>Foto tiks pievienoti drīzumā</span>
+    function renderProducts() {
+      const grid     = document.getElementById('product-grid');
+      const emptyMsg = document.getElementById('empty-msg');
+      const list     = activeFilter === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.cat === activeFilter);
+      if (list.length === 0) { grid.innerHTML = ''; emptyMsg.classList.remove('hidden'); return; }
+      emptyMsg.classList.add('hidden');
+      grid.innerHTML = list.map(p => `
+        <div class="group border border-on-sfx/10 bg-white flex flex-col hover:border-electric-blue/40 hover:shadow-md transition-all">
+          <div class="aspect-[4/3] bg-sc overflow-hidden relative flex items-center justify-center">
+            ${p.img
+              ? `<img src="${p.img}" alt="${p.name}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />`
+              : `<span class="material-symbols-outlined text-7xl text-outline-v/60">${catIcon(p.cat)}</span>`
+            }
+            ${!p.inStock ? '<div class="absolute inset-0 bg-white/70 flex items-center justify-center"><span class="font-mono text-[11px] uppercase tracking-widest bg-error text-white px-3 py-1">Nav noliktavā</span></div>' : ''}
+          </div>
+          <div class="p-5 flex flex-col flex-1">
+            <p class="font-mono text-[10px] uppercase tracking-widest text-outline mb-1">${catLabel(p.cat)}</p>
+            <h3 class="font-display text-[15px] font-semibold text-deep-navy uppercase leading-tight mb-2 flex-1">${p.name}</h3>
+            <p class="font-body text-sm text-on-sv mb-4 leading-relaxed">${p.desc}</p>
+            <div class="flex items-center justify-between mt-auto gap-3">
+              <span class="font-mono text-2xl text-electric-blue font-bold">€ ${p.price}</span>
+              <button onclick="addToCart('${p.id}')" ${!p.inStock ? 'disabled' : ''}
+                class="flex items-center gap-1.5 border border-deep-navy px-4 py-2.5 font-mono text-[10px] uppercase tracking-widest hover:bg-deep-navy hover:text-white transition-all disabled:opacity-40 disabled:pointer-events-none shrink-0">
+                <span class="material-symbols-outlined text-sm" id="ci-${p.id}">add_shopping_cart</span>
+                <span id="cl-${p.id}">Pievienot</span>
+              </button>
             </div>
-            <img class="bike-main-img" src="" alt="${bike.title}" style="display:none;" />
-            <span class="bike-photo-count" style="display:none;"></span>
           </div>
-          <div class="bike-thumbs"></div>
-        </div>
-        <div class="bike-info">
-          <div class="bike-header">
-            <h3 class="bike-title">${bike.title}</h3>
-            <span class="bike-price">€${bike.price}</span>
-          </div>
-          <div class="bike-meta">
-            <span class="bike-year">${bike.year}</span>
-            <span class="bike-category">${bike.category}</span>
-            <span class="bike-condition ${COND_MAP[bike.condition] || ''}">${bike.condition}</span>
-          </div>
-          <p class="bike-desc">${bike.description}</p>
-          <div class="bike-specs">
-            ${bike.specs.map(s => `<span class="bike-spec-tag">${s}</span>`).join('')}
-          </div>
-          ${bike.sold
-            ? `<div class="bike-sold-badge">Pārdots</div>`
-            : `<button class="btn btn-primary btn-add-cart" data-id="${bike.id}" data-type="bike" data-title="${bike.title}" data-price="${bike.price}" data-meta="${bike.year} · ${bike.category}">
-                 <i class="icon ion-md-cart"></i> Pievienot grozam
-               </button>`}
-        </div>
-        ${bike.sold ? '<div class="bike-sold-overlay">PĀRDOTS</div>' : ''}
-      `;
-
-      // Load images async
-      discoverImages(bike.id).then(imgs => buildGallery(card, imgs));
-
-      return card;
+        </div>`).join('');
     }
 
-    // ── CREATE PRODUCT CARD ───────────────────────────────────
-
-    function createProductCard(product) {
-      const card = document.createElement('div');
-      card.className = 'product-card reveal';
-      card.dataset.type = 'product';
-
-      card.innerHTML = `
-        ${product.image
-          ? `<img class="product-card-img" src="${product.image}" alt="${product.title}" />`
-          : `<div class="product-card-placeholder">
-               <i class="icon ion-md-flask"></i>
-               <span>Foto drīzumā</span>
-             </div>`}
-        <div class="product-card-body">
-          <span class="product-card-cat">${product.category}</span>
-          <h3 class="product-card-title">${product.title}</h3>
-          <p class="product-card-desc">${product.description}</p>
-          <div class="product-card-specs">
-            ${product.specs.map(s => `<span class="product-card-spec">${s}</span>`).join('')}
-          </div>
-        </div>
-        <div class="product-card-footer">
-          <span class="product-card-price">€${product.price.toFixed(2)}</span>
-          ${product.sold
-            ? `<span style="font-family:var(--font-mono);font-size:0.65rem;color:rgba(244,242,238,0.35);text-transform:uppercase;letter-spacing:0.08em;">Izpārdots</span>`
-            : `<button class="btn btn-primary btn-add-cart" data-id="${product.id}" data-type="product" data-title="${product.title}" data-price="${product.price}" data-meta="${product.category}">
-                 <i class="icon ion-md-cart"></i> Pievienot
-               </button>`}
-        </div>
-      `;
-
-      return card;
+    function catIcon(cat) {
+      const map = { bremzes:'emergency_home', pārnesumi:'settings', riepas:'circle', pedāļi:'directions_bike', stūres:'navigation', sēdekļi:'chair', aksesuāri:'construction' };
+      return map[cat] || 'inventory_2';
+    }
+    function catLabel(cat) {
+      const map = { bremzes:'Bremzes', pārnesumi:'Pārnesumi', riepas:'Riepas & Kameras', pedāļi:'Pedāļi', stūres:'Stūres', sēdekļi:'Sēdekļi', aksesuāri:'Aksesuāri' };
+      return map[cat] || cat;
     }
 
-    // ── RENDER GRID ───────────────────────────────────────────
+    // ── Grozs ─────────────────────────────────────────────────────────────────
+    let cart = JSON.parse(localStorage.getItem('oz_shop_cart') || '[]');
 
-    function renderGrid(filter) {
-      const grid = document.getElementById('shop-grid');
-      grid.innerHTML = '';
+    function saveCart()  { localStorage.setItem('oz_shop_cart', JSON.stringify(cart)); }
+    function cartTotal() { return cart.reduce((s, i) => s + i.price * i.qty, 0); }
+    function cartCount() { return cart.reduce((s, i) => s + i.qty, 0); }
 
-      const activeFilter = filter || 'all';
-      const visible = [];
+    function updateBadge() {
+      const b = document.getElementById('cart-badge');
+      const n = cartCount();
+      b.textContent = n;
+      b.style.display = n > 0 ? 'flex' : 'none';
+    }
 
-      // Bikes
-      BIKES.forEach(bike => {
-        if (!bike.active) return;
-        if (activeFilter !== 'all' && activeFilter !== 'bike') return;
-        visible.push({ card: createBikeCard(bike), type: 'bike' });
-      });
-
-      // Products
-      PRODUCTS.forEach(product => {
-        if (!product.active) return;
-        if (activeFilter !== 'all' && activeFilter !== 'product') return;
-        visible.push({ card: createProductCard(product), type: 'product' });
-      });
-
-      if (visible.length === 0) {
-        grid.innerHTML = `
-          <div class="shop-empty">
-            <i class="icon ion-md-bicycle"></i>
-            <p>Šobrīd šajā kategorijā nav aktīvu preču</p>
-          </div>
-        `;
-        return;
-      }
-
-      visible.forEach(({ card }) => grid.appendChild(card));
-
-      // Re-attach scroll observer to new cards
-      if (window._revealObserver) {
-        grid.querySelectorAll('.reveal').forEach(el => window._revealObserver.observe(el));
+    function addToCart(id) {
+      const p = PRODUCTS.find(x => x.id === id);
+      if (!p || !p.inStock) return;
+      const ex = cart.find(i => i.id === id);
+      if (ex) ex.qty++; else cart.push({ id: p.id, name: p.name, price: p.price, qty: 1 });
+      saveCart(); updateBadge();
+      const icon = document.getElementById('ci-' + id);
+      const lbl  = document.getElementById('cl-' + id);
+      if (icon && lbl) {
+        icon.textContent = 'check'; lbl.textContent = 'Pievienots!';
+        setTimeout(() => { icon.textContent = 'add_shopping_cart'; lbl.textContent = 'Pievienot'; }, 1800);
       }
     }
 
-    // ── CART DRAWER ───────────────────────────────────────────
+    function removeFromCart(id) {
+      cart = cart.filter(i => i.id !== id);
+      saveCart(); updateBadge(); renderCartSidebar();
+    }
 
-    function renderCartDrawer() {
-      const items = window.CartStore.items();
-      const list = document.getElementById('cart-items-list');
-      const total = document.getElementById('cart-total');
-      const countLabel = document.getElementById('cart-count-label');
-      const checkoutBtn = document.getElementById('checkout-btn');
+    function changeQty(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+      saveCart(); updateBadge(); renderCartSidebar();
+    }
 
-      const count = window.CartStore.count();
-      const n = count;
-      const itemLabel = (n % 10 === 1 && n % 100 !== 11) ? 'prece'
-                      : (n % 10 === 0 || (n % 100 >= 11 && n % 100 <= 19)) ? 'preču'
-                      : 'preces';
-      countLabel.textContent = `${n} ${itemLabel}`;
-      total.textContent = `€${window.CartStore.total().toFixed(2)}`;
-      checkoutBtn.disabled = count === 0;
-      document.querySelectorAll('.bank-btn').forEach(btn => { btn.disabled = count === 0; });
+    function toggleCart() {
+      const sidebar  = document.getElementById('cart-sidebar');
+      const overlay  = document.getElementById('cart-overlay');
+      const isOpen   = !sidebar.classList.contains('translate-x-full');
+      sidebar.classList.toggle('translate-x-full', isOpen);
+      overlay.classList.toggle('hidden', isOpen);
+      if (!isOpen) renderCartSidebar();
+    }
 
-      if (items.length === 0) {
-        list.innerHTML = `
-          <div class="cart-empty-state">
-            <i class="icon ion-md-cart"></i>
-            <p>Grozs ir tukšs</p>
-          </div>
-        `;
-        return;
-      }
+    function renderCartSidebar() {
+      const container = document.getElementById('cart-items-container');
+      const emptyMsg  = document.getElementById('empty-cart-msg');
+      const totalEl   = document.getElementById('cart-total-display');
+      const checkBtn  = document.getElementById('checkout-btn');
 
-      list.innerHTML = '';
-      items.forEach(item => {
+      totalEl.textContent = '€ ' + cartTotal();
+      checkBtn.disabled   = cart.length === 0;
+      container.querySelectorAll('.cart-item').forEach(el => el.remove());
+
+      if (cart.length === 0) { emptyMsg.classList.remove('hidden'); return; }
+      emptyMsg.classList.add('hidden');
+      cart.forEach(item => {
         const el = document.createElement('div');
-        el.className = 'cart-item';
+        el.className = 'cart-item flex gap-3 border-b border-on-sfx/5 pb-4 mb-4';
         el.innerHTML = `
-          <div>
-            <div class="cart-item-name">${item.title}</div>
-            <div class="cart-item-meta">${item.meta || ''}</div>
-            <div class="cart-item-qty">
-              <button class="qty-minus" data-id="${item.id}" data-type="${item.type}" aria-label="Samazināt">−</button>
-              <span>${item.qty}</span>
-              <button class="qty-plus" data-id="${item.id}" data-type="${item.type}" aria-label="Palielināt">+</button>
-              <button class="cart-item-remove" data-id="${item.id}" data-type="${item.type}">Noņemt</button>
+          <div class="w-14 h-14 bg-sc shrink-0 flex items-center justify-center">
+            <span class="material-symbols-outlined text-xl text-outline">directions_bike</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="font-display text-sm font-semibold text-deep-navy uppercase leading-tight line-clamp-2">${item.name}</p>
+            <div class="flex items-center gap-2 mt-2">
+              <button onclick="changeQty('${item.id}',-1)" class="w-6 h-6 border border-outline-v flex items-center justify-center hover:border-primary text-sm leading-none">−</button>
+              <span class="font-mono text-sm w-4 text-center">${item.qty}</span>
+              <button onclick="changeQty('${item.id}',1)"  class="w-6 h-6 border border-outline-v flex items-center justify-center hover:border-primary text-sm leading-none">+</button>
             </div>
           </div>
-          <div>
-            <div class="cart-item-price">€${(item.price * item.qty).toFixed(2)}</div>
-          </div>
-        `;
-        list.appendChild(el);
-      });
-
-      // Qty buttons
-      list.querySelectorAll('.qty-minus').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const item = window.CartStore.items().find(i => i.id === btn.dataset.id && i.type === btn.dataset.type);
-          if (item) window.CartStore.setQty(btn.dataset.id, btn.dataset.type, item.qty - 1);
-        });
-      });
-
-      list.querySelectorAll('.qty-plus').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const item = window.CartStore.items().find(i => i.id === btn.dataset.id && i.type === btn.dataset.type);
-          if (item) window.CartStore.setQty(btn.dataset.id, btn.dataset.type, item.qty + 1);
-        });
-      });
-
-      list.querySelectorAll('.cart-item-remove').forEach(btn => {
-        btn.addEventListener('click', () => {
-          window.CartStore.remove(btn.dataset.id, btn.dataset.type);
-        });
+          <div class="shrink-0 flex flex-col items-end gap-2">
+            <span class="font-mono text-electric-blue text-sm">€ ${item.price * item.qty}</span>
+            <button onclick="removeFromCart('${item.id}')" class="text-error">
+              <span class="material-symbols-outlined text-sm">delete</span>
+            </button>
+          </div>`;
+        container.appendChild(el);
       });
     }
 
-    function openCart() {
-      document.getElementById('cart-drawer').classList.add('open');
-      document.getElementById('cart-overlay').classList.add('open');
+    // ── Checkout modālis ──────────────────────────────────────────────────────
+    function openCheckout() {
+      if (cart.length === 0) return;
+      const sum = document.getElementById('modal-order-summary');
+      sum.innerHTML = cart.map(i => `
+        <div class="flex justify-between py-1.5">
+          <span class="flex-1 pr-3">${i.name} <span class="text-outline">× ${i.qty}</span></span>
+          <span class="font-mono shrink-0">€ ${i.price * i.qty}</span>
+        </div>`).join('');
+      document.getElementById('modal-order-total').textContent = '€ ' + cartTotal();
+      document.getElementById('checkout-modal').classList.add('open');
       document.body.style.overflow = 'hidden';
+      document.getElementById('cart-sidebar').classList.add('translate-x-full');
+      document.getElementById('cart-overlay').classList.add('hidden');
     }
 
-    function closeCart() {
-      document.getElementById('cart-drawer').classList.remove('open');
-      document.getElementById('cart-overlay').classList.remove('open');
+    function closeCheckout() {
+      document.getElementById('checkout-modal').classList.remove('open');
       document.body.style.overflow = '';
     }
 
-    // ── CHECKOUT ──────────────────────────────────────────────
-
-    async function doCheckout() {
-      const btn = document.getElementById('checkout-btn');
-      btn.disabled = true;
-      btn.innerHTML = '<i class="icon ion-md-hourglass"></i> Apstrādā...';
-
-      const items = window.CartStore.items().map(i => ({
-        title: i.title,
-        price: i.price,
-        qty: i.qty,
-      }));
-
-      try {
-        const res = await fetch('/php/checkout.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ items }),
-        });
-
-        const data = await res.json();
-
-        if (data.url) {
-          window.location.href = data.url;
-        } else {
-          throw new Error(data.error || 'Kļūda');
-        }
-      } catch (err) {
-        console.error('Checkout kļūda:', err);
-        btn.disabled = false;
-        btn.innerHTML = '<i class="icon ion-md-lock"></i> Apmaksāt';
-        alert('Apmaksas apstrādē radās kļūda. Lūdzu mēģiniet vēlāk vai sazinieties ar mums.');
-      }
-    }
-
-    // ── BANK CHECKOUT ─────────────────────────────────────────
-
-    async function doBankCheckout(aspsp) {
-      const allBankBtns = document.querySelectorAll('.bank-btn');
-      allBankBtns.forEach(b => b.disabled = true);
-      document.getElementById('checkout-btn').disabled = true;
-
-      const activeBtn = document.querySelector(`.bank-btn[data-bank="${aspsp}"]`);
-      const origHtml = activeBtn.innerHTML;
-      activeBtn.innerHTML = '<i class="icon ion-md-hourglass" style="font-size:1.2rem"></i>';
-
-      const items = window.CartStore.items().map(i => ({
-        title: i.title, price: i.price, qty: i.qty,
-      }));
-
-      try {
-        const res = await fetch('/php/bank-checkout.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ aspsp, items }),
-        });
-        const data = await res.json();
-        if (data.url) {
-          window.location.href = data.url;
-        } else {
-          throw new Error(data.error || 'Kļūda');
-        }
-      } catch (err) {
-        console.error('Bank checkout kļūda:', err);
-        activeBtn.innerHTML = origHtml;
-        const count = window.CartStore.count();
-        allBankBtns.forEach(b => b.disabled = count === 0);
-        document.getElementById('checkout-btn').disabled = count === 0;
-        alert('Bankas apmaksas apstrādē radās kļūda. Lūdzu mēģiniet vēlāk vai sazinieties ar mums.');
-      }
-    }
-
-    // ── SUCCESS MODAL ─────────────────────────────────────────
-
-    function showSuccessModal() {
-      document.getElementById('success-overlay').classList.add('open');
-      window.CartStore.clear();
-      // Remove ?success=1 from URL
-      history.replaceState(null, '', window.location.pathname);
-    }
-
-    // ── INIT ──────────────────────────────────────────────────
-
-    document.addEventListener('DOMContentLoaded', () => {
-
-      // Render shop grid
-      renderGrid('all');
-
-      // Category filter tabs
-      document.getElementById('shop-filters').addEventListener('click', e => {
-        const btn = e.target.closest('.shop-filter-btn');
-        if (!btn) return;
-        document.querySelectorAll('.shop-filter-btn').forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
-        });
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
-        renderGrid(btn.dataset.filter);
-      });
-
-      // Add to cart (delegated)
-      document.getElementById('shop-grid').addEventListener('click', e => {
-        const btn = e.target.closest('.btn-add-cart');
-        if (!btn) return;
-        window.CartStore.add({
-          id: btn.dataset.id,
-          type: btn.dataset.type,
-          title: btn.dataset.title,
-          price: parseFloat(btn.dataset.price),
-          meta: btn.dataset.meta || '',
-        });
-        // Bounce animation
-        btn.textContent = 'Pievienots!';
-        btn.style.background = '#1a6e3c';
-        setTimeout(() => {
-          btn.innerHTML = '<i class="icon ion-md-cart"></i> Pievienot grozam';
-          btn.style.background = '';
-        }, 1400);
-      });
-
-      // Cart drawer — open via nav button
-      document.getElementById('nav-cart').addEventListener('click', e => {
-        e.preventDefault();
-        openCart();
-      });
-
-      document.getElementById('cart-close').addEventListener('click', closeCart);
-      document.getElementById('cart-overlay').addEventListener('click', closeCart);
-
-      // ESC key closes cart
-      document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') closeCart();
-      });
-
-      // Cart drawer render on change
-      window.CartStore.onChange(() => {
-        renderCartDrawer();
-      });
-      renderCartDrawer();
-
-      // Checkout button (Stripe)
-      document.getElementById('checkout-btn').addEventListener('click', doCheckout);
-
-      // Bank payment buttons
-      document.querySelectorAll('.bank-btn').forEach(btn => {
-        btn.addEventListener('click', () => doBankCheckout(btn.dataset.bank));
-      });
-
-      // Success modal
-      if (new URLSearchParams(window.location.search).get('success') === '1') {
-        showSuccessModal();
-      }
-      document.getElementById('success-close').addEventListener('click', () => {
-        document.getElementById('success-overlay').classList.remove('open');
-      });
-
+    document.getElementById('checkout-modal').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeCheckout();
     });
-    </script>
 
-    <script src="./js/cookie-consent.js" defer></script>
-  </body>
+    // ── Formas iesniegšana ────────────────────────────────────────────────────
+    document.getElementById('order-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const errBox  = document.getElementById('form-error');
+      const btn     = document.getElementById('submit-btn');
+      const lbl     = document.getElementById('submit-label');
+      const spinner = document.getElementById('submit-spinner');
+      errBox.classList.add('hidden');
+
+      const req = ['f-name','f-surname','f-email','f-phone','f-street','f-city','f-zip'];
+      let ok = true;
+      req.forEach(id => {
+        const el = document.getElementById(id);
+        el.classList.remove('err');
+        if (!el.value.trim()) { el.classList.add('err'); ok = false; }
+      });
+      const em = document.getElementById('f-email');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)) { em.classList.add('err'); ok = false; }
+      if (!ok) { errBox.textContent = 'Lūdzu aizpildiet visus obligātos laukus (*).'; errBox.classList.remove('hidden'); return; }
+
+      btn.disabled = true; lbl.textContent = 'Sūta...'; spinner.classList.remove('hidden');
+
+      const payload = {
+        name:    document.getElementById('f-name').value.trim() + ' ' + document.getElementById('f-surname').value.trim(),
+        email:   document.getElementById('f-email').value.trim(),
+        phone:   document.getElementById('f-phone').value.trim(),
+        address: [document.getElementById('f-street').value.trim(),
+                  document.getElementById('f-city').value.trim(),
+                  document.getElementById('f-zip').value.trim()].join(', '),
+        notes:   document.getElementById('f-notes').value.trim(),
+        items:   cart.map(i => ({ name: i.name, qty: i.qty, price: i.price })),
+        total:   cartTotal(),
+      };
+
+      try {
+        const res  = await fetch('./php/shop-order.php', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload) });
+        const data = await res.json();
+        if (data.ok) {
+          cart = []; saveCart(); updateBadge();
+          closeCheckout();
+          document.getElementById('success-msg').classList.remove('hidden');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          e.target.reset();
+        } else {
+          throw new Error(data.error || 'Servera kļūda');
+        }
+      } catch (err) {
+        errBox.textContent = 'Neizdevās nosūtīt. Sazinieties tieši: info@bergsvelo.lv vai WhatsApp.';
+        errBox.classList.remove('hidden');
+      } finally {
+        btn.disabled = false; lbl.textContent = 'Apstiprināt pasūtījumu'; spinner.classList.add('hidden');
+      }
+    });
+
+    // ── Init ──────────────────────────────────────────────────────────────────
+    renderProducts();
+    updateBadge();
+    if (new URLSearchParams(window.location.search).get('success') === '1') {
+      document.getElementById('success-msg').classList.remove('hidden');
+    }
+  </script>
+</body>
 </html>
